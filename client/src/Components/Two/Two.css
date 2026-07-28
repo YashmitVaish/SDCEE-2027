@@ -1,0 +1,22 @@
+.two {
+  /* height: 75vh; */
+  background-color: white;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.imgcont {
+  display: flex;
+  justify-content: space-between;
+}
+.img-two {
+  width: 40%;
+  object-fit: contain;
+}
+
+.topics {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}

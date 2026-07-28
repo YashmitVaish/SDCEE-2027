@@ -1,0 +1,72 @@
+.three {
+  /* height: 60vh; */
+  background-color: #d2d8dd;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  scroll-padding: -20px;
+  padding: 30px 0;
+}
+
+/* .wrapper {
+  margin: 0 auto;
+  max-width: 800px;
+  text-align: center;
+} */
+
+.timeline ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.timeline ul li {
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+.schedule {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.schedule-button {
+  margin-right: 20px;
+  text-align: center;
+}
+
+.schedule-button button {
+  background-color: maroon;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.schedule-button button:hover {
+  background-color: rgb(180, 14, 14);
+}
+
+.schedule-button img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.qrcode {
+  max-height: 150px;
+  max-width: 150px;
+}
+
+.qrcode1 {
+  padding-left: 10px;
+}

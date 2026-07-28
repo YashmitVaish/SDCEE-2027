@@ -1,0 +1,104 @@
+.nav {
+  background-color: rgb(205, 217, 177);
+  height: 70px;
+  max-width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 0px 50px;
+  position: sticky;
+  top: 0;
+  z-index: 1000000;
+}
+
+.logo > img {
+  height: 100%;
+  width: 100px;
+}
+
+.nav-menu {
+  width: 80%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.nav-regg > button {
+  border-radius: 10px;
+  background-color: #000000;
+  color: white;
+  padding: 5px 20px;
+}
+
+.nav-link {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-decoration: none;
+  color: black;
+}
+
+.text-link {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+.menu-icon {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: none;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: #000;
+  margin: 6px 0;
+}
+
+/* Styles for menu when active */
+.nav-menu.active {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 70px;
+  left: 0;
+  width: 100%;
+  background-color: rgb(205, 217, 177);
+  z-index: 100;
+  padding: 10px;
+}
+
+/* Adjust content when menu is open */
+.menu-open {
+  overflow: hidden;
+}
+
+.menu-open #nav + section {
+  margin-top: 200px; /* Adjust as needed */
+}
+
+@media screen and (max-width: 1100px) {
+  .menu-icon {
+    display: block;
+    margin-left: -70px;
+  }
+
+  .nav-menu {
+    display: none;
+  }
+
+  .nav-regg {
+    margin-right: -90px;
+  }
+
+  .nav-menu.active {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background-color: rgb(205, 217, 177);
+    z-index: 100;
+    padding: 10px;
+  }
+}

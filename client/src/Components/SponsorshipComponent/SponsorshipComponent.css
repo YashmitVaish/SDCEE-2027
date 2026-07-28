@@ -1,0 +1,55 @@
+.our-sponsors {
+  text-align: center;
+  padding: 3vw 0;
+  background-color: rgb(234, 219, 219);
+}
+
+.section-heading {
+  color: #000;
+}
+
+.separator {
+  width: 200px;
+  height: 3px;
+  background-color: #f68317;
+  margin: 10px auto;
+}
+
+.sponsorship-button {
+  padding: 10px 20px;
+  margin-top: 20px;
+  background-color: #7a1010;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.sponsorship-button:hover {
+  background-color: #721f1f;
+}
+
+.carousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+.sponsor-image {
+  flex: 0 0 calc(25% - 20px);
+  max-width: 170px;
+  max-height: 17  0px;
+  margin: 10px;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .sponsor-image {
+    flex: 0 0 calc(50% - 20px);
+    max-width: calc(30% - 20px);
+  }
+}

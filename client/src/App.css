@@ -1,0 +1,27 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.cont {
+  z-index: 0;
+}
+
+button {
+  outline: 0;
+  border: 0px solid;
+}
+
+.wrapper {
+  padding: 0 50px;
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .four {
+    overflow-x: hidden;
+  }
+}

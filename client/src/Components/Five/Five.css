@@ -1,0 +1,45 @@
+.five {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)),
+    url(./bg-51.png);
+  background-color: none;
+  background-repeat: no-repeat;
+  width: 100%;
+  background-size: 100% 100%;
+  padding: 30px 0;
+  padding-bottom: 70px;
+  margin: 0;
+  color: white;
+  filter: grayscale(10%);
+  text-align: center;
+}
+
+.five h3 {
+  margin: 30px 0px;
+}
+.five p {
+  text-align: center;
+  padding-left: 140px;
+  padding-right: 140px;
+  font-size: 1.2rem;
+}
+
+@media screen and (max-width: 600px) {
+  .five {
+    overflow-x: hidden;
+    background: none;
+    background-color: gray;
+    width: 100vw;
+  }
+  .five h3 {
+    padding: 25px;
+    color: black;
+    font-size: 1.9rem;
+  }
+
+  .five p {
+    padding: 30px;
+  }
+}
