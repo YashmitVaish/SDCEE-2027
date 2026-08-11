@@ -2,13 +2,17 @@
    HERO SECTION
 ========================================================= */
 
+/* =========================================================
+   HERO SECTION
+========================================================= */
+
 .hero {
   position: relative;
 
   width: 100%;
-  height: 48.85vw;
+  height: 57.2vw;
 
-  min-height: 750px;
+  min-height: 936px;
 
   overflow: hidden;
 
@@ -23,18 +27,18 @@
 .hero-art {
   position: absolute;
 
-  width: 67.24vw;
+  width: 58.5vw;
   height: auto;
 
-  left: 31.875vw;
+  left: 40.52vw;
 
   /*
-    IMPORTANT:
-    The artwork is intentionally positioned above
-    the hero so the large circular element sits
-    in the upper-right like the Figma design.
+    This will hold the college photo, so most of the
+    circle (a major segment, not just a sliver) needs
+    to stay on screen. Only a small cap bleeds off the
+    top edge for the corner-peek effect.
   */
-  top: -23.59vw;
+  top: -2.15vw;
 
   z-index: 1;
 
@@ -92,12 +96,6 @@
 .hero-text {
   position: relative;
 
-  /*
-    Small upward correction so the whole
-    text block sits closer to the Figma design.
-  */
-  margin-top: -2vw;
-
   color: #000000;
 
   font-family: "Times New Roman", Times, serif;
@@ -111,15 +109,17 @@
 ========================================================= */
 
 .hero-head {
-  margin: 0 0 8px 0;
+  margin: 0 0 clamp(10px, 1.93vw, 37px) 0;
 
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
 
-  font-size: clamp(55px, 4.15vw, 80px);
+  font-size: clamp(70px, 5vw, 96px);
 
-  font-weight: 700;
+  font-weight: 600;
 
   line-height: 1;
+
+  letter-spacing: -0.03em;
 
   color: #000000;
 }
@@ -132,11 +132,13 @@
 .hero-description {
   margin: 0;
 
-  font-family: "Times New Roman", Times, serif;
+  font-family: "Poly", "Times New Roman", Times, serif;
 
-  font-size: clamp(15px, 1.05vw, 20px);
+  font-size: clamp(26px, 1.667vw, 32px);
 
   line-height: 1.25;
+
+  letter-spacing: -0.03em;
 
   color: #000000;
 
@@ -149,13 +151,15 @@
 ========================================================= */
 
 .hero-date {
-  margin: 26px 0 20px 0;
+  margin: clamp(14px, 2.34vw, 45px) 0 clamp(12px, 1.2vw, 23px) 0;
 
-  font-family: "Times New Roman", Times, serif;
+  font-family: "Ramaraja", "Times New Roman", Times, serif;
 
-  font-size: clamp(17px, 1.25vw, 24px);
+  font-size: clamp(29px, 2.083vw, 40px);
 
-  font-weight: 700;
+  font-weight: 400;
+
+  letter-spacing: -0.03em;
 
   color: #000000;
 }
@@ -170,26 +174,28 @@
 
   align-items: center;
 
-  gap: 10px;
+  gap: clamp(10px, 1.04vw, 20px);
 }
 
 
 .hero-reg {
-  height: 44px;
+  height: auto;
 
-  padding: 0 24px;
+  padding: clamp(10px, 0.833vw, 16px) clamp(20px, 2.604vw, 50px);
 
-  border: none;
+  border: 1px solid #000000;
 
-  border-radius: 9px;
+  border-radius: clamp(10px, 1.04vw, 20px);
 
   background-color: #716997;
 
   color: #ffffff;
 
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Montserrat", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 
-  font-size: 16px;
+  font-size: clamp(15px, 1.667vw, 32px);
+
+  font-weight: 400;
 
   cursor: pointer;
 
@@ -207,7 +213,7 @@
 
 
 .hostel-button {
-  min-width: 215px;
+  padding: clamp(10px, 0.833vw, 16px) clamp(12px, 1.04vw, 20px);
 }
 
 
@@ -221,17 +227,17 @@
 ========================================================= */
 
 .journal {
-  margin-top: 20px;
+  margin-top: clamp(14px, 1.77vw, 34px);
 
   width: min(600px, 90%);
 
-  color: #5e1618;
+  color: #ff0000;
 
-  font-family: "Times New Roman", Times, serif;
+  font-family: "Neuton", "Times New Roman", Times, serif;
 
-  font-size: clamp(11px, 0.75vw, 15px);
+  font-size: clamp(19px, 1.25vw, 24px);
 
-  line-height: 1.35;
+  line-height: 1.3;
 }
 
 
@@ -242,7 +248,7 @@
 
   font-weight: 400;
 
-  color: #5e1618;
+  color: #ff0000;
 }
 
 
@@ -256,7 +262,7 @@
 .journal li {
   margin-bottom: 2px;
 
-  color: #5e1618;
+  color: #ff0000;
 }
 
 
@@ -306,20 +312,20 @@
 @media screen and (max-width: 1100px) {
 
   .hero {
-    height: 700px;
+    height: 800px;
 
-    min-height: 700px;
+    min-height: 800px;
   }
 
 
   .hero-art {
-    width: 850px;
+    width: 754px;
 
     max-width: none;
 
-    left: 42%;
+    left: 40%;
 
-    top: -50px;
+    top: -10px;
   }
 
 
@@ -330,20 +336,8 @@
   }
 
 
-  .hero-head {
-    font-size: 58px;
-  }
-
-
-  .hero-description {
-    font-size: 16px;
-  }
-
-
   .journal {
     width: 90%;
-
-    font-size: 12px;
   }
 
 }
@@ -358,25 +352,25 @@
   .hero {
     height: auto;
 
-    min-height: 700px;
+    min-height: 806px;
 
     overflow: hidden;
   }
 
 
   .hero-art {
-    width: 900px;
+    width: 787px;
 
     left: 20%;
 
-    top: -30px;
+    top: 4px;
 
     opacity: 1;
   }
 
 
   .hero-content {
-    min-height: 700px;
+    min-height: 806px;
   }
 
 
@@ -392,54 +386,29 @@
 
 
   .hero-text {
-    margin-top: 0;
-
     width: 100%;
   }
 
 
   .hero-head {
-    font-size: 52px;
+    font-size: 62px;
   }
 
 
   .hero-description {
-    font-size: 15px;
-  }
-
-
-  .hero-date {
-    font-size: 18px;
-
-    margin-top: 25px;
+    font-size: 24px;
   }
 
 
   .hero-buttons {
     flex-wrap: wrap;
-
-    gap: 8px;
-  }
-
-
-  .hero-reg {
-    height: 42px;
-
-    padding: 0 18px;
-
-    font-size: 14px;
-  }
-
-
-  .hostel-button {
-    min-width: auto;
   }
 
 
   .journal {
     width: 100%;
 
-    font-size: 11px;
+    font-size: 18px;
   }
 
 }
@@ -452,11 +421,11 @@
 @media screen and (max-width: 450px) {
 
   .hero-art {
-    width: 750px;
+    width: 644px;
 
-    left: 15%;
+    left: 14%;
 
-    top: 0;
+    top: 10px;
   }
 
 
@@ -468,12 +437,12 @@
 
 
   .hero-head {
-    font-size: 44px;
+    font-size: 53px;
   }
 
 
   .hero-description {
-    font-size: 14px;
+    font-size: 22px;
   }
 
 }

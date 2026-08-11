@@ -71,6 +71,7 @@ export default function Two() {
             </div>
           </div>
         </div>
+
       </div>
     </section>
   );
