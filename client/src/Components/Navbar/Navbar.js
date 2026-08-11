@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import "./Navbar.css";
-import logo from "./logo.png";
 import { HashLink as Link } from "react-router-hash-link";
 
 export default function Navbar() {
@@ -10,43 +9,57 @@ export default function Navbar() {
     setMenuVisible(!menuVisible);
   };
 
+  const closeMenu = () => {
+    setMenuVisible(false);
+  };
+
   return (
-    <div className={`nav ${menuVisible ? "active" : ""}`} id="nav">
-      <button className="menu-icon" onClick={toggleMenu}>
-        <div className="bar"></div>
-        <div className="bar"></div>
-        <div className="bar"></div>
+    <nav className={`nav ${menuVisible ? "menu-open" : ""}`} id="nav">
+      <Link to="/" className="logo" onClick={closeMenu}>
+        <img src={require("./Full-Logo.png")} alt="Thapar Institute" />
+      </Link>
+
+      <button
+        className="menu-icon"
+        onClick={toggleMenu}
+        aria-label="Toggle navigation"
+      >
+        <span className="bar"></span>
+        <span className="bar"></span>
+        <span className="bar"></span>
       </button>
-      <Link smooth to="#hero" className="text-link">
-        <div className="logo">
-          <img src={require("./Full-Logo.png")} alt="logo" />
-        </div>
-      </Link>
+
       <div className={`nav-menu ${menuVisible ? "active" : ""}`}>
-        <Link smooth to="#hero" className="text-link">
-          <a className="nav-link">Home</a>
+        <Link to="/" className="nav-link" onClick={closeMenu}>
+          Home
         </Link>
-        <Link smooth to="#venue" className="text-link">
-          <a className="nav-link">Venue</a>
+
+        <Link to="/#venue" className="nav-link" onClick={closeMenu}>
+          Venue
         </Link>
-        <Link smooth to="#speakers" className="text-link">
-          <a className="nav-link">Speakers</a>
+
+        <Link to="/#speakers" className="nav-link" onClick={closeMenu}>
+          Speakers
         </Link>
-        <Link smooth to="/abstract" className="text-link">
-          <a className="nav-link">Abstract/Paper Submission</a>
+
+        <Link to="/abstract" className="nav-link" onClick={closeMenu}>
+          Abstract/Paper Submission
         </Link>
-        <Link smooth to="#dates" className="text-link">
-          <a className="nav-link">Schedule</a>
+
+        <Link to="/#schedule" className="nav-link" onClick={closeMenu}>
+          Schedule
         </Link>
-        <Link smooth to="#team" className="text-link">
-          <a className="nav-link">Our Team</a>
+
+        <Link to="/#team" className="nav-link" onClick={closeMenu}>
+          Our Team
         </Link>
-      </div>
-      <Link smooth to="/register" className="text-link">
+
         <div className="nav-regg">
-          <button>Register</button>
+          <Link to="/register" className="text-link" onClick={closeMenu}>
+            <button>Register</button>
+          </Link>
         </div>
-      </Link>
-    </div>
+      </div>
+    </nav>
   );
 }
