@@ -5,7 +5,6 @@ import conferenceBg from "./conference-bg.png"; // the crowd photo
 export default function Two() {
   return (
     <section className="two">
-      <div className="two-topline"></div>
 
       <div className="two-overlay">
         <div className="two-content">

@@ -13,6 +13,8 @@ import Abstract from "./pages/Abstract";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Speakers from "./Components/Speakers/Speakers";
 import SponsorshipComponent from "./Components/SponsorshipComponent/SponsorshipComponent";
+import InfoBar from "./Components/InfoBar/InfoBar";
+
 
 function App() {
   return (
@@ -34,6 +36,7 @@ function Home() {
     <>
       <Navbar />
       <Hero />
+      <InfoBar />
       <Two />
       <Three />
       <SponsorshipComponent />
