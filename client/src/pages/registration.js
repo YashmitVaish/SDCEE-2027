@@ -249,7 +249,7 @@ export default function Registration() {
               Engineering and Technology
             </p>
             <p>
-              <strong>Account Number </strong> 676010011622
+              <strong>Account Number </strong> 0267104000092579
             </p>
             <p>
               <strong>Type of A/c </strong> Saving
@@ -258,14 +258,14 @@ export default function Registration() {
               <strong>Bank Name </strong> Kotak Mahindra Bank Ltd.
             </p>
             <p>
-              <strong>IFSC Code </strong> KKBK0000263
+              <strong>IFSC Code </strong> IBKL0000267
             </p>
             <p>
               <strong>Swift Code </strong> KKBKINBB
             </p>
             <p>
-              <strong>Bank Address </strong> Kotak Mahindra Bank Ltd. Leela
-              Bhawan, Patiala, Punjab, India
+              <strong>Bank Address </strong> Ground & First Floor, Plot No. 644 Main Road Kashmiran Wala Gurudwara,
+              Tripuri Town, Pati Patiala Punjab - 147001
             </p>
           </div>
           <div className="key-dates">
