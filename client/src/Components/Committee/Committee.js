@@ -90,31 +90,31 @@ const coreteam = [
 
 const orgsecs = [
   {
-    name: "Dr. Sanghamitra Barman",
-    img: require("./images/sanghita.jpg"),
+    name: "Dr. Chandra Shekhar",
+    img: require("./images/Dr. Chandra Shekhar.jpg"),
     role: "Organizing Secretary",
   },
   {
-    name: "Dr. Jaiprakash Kushwaha",
-    img: require("./images/jaiprakashkhushwaha.jpg"),
+    name: "Dr. Sujoy Chattaraj",
+    img: require("./images/Dr. Sujoy Chattaraj.png"),
     role: "Organizing Secretary",
   },
   {
-    name: "Dr. Neetu Singh",
-    img: require("./images/neetusingh.jpg"),
+    name: "Dr. Sushma Kumari",
+    img: require("./images/Dr. Sushma Kumari.jpeg"),
     role: "Organizing Secretary",
   },
 ];
 
 const jointsecs = [
   {
-    name: "Dr. Vivek Pawar",
-    img: require("./images/vivekpawar.jpg"),
+    name: "Dr. Lovepreet Singh",
+    img: require("./images/Dr. Lovepreet Singh.png"),
     role: "Joint Secretary",
   },
   {
-    name: "Dr. Himali Horo",
-    img: require("./images/himalihoro.jpg"),
+    name: "Dr. Renuka",
+    img: require("./images/Dr. Renuka.jpg"),
     role: "Joint Secretary",
   },
 ];
