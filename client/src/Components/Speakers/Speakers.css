@@ -1,26 +1,14 @@
+/* ============================= */
+/*        KEYNOTE SPEAKERS        */
+/* ============================= */
+
 .speakers {
   margin: 40px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.chiefguest {
-  background-color: rgb(207, 227, 234);
-  padding-top: 20px;
-}
 
-.chief {
-  padding-bottom: 0 !important;
-}
-
-.chief-speakercont {
-  width: 100%;
-  margin-top: 30px;
-
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-}
 .speakercont {
   width: 100%;
   margin-top: 100px;
@@ -50,18 +38,256 @@
   margin-bottom: 10px;
 }
 
+
+/* ============================= */
+/*          CHIEF GUEST           */
+/* ============================= */
+
+.chiefguest {
+  position: relative;
+
+  background-color: white;
+
+  padding-top: 55px;
+  padding-bottom: 70px;
+
+  overflow: hidden;
+
+  text-align: center;
+}
+
+/* CHIEF GUEST heading */
+
+.chief {
+  margin: 0 0 35px 0 !important;
+  padding: 0 !important;
+
+  font-size: 38px;
+  font-weight: 400;
+
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+
+/* Container */
+
+.chief-speakercont {
+  position: relative;
+
+  width: 100%;
+  margin-top: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  overflow: visible;
+}
+
+
+/* ============================= */
+/*       DECORATIVE CURVES       */
+/* ============================= */
+
+/* BLUE CURVE */
+
+.chief-speakercont::before {
+  content: "";
+
+  position: absolute;
+
+  width: 1250px;
+  height: 360px;
+
+  left: 50%;
+  top: 20px;
+
+  transform: translateX(-50%);
+
+  border-top: 3px solid #3da9ff;
+  border-radius: 50%;
+
+  z-index: 0;
+}
+
+
+/* RED CURVE */
+
+.chief-speakercont::after {
+  content: "";
+
+  position: absolute;
+
+  width: 1250px;
+  height: 360px;
+
+  left: 50%;
+  top: 10px;
+
+  transform: translateX(-50%);
+
+  border-top: 3px solid #ff3d3d;
+  border-radius: 50%;
+
+  z-index: 0;
+}
+
+
+/* GREEN CURVE */
+
+.chief-speakercont .onespeaker::before {
+  content: "";
+
+  position: absolute;
+
+  width: 1250px;
+  height: 360px;
+
+  left: 50%;
+  top: 30px;
+
+  transform: translateX(-50%);
+
+  border-top: 3px solid #00a651;
+  border-radius: 50%;
+
+  z-index: -1;
+}
+
+
+/* ============================= */
+/*          CHIEF GUEST CARD      */
+/* ============================= */
+
+.chief-speakercont .onespeaker {
+  position: relative;
+
+  flex-basis: auto;
+
+  width: 500px;
+
+  margin: 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  z-index: 2;
+}
+
+
+/* Chief Guest Image */
+
 .chief-speakerimg {
-  width: 250px;
+  width: 255px;
+  height: 255px;
+
   aspect-ratio: 1;
 
   object-fit: cover;
   object-position: top;
-  margin-bottom: 10px;
-  border: 5px solid black;
+
+  border-radius: 50%;
+
+  border: none;
+
+  margin-bottom: 25px;
+
+  position: relative;
+
+  z-index: 3;
 }
 
+
+/* Name */
+
+.chief-speakercont .onespeaker h3 {
+  margin: 0;
+
+  padding: 0 0 8px 0;
+
+  width: 400px;
+
+  font-size: 34px;
+  font-weight: 400;
+
+  letter-spacing: 1px;
+
+  border-bottom: 1px solid #777;
+}
+
+
+/* Details */
+
+.chief-speakercont .onespeaker h6 {
+  margin: 4px 0;
+
+  font-size: 15px;
+  font-weight: 400;
+
+  letter-spacing: 1px;
+
+  text-transform: uppercase;
+
+  color: #444;
+}
+
+
+/* First detail gets a little more breathing room */
+
+.chief-speakercont .onespeaker h3 + h6 {
+  margin-top: 9px;
+}
+
+
+/* ============================= */
+/*            MOBILE             */
+/* ============================= */
+
 @media screen and (max-width: 600px) {
-  /* .speakercont {
-    scale: 0.5;
-  } */
+
+  .chiefguest {
+    padding-top: 40px;
+    padding-bottom: 50px;
+  }
+
+  .chief {
+    font-size: 30px;
+  }
+
+  .chief-speakercont .onespeaker {
+    width: 100%;
+  }
+
+  .chief-speakerimg {
+    width: 210px;
+    height: 210px;
+  }
+
+  .chief-speakercont .onespeaker h3 {
+    width: 90%;
+    font-size: 27px;
+  }
+
+  .chief-speakercont .onespeaker h6 {
+    font-size: 12px;
+  }
+
+  /* Smaller curves on mobile */
+
+  .chief-speakercont::before,
+  .chief-speakercont::after,
+  .chief-speakercont .onespeaker::before {
+    width: 800px;
+    height: 300px;
+  }
+
+  .speakercont {
+    margin-top: 50px;
+  }
+
+  .speakercont .onespeaker {
+    flex-basis: 100%;
+  }
 }

@@ -1,55 +1,72 @@
 .our-sponsors {
-  text-align: center;
-  padding: 3vw 0;
-  background-color: rgb(234, 219, 219);
+  width: 100%;
+  min-height: 300px;
+
+  box-sizing: border-box;
+
+  background-color: #ffffff;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding-top: 38px;
+
+  border-bottom: 1px solid #bdbdbd;
 }
+
+
+/* =========================
+   HEADING
+========================= */
 
 .section-heading {
-  color: #000;
+  margin: 0;
+
+  color: #000000;
+
+  font-family: Arial, Helvetica, sans-serif;
+
+  font-size: 36px;
+  font-weight: 700;
+
+  line-height: 1.2;
+
+  text-align: center;
 }
 
-.separator {
-  width: 200px;
-  height: 3px;
-  background-color: #f68317;
-  margin: 10px auto;
-}
 
-.sponsorship-button {
-  padding: 10px 20px;
-  margin-top: 20px;
-  background-color: #7a1010;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 16px;
-}
+/* =========================
+   RESPONSIVE
+========================= */
 
-.sponsorship-button:hover {
-  background-color: #721f1f;
-}
-
-.carousel {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  margin: 0 auto;
-  max-width: 100%;
-}
-
-.sponsor-image {
-  flex: 0 0 calc(25% - 20px);
-  max-width: 170px;
-  max-height: 17  0px;
-  margin: 10px;
-  object-fit: cover;
-}
-
-@media (max-width: 768px) {
-  .sponsor-image {
-    flex: 0 0 calc(50% - 20px);
-    max-width: calc(30% - 20px);
+@media screen and (max-width: 768px) {
+  .our-sponsors {
+    min-height: 250px;
+    padding-top: 35px;
   }
+
+  .section-heading {
+    font-size: 30px;
+  }
+}
+
+
+@media screen and (max-width: 480px) {
+  .our-sponsors {
+    min-height: 220px;
+    padding-top: 30px;
+  }
+
+  .section-heading {
+    font-size: 26px;
+  }
+}
+
+.chiefguest {
+  background-color: white;
+  padding-top: 20px;
+  padding-bottom: 45px;
+
+  border-bottom: 1px solid #b5b5b5;
 }
