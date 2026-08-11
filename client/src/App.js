@@ -3,7 +3,6 @@ import Hero from "./Components/Hero/Hero";
 import Navbar from "./Components/Navbar/Navbar";
 import Two from "./Components/Two/Two";
 import Three from "./Components/Three/Three";
-import Four from "./Components/Four/Four";
 import Footer from "./Components/Footer/Footer";
 import Five from "./Components/Five/Five";
 import Six from "./Components/Six/Six";
@@ -40,11 +39,10 @@ function Home() {
       <Hero />
       <InfoBar />
       <Two />
-      <Venue />
       <Three />
       <SponsorshipComponent />
       <Speakers />
-      <Four />
+      <Venue />
       <Committee />
       <Five />
       <Six />
