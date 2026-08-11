@@ -14,6 +14,8 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Speakers from "./Components/Speakers/Speakers";
 import SponsorshipComponent from "./Components/SponsorshipComponent/SponsorshipComponent";
 import InfoBar from "./Components/InfoBar/InfoBar";
+import Venue from "./Components/Venue/Venue";
+
 
 
 function App() {
@@ -38,6 +40,7 @@ function Home() {
       <Hero />
       <InfoBar />
       <Two />
+      <Venue />
       <Three />
       <SponsorshipComponent />
       <Speakers />

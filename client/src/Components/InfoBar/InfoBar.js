@@ -5,12 +5,10 @@ export default function InfoBar() {
   return (
     <div className="info-bar">
       <div className="info-item">
-        <span className="info-icon">📅</span>
         <span>September 26-27, 2025</span>
       </div>
 
       <div className="info-item">
-        <span className="info-icon">📍</span>
         <span>Thapar Institute of Engineering &amp; Technology</span>
       </div>
 
