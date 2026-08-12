@@ -154,19 +154,14 @@ export default function Registration() {
             <div className="register-guide">
               <ul className="guide-reg">
                 <li>
-                  All the participants have to submit the registration fee
-                  through UPI or Netbanking, in order to attend/present paper in
-                  the conference. E-receipt can be downloaded from payment
-                  portal after successful payment process.
+                  Registration fee includes registration kit, lunch, conference/ gala dinner, and tea during the conference sessions for offline attendees.
                 </li>
                 <li>
-                  Once the payment has been done, the authors need to fill the
-                  registration form for their confirmation.
+                  Registration fee is inclusive of GST.
                 </li>
                 <li>
                   {" "}
-                  Registration fee includes registration kit, lunch, conference/
-                  gala dinner, and tea during the conference sessions.
+                  The registration fee does not include the Article Publication Charge (APC). If selected for publication, authors are responsible for paying the APC directly according to the journal’s.
                 </li>
               </ul>
             </div>
@@ -225,22 +220,21 @@ export default function Registration() {
             <h2>Important Dates:</h2>
             <ul>
               <li>
-                <strong>Last Date of Abstract Submissions:</strong> January 10,
-                2024
+                <strong>Last Date of Abstract Submissions:</strong> October 31,
+                2026
               </li>
               <li>
-                <strong>Notification of Acceptance:</strong> January 12, 2024
+                <strong>Early Bird Registration (deadline) :</strong> December 20, 2026
               </li>
               {/* <li>
               <strong>Early Bird Registration Start:</strong> October
               01,2023-December 15,2023
             </li> */}
               <li>
-                <strong>Full Paper (Selected) Submission:</strong> January 30,
-                2024
+                <strong>Full Paper (Selected) Submission:</strong> January 15, 2027 - February 15, 2027
               </li>
               <li>
-                <strong>Conference Date:</strong> February 22-24, 2024
+                <strong>Conference Date:</strong> February 18-20, 2027
               </li>
             </ul>
           </div>
