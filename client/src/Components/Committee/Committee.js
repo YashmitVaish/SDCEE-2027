@@ -76,14 +76,32 @@ const organizing = [
 
 const coreteam = [
   {
-    name: "Prof. Rajeev Mehta",
-    img: require("./images/rajeevmeheta.jpg"),
-    role: "Chairperson",
+    name: "Prof. Avinash Chandra",
+    img: require("./images/avinashchandra.jpg"),
+    role: "Chairperson & Convener",
+  },
+];
+
+const coconveners = [
+  {
+    name: "Dr. Sudhir Kumar Singh",
+    img: null,
+    role: "Co-Convener",
   },
   {
-    name: "Dr. Avinash Chandra",
-    img: require("./images/avinashchandra.jpg"),
-    role: "Convener",
+    name: "Dr. Parminder Singh",
+    img: null,
+    role: "Co-Convener",
+  },
+  {
+    name: "Dr. Vivek Pawar",
+    img: null,
+    role: "Co-Convener",
+  },
+  {
+    name: "Dr. Himali Horo",
+    img: null,
+    role: "Co-Convener",
   },
 ];
 
@@ -94,26 +112,26 @@ const orgsecs = [
     role: "Organizing Secretary",
   },
   {
-    name: "Dr. Sujoy Chattaraj",
-    img: require("./images/Dr. Sujoy Chattaraj.png"),
+    name: "Dr. Sushma Kumari",
+    img: require("./images/Dr. Sushma Kumari.jpeg"),
     role: "Organizing Secretary",
   },
   {
-    name: "Dr. Sushma Kumari",
-    img: require("./images/Dr. Sushma Kumari.jpeg"),
+    name: "Dr. Sujoy Chattaraj",
+    img: require("./images/Dr. Sujoy Chattaraj.png"),
     role: "Organizing Secretary",
   },
 ];
 
 const jointsecs = [
   {
-    name: "Dr. Lovepreet Singh",
-    img: require("./images/Dr. Lovepreet Singh.png"),
+    name: "Dr. Renuka",
+    img: require("./images/Dr. Renuka.jpg"),
     role: "Joint Secretary",
   },
   {
-    name: "Dr. Renuka",
-    img: require("./images/Dr. Renuka.jpg"),
+    name: "Dr. Lovepreet Singh",
+    img: require("./images/Dr. Lovepreet Singh.png"),
     role: "Joint Secretary",
   },
 ];
@@ -184,7 +202,7 @@ export default function Committee() {
 
           <div className="orgcommembers">
             {coreteam.map((member, i) => (
-              <div className="orgcommember secs">
+              <div className="orgcommember secs" key={`role-${i}`}>
                 <div>
                   <h3 className="color-role">{member.role}</h3>
                 </div>
@@ -192,7 +210,7 @@ export default function Committee() {
             ))}
 
             {coreteam.map((member, i) => (
-              <div className="orgcommember secs">
+              <div className="orgcommember secs" key={`img-${i}`}>
                 <img
                   src={member.img}
                   alt=""
@@ -204,10 +222,23 @@ export default function Committee() {
               </div>
             ))}
 
+            <h3 className="corehead">Co-Conveners</h3>
+
+            {coconveners.map((member, i) => (
+              <div className="orgcommember" key={i}>
+                {member.img && (
+                  <img src={member.img} alt="" className="orgcommemberimg" />
+                )}
+                <div>
+                  <h5>{member.name}</h5>
+                </div>
+              </div>
+            ))}
+
             <h3 className="corehead">Organizing Secretaries</h3>
 
             {orgsecs.map((member, i) => (
-              <div className="orgcommember orgsecs">
+              <div className="orgcommember orgsecs" key={i}>
                 <img src={member.img} alt="" className="orgcommemberimg" />
                 <div>
                   <h5>{member.name}</h5>
@@ -218,7 +249,7 @@ export default function Committee() {
             <h3 className="corehead">Joint Secretaries</h3>
 
             {jointsecs.map((member, i) => (
-              <div className="orgcommember">
+              <div className="orgcommember" key={i}>
                 <img src={member.img} alt="" className="orgcommemberimg" />
                 <div>
                   <h5>{member.name}</h5>
@@ -233,7 +264,7 @@ export default function Committee() {
 
           <div className="orgcommembers">
             {organizing.map((member, i) => (
-              <div className="orgcommember">
+              <div className="orgcommember" key={i}>
                 <img src={member.img} alt="" className="orgcommemberimg" />
                 <div>
                   <h5>{member.name}</h5>
