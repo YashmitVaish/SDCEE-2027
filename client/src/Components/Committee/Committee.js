@@ -3,75 +3,74 @@ import "./Comittee.css";
 
 const organizing = [
   {
-    name: "Dr. Bonamali Pal",
-    img: require("./images/bonamalipal.jpg"),
-    dept: "Chemistry & Biochemistry, TIET Patiala",
-  },
-  {
-    name: "Dr. B K Chudasama",
+    name: "Prof. B. K. Chudasama",
     img: require("./images/bkchudasama.jpg"),
-    dept: "Physics & Material Science, TIET, Patiala",
+    dept: "Physics & Materials Science, TIET Patiala",
   },
   {
-    name: "Dr. B. C. Mohanty",
+    name: "Prof. B. C. Mohanty",
     img: require("./images/bcmohantay.jpg"),
-    dept: "Physics & Material Science, TIET, Patiala",
+    dept: "Physics & Materials Science, TIET Patiala",
   },
   {
-    name: "Dr. Amit Dhir",
+    name: "Prof. H. D. Joshi",
     img: require("./images/amitdhir.jpg"),
-    dept: "Energy & Environment, TIET, Patiala",
+    dept: "E&C Engineering, TIET Patiala",
   },
   {
-    name: "Dr. Dwarika N. Ratha",
+    name: "Prof. Dheeraj Gupta",
     img: require("./images/dvarikanratha.jpg"),
-    dept: "Civil Engineering, TIET, Patiala",
+    dept: "Mechanical Engineering, TIET Patiala",
   },
   {
-    name: "Dr. S. S. Mallick",
+    name: "Prof. Dwarika Nath Ratha",
     img: require("./images/ssmalick.jpg"),
-    dept: "Mechanical Engineering, TIET, Patiala",
+    dept: "Civil Engineering, TIET Patiala",
   },
   {
-    name: "Dr. Anoop Verma",
+    name: "Dr. Sharad Saxena",
     img: require("./images/anoopverma.jpg"),
+    dept: "CSE, TIET Patiala",
+  },
+  {
+    name: "Dr. Shilpi Verma",
+    img: require("./images/sapnasharma.jpg"),
+    dept: "Energy & Environment, TIET Patiala",
+  },
+  {
+    name: "Dr. H. S. Singh",
+    img: require("./images/sharadsaxena.jpg"),
+    dept: "E&C Engineering, TIET Patiala",
+  },
+  {
+    name: "Dr. Dhamodharan K.",
+    img: require("./images/Dchoudhury.jpg"),
     dept: "Energy & Environment, TIET Patiala",
   },
   {
     name: "Dr. Sapna Sharma",
-    img: require("./images/sapnasharma.jpg"),
+    img: require("./images/shilpiverma.jpg"),
     dept: "Mathematics, TIET Patiala",
   },
   {
-    name: "Dr. Sharad Saxena",
-    img: require("./images/sharadsaxena.jpg"),
-    dept: "Computer Science & Eng, TIET, Patiala",
-  },
-
-  {
-    name: "Dr. D. Choudhury",
-    img: require("./images/Dchoudhury.jpg"),
-    dept: " Chemistry & Biochemistry, TIET Patiala",
-  },
-  {
-    name: "Dr. Shilpi Verma",
-    img: require("./images/shilpiverma.jpg"),
-    dept: "Energy & Environment, TIET Patiala",
-  },
-  {
-    name: "Dr. Bunushree Behera",
+    name: "Dr. Rohit Singla",
     img: require("./images/BunushreeBehera.png"),
-    dept: "Biotechnology, TIET, Patiala",
-  },
-  {
-    name: "Dr. Jyotsana Mehta",
-    img: require("./images/JyotsanaMehta.jpg"),
-    dept: "Biotechnology, TIET, Patiala",
+    dept: "Mechanical Engineering, TIET Patiala",
   },
   {
     name: "Dr. Vivek Gupta",
+    img: require("./images/JyotsanaMehta.jpg"),
+    dept: "Civil Engineering, TIET Patiala",
+  },
+  {
+    name: "Prof. Rajeev Mehta",
     img: require("./images/vivekGupta.jpg"),
-    dept: "Civil Engineering Department, TIET Patiala",
+    dept: "Chemical Engineering, TIET Patiala",
+  },
+  {
+    name: "Prof. Raj K. Gupta",
+    img: require("./images/bonamalipal.jpg"),
+    dept: "Chemical Engineering, TIET Patiala",
   },
 ];
 
@@ -120,67 +119,34 @@ const jointsecs = [
 ];
 
 const advcom = [
-  { name: "Prof. Shang Dai", department: "University of Leeds, UK" },
-  { name: "Prof. Animesh Jha", department: "University of Leeds, UK" },
-  { name: "Prof. Ali Hassanpour", department: "University of Leeds, UK" },
-  { name: "Prof. Mika Sillanpaa", department: "Aarhus University, Denmark" },
-  { name: "Prof. Roop Mahajan", department: "Virginia Tech, USA" },
-  {
-    name: "Prof S.N. Upadhyay (Rtd.)",
-    department: "IIT(BHU), Varanasi, INDIA",
-  },
-  { name: "Prof. Anil Verma", department: "IIT Delhi, INDIA" },
-  { name: "Prof. V.C. Srivastava", department: "IIT Roorkee, INDIA" },
-  { name: "Prof. Amit Dhiman", department: "IIT Roorkee, INDIA" },
-  { name: "Prof. Narasimha Mangadoddy", department: "IIT Hyderabad, INDIA" },
-  {
-    name: "Prof. Rajat Chakrabarty",
-    department: "Jadavpur University, Kolkata, INDIA",
-  },
-  {
-    name: "Prof. Gopinath Halder",
-    department: "NIT Durgapur, India",
-  },
-  { name: "Dr. Bhanu Pratap Singh", department: "CSIR-NPL, New Delhi, INDIA" },
-  {
-    name: "Dr. Prasun Roy",
-    department: "Scientist-F, CFEES, DRDO, Delhi, INDIA",
-  },
-  { name: "Dr. H.J. Pant", department: "Head, IRAD, BARC, Mumbai, INDIA" },
-  { name: "Prof. Manoj K.C. Ramteke", department: "IIT Delhi, INDIA" },
-  { name: "Prof. Ajay Mandal", department: "IIT(ISM) Dhanbad, INDIA" },
-  { name: "Prof. Chinmay Ghoroi", department: "IIT Gandhinagar, INDIA" },
-  { name: "Prof. R.K. Upadhyay", department: "IIT(BHU), Varanasi, INDIA" },
-  {
-    name: "Prof. G. M. Joshi",
-    department: "ICT, Mumbai (Marathwada Jalna Campus), INDIA",
-  },
-  { name: "Prof. Raghvendra Gupta", department: "IIT Guwahati, INDIA" },
-  {
-    name: "Dr. Raj Kumar Arya",
-    department: "Dr. B.R. Ambedkar, NIT Jalandhar, INDIA",
-  },
-  { name: "Dr. Arvind Kumar Gautam", department: "NIT Hamirpur, INDIA" },
-  {
-    name: "Dr. S. Kumar",
-    department: "Dy. Director, SSN Inst. of Bioenergy, Kapurthala, INDIA",
-  },
-  {
-    name: "Dr. Sunil Dhole",
-    department: "CEOs, Chemdist Group of Companies, INDIA",
-  },
-  {
-    name: "Dr. Sandip Patil",
-    department: "Director, E-Spin Nanotech, Kanpur, INDIA",
-  },
-  {
-    name: "Dr. Ammu Prhashanna",
-    department: "Principal Scientist, Mondelez Int., NY, USA",
-  },
-  {
-    name: "Dr. Ram Chandar",
-    department: "Director, Huwel Lifesciences, Hyderabad, INDIA",
-  },
+  { name: "Prof. Christopher Pain", department: "ICL, UK" },
+  { name: "Prof. Rajnish Kumar", department: "IIT Madras, India" },
+  { name: "Prof. Jayant K. Singh", department: "IIT Kanpur, India" },
+  { name: "Prof. Dipan Kundu", department: "UNSW, Sydney" },
+  { name: "Prof. Vimal Chandra Srivastava", department: "IIT Roorkee, India" },
+  { name: "Prof. Rabibrata Mukherjee", department: "IIT Kharagpur, India" },
+  { name: "Prof. Vikram Vishal", department: "IIT Bombay, India" },
+  { name: "Prof. Amit Dhiman", department: "IIT Roorkee, India" },
+  { name: "Prof. Anil Verma", department: "IIT Delhi, India" },
+  { name: "Prof. Amarjit Singh Sarpal", department: "FURG, Brazil" },
+  { name: "Dr. Siddharth Gadkari", department: "University of Surrey, UK" },
+  { name: "Dr. Parag R. Gogate", department: "ICT, India" },
+  { name: "Dr. Akhilesh Kumar", department: "CDC, South Korea" },
+  { name: "Dr. Sharad Lande", department: "Reliance Industries Ltd., India" },
+  { name: "Dr. Kunal Mondal", department: "UCF, USA" },
+  { name: "Dr. Bhanu Pratap Singh", department: "CSIR-NPL, New Delhi, India" },
+  { name: "Dr. Pooja Devi", department: "CSIR-CSIO, Chandigarh, India" },
+  { name: "Dr. Amrita Jain", department: "IPPT-PAN, Poland" },
+  { name: "Dr. Pratik N Sheth", department: "BITS Pilani, India" },
+  { name: "Dr Sushil Kumar", department: "MNIT, Allahabad, India" },
+  { name: "Dr. Ramesh Kumar", department: "H U, Seoul, Republic of Korea" },
+  { name: "Dr. Raj Kumar Arya", department: "NIT Jalandhar, India" },
+  { name: "Dr. Sarang P. Gumfekar", department: "IIT Ropar, India" },
+  { name: "Dr. Babul Prasad", department: "NCL Pune, India" },
+  { name: "Dr. Sushil Kumar Kansal", department: "Punjab University, India" },
+  { name: "Dr. Chandi Sasmal", department: "IIT Ropar, India" },
+  { name: "Dr. Sandip Patil", department: "E-Spin Nanotech Pvt. Ltd., India" },
+  { name: "Dr. Praveen Somwanshi", department: "MIT-ADT University Pune, India" },
 ];
 
 export default function Committee() {
