@@ -102,6 +102,25 @@
   text-align: left;
 }
 
+/* Payment Details + QR layout */
+.payment-details-qr {
+  float: right;
+  text-align: center;
+  margin: 0 0 10px 20px;
+}
+
+.payment-details-qr .qr-image {
+  width: 160px;
+  height: 160px;
+  object-fit: contain;
+}
+
+.payment-details-qr .qr-vpa {
+  margin-top: 8px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
 @media screen and (max-width: 600px) {
   .register {
     overflow: hidden;
@@ -120,5 +139,9 @@
   }
   .button-container button {
     width: 100%;
+  }
+  .payment-details-qr {
+    float: none;
+    margin: 10px auto;
   }
 }
