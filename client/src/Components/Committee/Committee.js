@@ -4,72 +4,72 @@ import "./Comittee.css";
 const organizing = [
   {
     name: "Prof. B. K. Chudasama",
-    img: require("./images/bkchudasama.jpg"),
+    img: require("./images/bkc.jpg"),
     dept: "Physics & Materials Science, TIET Patiala",
   },
   {
     name: "Prof. B. C. Mohanty",
-    img: require("./images/bcmohantay.jpg"),
+    img: require("./images/bcm.jpg"),
     dept: "Physics & Materials Science, TIET Patiala",
   },
   {
     name: "Prof. H. D. Joshi",
-    img: require("./images/amitdhir.jpg"),
+    img: require("./images/hdj.png"),
     dept: "E&C Engineering, TIET Patiala",
   },
   {
     name: "Prof. Dheeraj Gupta",
-    img: require("./images/dvarikanratha.jpg"),
+    img: require("./images/dheeraj.jpg"),
     dept: "Mechanical Engineering, TIET Patiala",
   },
   {
     name: "Prof. Dwarika Nath Ratha",
-    img: require("./images/ssmalick.jpg"),
+    img: require("./images/dnr.jpg"),
     dept: "Civil Engineering, TIET Patiala",
   },
   {
     name: "Dr. Sharad Saxena",
-    img: require("./images/anoopverma.jpg"),
+    img: require("./images/sharadsaxena.jpg"),
     dept: "CSE, TIET Patiala",
   },
   {
     name: "Dr. Shilpi Verma",
-    img: require("./images/sapnasharma.jpg"),
+    img: require("./images/shilpiverma.jpg"),
     dept: "Energy & Environment, TIET Patiala",
   },
   {
     name: "Dr. H. S. Singh",
-    img: require("./images/sharadsaxena.jpg"),
+    // img: require("./images/sharadsaxena.jpg"),
     dept: "E&C Engineering, TIET Patiala",
   },
   {
     name: "Dr. Dhamodharan K.",
-    img: require("./images/Dchoudhury.jpg"),
+    img: require("./images/dk.jpeg"),
     dept: "Energy & Environment, TIET Patiala",
   },
   {
     name: "Dr. Sapna Sharma",
-    img: require("./images/shilpiverma.jpg"),
+    img: require("./images/sapnasharma.jpg"),
     dept: "Mathematics, TIET Patiala",
   },
   {
     name: "Dr. Rohit Singla",
-    img: require("./images/BunushreeBehera.png"),
+    img: require("./images/rohitkumar.jpg"),
     dept: "Mechanical Engineering, TIET Patiala",
   },
   {
     name: "Dr. Vivek Gupta",
-    img: require("./images/JyotsanaMehta.jpg"),
+    img: require("./images/vivekGupta.jpg"),
     dept: "Civil Engineering, TIET Patiala",
   },
   {
     name: "Prof. Rajeev Mehta",
-    img: require("./images/vivekGupta.jpg"),
+    img: require("./images/rajeevmeheta.jpg"),
     dept: "Chemical Engineering, TIET Patiala",
   },
   {
     name: "Prof. Raj K. Gupta",
-    img: require("./images/bonamalipal.jpg"),
+    img: require("./images/rajkumargupta.jpg"),
     dept: "Chemical Engineering, TIET Patiala",
   },
 ];
