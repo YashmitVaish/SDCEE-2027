@@ -28,23 +28,19 @@
   position: absolute;
 
   width: 58.5vw;
-  height: auto;
+  height: 58.5vw;
 
   left: 40.52vw;
-
-  /*
-    This will hold the college photo, so most of the
-    circle (a major segment, not just a sliver) needs
-    to stay on screen. Only a small cap bleeds off the
-    top edge for the corner-peek effect.
-  */
   top: -2.15vw;
 
   z-index: 1;
 
   pointer-events: none;
-
   user-select: none;
+
+  object-fit: cover;
+
+  border-radius: 50%;
 }
 
 

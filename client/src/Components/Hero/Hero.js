@@ -1,8 +1,7 @@
 import React from "react";
 import "./Hero.css";
 import { HashLink as Link } from "react-router-hash-link";
-
-import heroArt from "../../assets/Group 4.svg";
+import collegePhoto from "./college.jpg";
 import newBlinking from "./new-blinking.gif";
 
 export default function Hero() {
@@ -11,8 +10,8 @@ export default function Hero() {
 
       {/* Figma artwork */}
       <img
-        src={heroArt}
-        alt=""
+        src={collegePhoto}
+        alt="Thapar Institute"
         className="hero-art"
       />
 
