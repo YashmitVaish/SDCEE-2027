@@ -85,22 +85,22 @@ const coreteam = [
 const coconveners = [
   {
     name: "Dr. Sudhir Kumar Singh",
-    img: null,
+    img: require("./images/sudhir.jpg"),
     role: "Co-Convener",
   },
   {
     name: "Dr. Parminder Singh",
-    img: null,
+    img: require("./images/parminder.jpeg"),
     role: "Co-Convener",
   },
   {
     name: "Dr. Vivek Pawar",
-    img: null,
+    img: require("./images/vivekpawar.jpg"),
     role: "Co-Convener",
   },
   {
     name: "Dr. Himali Horo",
-    img: null,
+    img: require("./images/himalihoro.jpg"),
     role: "Co-Convener",
   },
 ];
