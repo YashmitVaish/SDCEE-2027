@@ -156,7 +156,7 @@ const speakers = [
 export default function Speakers() {
   return (
     <>
-      {/* <div className="chiefguest">
+      <div className="chiefguest">
         <h1 className="center chief">Chief Guest</h1>
         <div className="chief-speakercont">
           {chief.map((chief) => (
@@ -169,14 +169,14 @@ export default function Speakers() {
             </div>
           ))}
         </div>
-      </div> */}
+      </div>
       <div className="wrapper">
         <div className="speakers" id="speakers">
           <div>
             <h1>Keynote Speakers</h1>
           </div>
 
-          {/* <div className="speakercont">
+          <div className="speakercont">
             {speakers.map((speaker) => (
               <div className="onespeaker">
                 <img src={speaker.image} className="speakerimg" />
@@ -186,7 +186,7 @@ export default function Speakers() {
                 <h6>{speaker.place}</h6>
               </div>
             ))}
-          </div> */}
+          </div>
         </div>
       </div>
     </>
