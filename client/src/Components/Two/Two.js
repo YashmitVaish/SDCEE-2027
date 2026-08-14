@@ -19,16 +19,6 @@ export default function Two() {
 SDCEE-2027 offers valuable networking opportunities, research dissemination, and publication prospects in internationally reputed journals. The conference is a vital catalyst for innovation and sustainability, making it essential for academicians, researchers, and industry professionals. The event will be conducted in online and offline both modes.
           </p>
 
-          <p className="two-live">
-            Join us live:{" "}
-            <a
-              href="https://www.youtube.com/live/C4utU76THcQ?si=y5Jmw_UBvwytKJ0O"
-              target="_blank"
-              rel="noreferrer"
-            >
-              https://www.youtube.com/live/C4utU76THcQ?si=y5Jmw_UBvwytKJ0O
-            </a>
-          </p>
 
           <h3 className="topics-title">CONFERENCE THEMES :</h3>
 
