@@ -296,18 +296,20 @@ export default function Committee() {
             <h3>Student Committee</h3>
 
             <h5 className="post">Web Designers</h5>
-            <p className="name">Tithi Srivastava</p>
-            <p className="name">Akhilesh Bhardwaj</p>
-            <p className="name">Saanvi Mangla</p>
-            <p className="name">Arnav Gupta</p>
+            <p className="name">Ankita Sharma</p>
+            <p className="name">Rudransh</p>
+            {/* <p className="name">Saanvi Mangla</p>
+            <p className="name">Arnav Gupta</p> */}
 
-            <h5 className="post">Brouchure Designers</h5>
+            {/* <h5 className="post">Brouchure Designers</h5>
             <p className="name">Ishita Bharadwaaj</p>
-            <p className="name">Sudipta Bora</p>
+            <p className="name">Sudipta Bora</p> */}
 
             <h5 className="post">Developers</h5>
-            <p className="name">Sharath Chandra</p>
-            <p className="name">Saaransh Gupta</p>
+            <p className="name">Jash Patel</p>
+            <p className="name">Yashmit Vaish</p>
+            <p className="name">Varun Gupta</p>
+
           </div>
         </div>
       </div>
