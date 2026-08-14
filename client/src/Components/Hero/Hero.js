@@ -36,7 +36,7 @@ export default function Hero() {
             </p>
 
             <h3 className="hero-date">
-              February 22-24, 2027
+              February 18-20, 2027
             </h3>
 
             <div className="hero-buttons">

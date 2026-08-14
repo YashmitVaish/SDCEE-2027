@@ -6,76 +6,57 @@ import { HashLink as Link } from "react-router-hash-link";
 import { BrowserRouter, Route, Switch, Routes, Router } from "react-router-dom";
 
 export default function Registration() {
-  const earlyBirdRegistration = [
+  const registrationFees = [
     {
       category: "Faculty/Academicians (Indian)",
-      fee: 5000,
-      gst: 900,
-      total: 5900,
+      earlyBird: "3500 INR",
+      regular: "5000 INR",
+      online: "3000 INR",
     },
     {
-      category: "Research Scholars/Students (Indian)",
-      fee: 3000,
-      gst: 540,
-      total: 3540,
+      category: "Research Scholars/Students",
+      earlyBird: "2000 INR",
+      regular: "3000 INR",
+      online: "1500 INR",
     },
     {
-      category: "Industrial Participants (Indian)",
-      fee: 7000,
-      gst: 1260,
-      total: 8260,
+      category: "Industrial participants",
+      earlyBird: "7000 INR",
+      regular: "10000 INR",
+      online: "6000 INR",
     },
     {
       category: "Foreign Delegates",
-      fee: 350,
-      gst: 63,
-      total: 413,
+      earlyBird: "300 $",
+      regular: "400 $",
+      online: "300 $",
     },
     {
-      category: "Listener/Accompanying Person (Indian)",
-      fee: 2000,
-      gst: 360,
-      total: 2360,
+      category: "Overseas Scholars from Indian Origin (With valid proof)",
+      earlyBird: "200 $",
+      regular: "300 $",
+      online: "200 $",
+    },
+    {
+      category: "Listener/ Accompanying Person",
+      earlyBird: null,
+      regular: (
+        <>
+          2000 INR
+          <br />
+          100 $ (for overseas)
+        </>
+      ),
+      online: (
+        <>
+          1500 INR
+          <br />
+          80 $ (for overseas)
+        </>
+      ),
     },
   ];
 
-  const registrationDates = [
-    {
-      category: "Faculty/Academicians (Indian)",
-      fee: 6000,
-      gst: 1080,
-      total: 7080,
-    },
-    {
-      category: "Research Scholars/Students (Indian)",
-      fee: 4000,
-      gst: 720,
-      total: 4720,
-    },
-    {
-      category: "Industrial Participants (Indian)",
-      fee: 8000,
-      gst: 1440,
-      total: 9440,
-    },
-    {
-      category: "Foreign Delegates",
-      fee: 400,
-      gst: 72,
-      total: 472,
-    },
-    {
-      category: "Listener/Accompanying Person (Indian)",
-      fee: 2000,
-      gst: 360,
-      total: 2360,
-    },
-  ];
-
-  const calculateGST = (fee) => {
-    const gstRate = 0.18; // 18% GST
-    return (fee * gstRate).toFixed(0);
-  };
   const [menuVisible, setMenuVisible] = useState(false);
 
   const toggleMenu = () => {
@@ -130,7 +111,7 @@ export default function Registration() {
       <div className="register" id="">
         <div className="wrapper-reg">
           <div className="register-top">
-            <h1 className="hero-head reg-hero-head">SDCEE 2024</h1>
+            <h1 className="hero-head reg-hero-head">SDCEE 2027</h1>
             <h4>
               {" "}
               International Conference on <br /> "Sustainable Development in
@@ -141,69 +122,31 @@ export default function Registration() {
             <h1>Registration Guidelines</h1>
           </div>
           <div className="fee-details">
-            {/* <h2>Early Bird Registration</h2>
+            <h2>Registration Fee</h2>
             <table className="table-container">
               <thead>
                 <tr>
-                  <th>Category</th>
-                  <th>Fee</th>
-                  <th>18% GST</th>
-                  <th>Total Payable Amount</th>
+                  <th>Participant</th>
+                  <th>Early bird</th>
+                  <th>Regular</th>
+                  <th>Online</th>
                 </tr>
               </thead>
               <tbody>
-                {earlyBirdRegistration.map((item, index) => (
+                {registrationFees.map((item, index) => (
                   <tr key={index}>
                     <td>{item.category}</td>
-                    <td>
-                      {item.category === "Foreign Delegates"
-                        ? `$${item.fee}`
-                        : `₹${item.fee}`}
-                    </td>
-                    <td>
-                      {item.category === "Foreign Delegates"
-                        ? `$${item.gst}`
-                        : `₹${item.gst}`}
-                    </td>
-                    <td>
-                      {item.category === "Foreign Delegates"
-                        ? `$${item.total}`
-                        : `₹${item.total}`}
-                    </td>
-                  </tr>
-                ))}
-              </tbody>
-            </table> */}
-
-            <h2>Registration Details</h2>
-            <table className="table-container">
-              <thead>
-                <tr>
-                  <th>Category</th>
-                  <th>Fee</th>
-                  <th>18% GST</th>
-                  <th>Total Payable Amount</th>
-                </tr>
-              </thead>
-              <tbody>
-                {registrationDates.map((item, index) => (
-                  <tr key={index}>
-                    <td>{item.category}</td>
-                    <td>
-                      {item.category === "Foreign Delegates"
-                        ? `$${item.fee}`
-                        : `₹${item.fee}`}
-                    </td>
-                    <td>
-                      {item.category === "Foreign Delegates"
-                        ? `$${item.gst}`
-                        : `₹${item.gst}`}
-                    </td>
-                    <td>
-                      {item.category === "Foreign Delegates"
-                        ? `$${item.total}`
-                        : `₹${item.total}`}
-                    </td>
+                    {item.category === "Listener/ Accompanying Person" ? (
+                      <td colSpan={2} style={{ textAlign: "center" }}>
+                        {item.regular}
+                      </td>
+                    ) : (
+                      <td>{item.earlyBird}</td>
+                    )}
+                    {item.category !== "Listener/ Accompanying Person" && (
+                      <td>{item.regular}</td>
+                    )}
+                    <td>{item.online}</td>
                   </tr>
                 ))}
               </tbody>
@@ -211,19 +154,14 @@ export default function Registration() {
             <div className="register-guide">
               <ul className="guide-reg">
                 <li>
-                  All the participants have to submit the registration fee
-                  through UPI or Netbanking, in order to attend/present paper in
-                  the conference. E-receipt can be downloaded from payment
-                  portal after successful payment process.
+                  Registration fee includes registration kit, lunch, conference/ gala dinner, and tea during the conference sessions for offline attendees.
                 </li>
                 <li>
-                  Once the payment has been done, the authors need to fill the
-                  registration form for their confirmation.
+                  Registration fee is inclusive of GST.
                 </li>
                 <li>
                   {" "}
-                  Registration fee includes registration kit, lunch, conference/
-                  gala dinner, and tea during the conference sessions.
+                  The registration fee does not include the Article Publication Charge (APC). If selected for publication, authors are responsible for paying the APC directly according to the journal’s.
                 </li>
               </ul>
             </div>
@@ -244,50 +182,59 @@ export default function Registration() {
           </div>
           <div className="key-dates">
             <h2>Payment Details</h2>
-            <p>
-              <strong>Name of Beneficiary </strong> Thapar Institute of
-              Engineering and Technology
-            </p>
-            <p>
-              <strong>Account Number </strong> 0267104000092579
-            </p>
-            <p>
-              <strong>Type of A/c </strong> Saving
-            </p>
-            <p>
-              <strong>Bank Name </strong> Kotak Mahindra Bank Ltd.
-            </p>
-            <p>
-              <strong>IFSC Code </strong> IBKL0000267
-            </p>
-            <p>
-              <strong>Swift Code </strong> KKBKINBB
-            </p>
-            <p>
-              <strong>Bank Address </strong> Ground & First Floor, Plot No. 644 Main Road Kashmiran Wala Gurudwara,
-              Tripuri Town, Pati Patiala Punjab - 147001
-            </p>
+            <div className="payment-details-text">
+              <div className="payment-details-qr">
+                <img
+                  src={require("./scan-and-pay-qr.png")}
+                  alt="Scan & Pay QR Code"
+                  className="qr-image"
+                />
+                <p className="qr-vpa">VPA : o5bfrz37gff9@idbi</p>
+              </div>
+              <p>
+                <strong>Name of Beneficiary </strong> Thapar Institute of
+                Engineering and Technology
+              </p>
+              <p>
+                <strong>Account Number </strong> 0267104000092579
+              </p>
+              <p>
+                <strong>Type of A/c </strong> Saving
+              </p>
+              <p>
+                <strong>Bank Name </strong> Kotak Mahindra Bank Ltd.
+              </p>
+              <p>
+                <strong>IFSC Code </strong> IBKL0000267
+              </p>
+              <p>
+                <strong>Swift Code </strong> KKBKINBB
+              </p>
+              <p>
+                <strong>Bank Address </strong> Ground & First Floor, Plot No. 644 Main Road Kashmiran Wala Gurudwara,
+                Tripuri Town, Pati Patiala Punjab - 147001
+              </p>
+            </div>
           </div>
           <div className="key-dates">
             <h2>Important Dates:</h2>
             <ul>
               <li>
-                <strong>Last Date of Abstract Submissions:</strong> January 10,
-                2024
+                <strong>Last Date of Abstract Submissions:</strong> October 31,
+                2026
               </li>
               <li>
-                <strong>Notification of Acceptance:</strong> January 12, 2024
+                <strong>Early Bird Registration (deadline) :</strong> December 20, 2026
               </li>
               {/* <li>
               <strong>Early Bird Registration Start:</strong> October
               01,2023-December 15,2023
             </li> */}
               <li>
-                <strong>Full Paper (Selected) Submission:</strong> January 30,
-                2024
+                <strong>Full Paper (Selected) Submission:</strong> January 15, 2027 - February 15, 2027
               </li>
               <li>
-                <strong>Conference Date:</strong> February 22-24, 2024
+                <strong>Conference Date:</strong> February 18-20, 2027
               </li>
             </ul>
           </div>

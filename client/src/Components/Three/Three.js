@@ -16,18 +16,23 @@ export default function Three() {
           <div className="timeline">
             <ul>
               <li>
-                <strong>Last Date of Abstract Submissions:</strong>{" "}
-                <b>January 10, 2024</b>
+                <strong>Last Date of Abstract Submissions :</strong>{" "}
+                <b>October 31, 2026</b>
               </li>
 
               <li>
-                <strong>Notification of Acceptance:</strong>{" "}
-                <b>January 12, 2024</b>
+                <strong>Early Bird Registration (deadline) :</strong>{" "}
+                <b>December 20, 2026</b>
               </li>
 
               <li>
-                <strong>Conference Date:</strong>{" "}
-                <b>February 22-24, 2024</b>
+                <strong>Full Paper (Selected) submission : </strong>{" "}
+                <b>January 15, 2027 - February 15, 2027</b>
+              </li>
+
+              <li>
+                <strong>Conference Date :</strong>{" "}
+                <b>February 18-20, 2027</b>
               </li>
             </ul>
           </div>
