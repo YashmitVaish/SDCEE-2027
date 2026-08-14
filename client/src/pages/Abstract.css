@@ -8,6 +8,34 @@
 .abs-topics {
   margin: 20px;
 }
+
+.abs-topics-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 60px;
+  margin-top: 10px;
+}
+
+.abs-topics-column {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.abs-topic {
+  position: relative;
+  padding-left: 18px;
+  font-size: 14px;
+  line-height: 1.4;
+  color: #000;
+}
+
+.abs-topic::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  top: 0;
+}
 .abs-center {
   display: flex;
   justify-content: center;
@@ -44,6 +72,12 @@
   text-decoration: none;
   color: white;
   width: 100%;
+}
+
+.abs-btn-disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+  font: inherit;
 }
 
 .abs-journal {
@@ -99,6 +133,10 @@
   }
   .abs-btn {
     width: 100%;
+  }
+  .abs-topics-grid {
+    grid-template-columns: 1fr;
+    gap: 9px;
   }
   .journal-images {
     max-height: 130px;

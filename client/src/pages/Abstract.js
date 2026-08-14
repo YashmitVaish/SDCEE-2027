@@ -1,9 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 import "./registration.css";
 import "./Abstract.css";
-import Pdf from "../Components/CMT Submission Guidelines.pdf";
-import AbTemplate from "../Components/abstractTemplate.docx";
-import { HashLink as Link } from "react-router-hash-link";
+import Navbar from "../Components/Navbar/Navbar";
 import journal1 from "./j1.jpg";
 import journal2 from "./j2.jpg";
 import journal3 from "./j3.jpg";
@@ -12,56 +10,9 @@ import wos from "./wos.png";
 import scopus from "./scopus.png";
 
 export default function Registration() {
-  const [menuVisible, setMenuVisible] = useState(false);
-
-  const toggleMenu = () => {
-    setMenuVisible(!menuVisible);
-  };
   return (
     <div>
-      <div className={`nav ${menuVisible ? "active" : ""}`} id="nav">
-        <button className="menu-icon" onClick={toggleMenu}>
-          <div className="bar"></div>
-          <div className="bar"></div>
-          <div className="bar"></div>
-        </button>
-        <Link smooth to="/" className="text-link">
-          <div className="logo">
-            <img
-              src={require("../Components/Navbar/Full-Logo.png")}
-              alt="logo"
-            />
-          </div>
-        </Link>
-        <div className={`nav-menu ${menuVisible ? "active" : ""}`}>
-          <Link smooth to="/#hero" className="text-link">
-            <a className="nav-link">Home</a>
-          </Link>
-          <Link smooth to="/#venue" className="text-link">
-            <a className="nav-link">Venue</a>
-          </Link>
-          <Link smooth to="/#speakers" className="text-link">
-            <a className="nav-link">Speakers</a>
-          </Link>
-          <Link smooth to="" className="text-link">
-            <a className="nav-link">Abstract/Paper Submission</a>
-          </Link>
-          <Link smooth to="/#dates" className="text-link">
-            <a className="nav-link">Schedule</a>
-          </Link>
-          {/* <Link smooth to="#sponsors" className="text-link">
-          <a className="nav-link">Sponsors</a>
-        </Link> */}
-          <Link smooth to="/#team" className="text-link">
-            <a className="nav-link">Our Team</a>
-          </Link>
-        </div>
-        <Link smooth to="/register" className="text-link">
-          <div className="nav-regg">
-            <button>Register</button>
-          </div>
-        </Link>
-      </div>
+      <Navbar />
       <div className="abstract" id="">
         <div className="wrapper-reg">
           <div className="register-top">
@@ -154,19 +105,34 @@ export default function Registration() {
               The conference theme is encapsulated in the following subject
               areas, with an openness to explore additional related topics:
             </p>
-            <ul>
-              <li>Chemical & Process Engineering </li>
-              <li>Sustainable Environmental Solutions</li>
-              <li>Advancements in Energy Engineering</li>
-              <li>Materials in Engineering</li>
-              <li>Modeling and Simulation of Processes</li>
-              <li>Bioprocessing and Food Engineering</li>
-              <li>Applied Radiation Technology</li>
-              <li>
-                AI, Machine Learning, and Data Analytics in Process
-                Design/Optimization
-              </li>
-            </ul>
+            <div className="abs-topics-grid">
+              <div className="abs-topics-column">
+                <div className="abs-topic">Chemical &amp; Process Engineering</div>
+                <div className="abs-topic">Environmental Remediation and Sustainability</div>
+                <div className="abs-topic">Energy Engineering and Renewable Energy Technologies</div>
+                <div className="abs-topic">Sustainable Processes and Green Technologies</div>
+                <div className="abs-topic">Transport Phenomena (Fluid Flow, Heat Transfer, and Mass Transfer)</div>
+                <div className="abs-topic">Particle Technology and Mechanics</div>
+                <div className="abs-topic">Nanotechnology and Advanced Materials</div>
+                <div className="abs-topic">Process Modelling, Simulation, and Optimization</div>
+                <div className="abs-topic">Computational Fluid Dynamics (CFD)</div>
+              </div>
+
+              <div className="abs-topics-column">
+                <div className="abs-topic">Biotechnology, Bioprocess Engineering, and Food Technology</div>
+                <div className="abs-topic">
+                  Artificial Intelligence, Machine Learning, and Data Analytics for
+                  Process Design, Control, and Optimization
+                </div>
+                <div className="abs-topic">Carbon Capture, Utilization, and Storage (CCUS)</div>
+                <div className="abs-topic">Hydrogen Energy and Fuel Cell Technologies</div>
+                <div className="abs-topic">Circular Economy and Waste Valorization</div>
+                <div className="abs-topic">Colloidal Science, Soft Matter, and Rheology</div>
+                <div className="abs-topic">Process Safety, Risk Assessment, and Industrial Sustainability</div>
+                <div className="abs-topic">Applied Radiation Technology</div>
+                <div className="abs-topic">Experiential learnings in chemistry</div>
+              </div>
+            </div>
           </div>
           <div className="register-center">
             <div className="abs-gray">
@@ -180,31 +146,18 @@ export default function Registration() {
           </div>
           <div className="abs-links">
             <div className="abs-center">
-              <a href={Pdf} target="_blank" className="pdf register-center">
-                Submission Guidelines (CMT)
-              </a>
+              <button className="pdf register-center abs-btn-disabled" disabled>
+                <strike>Submission Guidelines (CMT)</strike>
+              </button>
             </div>
             <div className="abs-center">
-              <a
-                href={AbTemplate}
-                target="_blank"
-                className="pdf register-center"
-              >
-                Abstract template
-              </a>
+              <button className="pdf register-center abs-btn-disabled" disabled>
+                <strike>Abstract template</strike>
+              </button>
             </div>
             <div className="abs-center abs-btn-cont">
-              <button className="abs-btn">
-                <strike>
-                  {" "}
-                  <a
-                    className="abs-none"
-                    target="_blank"
-                    // href="https://cmt3.research.microsoft.com/SDCEE2024"
-                  >
-                    Abstract/Paper Submission
-                  </a>
-                </strike>
+              <button className="abs-btn abs-btn-disabled" disabled>
+                <strike>Abstract/Paper Submission</strike>
               </button>
             </div>
           </div>
