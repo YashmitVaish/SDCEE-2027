@@ -73,34 +73,36 @@ export default function Registration() {
           </div>
           <div className="fee-details">
             <h2>Registration Fee</h2>
-            <table className="table-container">
-              <thead>
-                <tr>
-                  <th>Participant</th>
-                  <th>Early bird</th>
-                  <th>Regular</th>
-                  <th>Online</th>
-                </tr>
-              </thead>
-              <tbody>
-                {registrationFees.map((item, index) => (
-                  <tr key={index}>
-                    <td>{item.category}</td>
-                    {item.category === "Listener/ Accompanying Person" ? (
-                      <td colSpan={2} style={{ textAlign: "center" }}>
-                        {item.regular}
-                      </td>
-                    ) : (
-                      <td>{item.earlyBird}</td>
-                    )}
-                    {item.category !== "Listener/ Accompanying Person" && (
-                      <td>{item.regular}</td>
-                    )}
-                    <td>{item.online}</td>
+            <div className="table-scroll">
+              <table className="table-container">
+                <thead>
+                  <tr>
+                    <th>Participant</th>
+                    <th>Early bird</th>
+                    <th>Regular</th>
+                    <th>Online</th>
                   </tr>
-                ))}
-              </tbody>
-            </table>
+                </thead>
+                <tbody>
+                  {registrationFees.map((item, index) => (
+                    <tr key={index}>
+                      <td>{item.category}</td>
+                      {item.category === "Listener/ Accompanying Person" ? (
+                        <td colSpan={2} style={{ textAlign: "center" }}>
+                          {item.regular}
+                        </td>
+                      ) : (
+                        <td>{item.earlyBird}</td>
+                      )}
+                      {item.category !== "Listener/ Accompanying Person" && (
+                        <td>{item.regular}</td>
+                      )}
+                      <td>{item.online}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
             <div className="register-guide">
               <ul className="guide-reg">
                 <li>

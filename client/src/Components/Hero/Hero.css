@@ -312,18 +312,18 @@
 @media screen and (max-width: 1100px) {
 
   .hero {
-    height: 800px;
+    height: auto;
 
-    min-height: 800px;
+    min-height: clamp(600px, 73vw, 800px);
   }
 
 
   .hero-art {
-    width: 754px;
+    width: 62vw;
 
-    max-width: none;
+    max-width: 700px;
 
-    left: 40%;
+    left: 36vw;
 
     top: -10px;
   }
@@ -352,16 +352,18 @@
   .hero {
     height: auto;
 
-    min-height: 806px;
+    min-height: clamp(500px, 130vw, 806px);
 
     overflow: hidden;
   }
 
 
   .hero-art {
-    width: 787px;
+    width: 76vw;
 
-    left: 20%;
+    max-width: 620px;
+
+    left: 20vw;
 
     top: 4px;
 
@@ -421,9 +423,9 @@
 @media screen and (max-width: 450px) {
 
   .hero-art {
-    width: 644px;
+    width: 82vw;
 
-    left: 14%;
+    left: 12vw;
 
     top: 10px;
   }

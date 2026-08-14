@@ -78,6 +78,21 @@ body {
 @media screen and (max-width: 600px) {
   .footer {
     overflow-x: hidden;
-    display: none;
+    flex-direction: column;
+    padding: 30px 20px;
+  }
+  .desc,
+  .useful-links,
+  .contact-us {
+    width: 100%;
+    float: none;
+    margin-left: 0;
+    margin-top: 20px;
+  }
+  .desc .map iframe {
+    width: 100%;
+    max-width: 290px;
+    height: auto;
+    aspect-ratio: 290 / 200;
   }
 }
