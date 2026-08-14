@@ -41,7 +41,7 @@ function Home() {
       <Two />
       <Three />
       {/* <SponsorshipComponent /> */}
-      {/* <Speakers /> */}
+      <Speakers />
       <Venue />
       <Committee />
       <Five />
