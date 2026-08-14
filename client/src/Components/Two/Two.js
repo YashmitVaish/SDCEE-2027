@@ -39,16 +39,6 @@ export default function Two() {
             researchers and industry professionals.
           </p>
 
-          <p className="two-live">
-            Join us live:{" "}
-            <a
-              href="https://www.youtube.com/live/C4utU76THcQ?si=y5Jmw_UBvwytKJ0O"
-              target="_blank"
-              rel="noreferrer"
-            >
-              https://www.youtube.com/live/C4utU76THcQ?si=y5Jmw_UBvwytKJ0O
-            </a>
-          </p>
 
           <h3 className="topics-title">CONFERENCE THEMES :</h3>
 
