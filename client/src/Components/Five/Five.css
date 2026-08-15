@@ -16,14 +16,22 @@
   text-align: center;
 }
 
+.five .wrapper {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
 .five h3 {
-  margin: 30px 0px;
+  margin: 0 0 20px;
+  font-family: "Poppins", Arial, sans-serif;
+  font-size: clamp(26px, 3vw, 40px);
+  font-weight: 600;
 }
 .five p {
   text-align: center;
-  padding-left: 140px;
-  padding-right: 140px;
-  font-size: 1.2rem;
+  font-family: "Inter", "Segoe UI", Arial, sans-serif;
+  font-size: clamp(15px, 1.15vw, 18px);
+  line-height: 1.6;
 }
 
 @media screen and (max-width: 600px) {
@@ -34,12 +42,6 @@
     width: 100vw;
   }
   .five h3 {
-    padding: 25px;
     color: black;
-    font-size: 1.9rem;
-  }
-
-  .five p {
-    padding: 30px;
   }
 }

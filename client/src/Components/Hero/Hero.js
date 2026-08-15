@@ -3,6 +3,7 @@ import "./Hero.css";
 import { HashLink as Link } from "react-router-hash-link";
 import collegePhoto from "./college.jpg";
 import newBlinking from "./new-blinking.gif";
+import GradientRing from "../GradientRing/GradientRing";
 
 export default function Hero() {
   return (
@@ -14,6 +15,7 @@ export default function Hero() {
         alt="Thapar Institute"
         className="hero-art"
       />
+      <GradientRing className="hero-art-ring" />
 
       {/* Hero content */}
       <div className="hero-content">
@@ -72,27 +74,9 @@ export default function Hero() {
                 />
 
                 <span>
-                  Selected papers will be published in the following SCI/SCIE journals:
+                  Selected papers will be published in indexed journals.
                 </span>
               </h5>
-
-              <ul>
-                <li>
-                  The Canadian Journal of Chemical Engineering (IF 2.1)
-                </li>
-
-                <li>
-                  Chemical and Biochemical Engineering Quarterly (IF 1.5)
-                </li>
-
-                <li>
-                  Chemical Engineering &amp; Technology (IF 2.1)
-                </li>
-
-                <li>
-                  Environmental Science and Pollution Research (ESPR) (IF 5.8)
-                </li>
-              </ul>
 
             </div>
 

@@ -4,13 +4,38 @@ body {
   /* background: #0e3408; */
 }
 
+.footer-wrap {
+  background-color: #241a30;
+}
+
 .footer {
-  background-color: #0e3408;
   display: flex;
   padding: 40px;
   padding-top: 50px;
   margin-bottom: 0;
   color: white;
+  font-family: "Inter", "Segoe UI", Arial, sans-serif;
+}
+
+.footer-ack {
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  padding: 16px 40px 24px;
+  color: rgba(255, 255, 255, 0.75);
+  font-family: "Inter", "Segoe UI", Arial, sans-serif;
+  font-size: 0.8rem;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.footer-ack strong {
+  color: #eccd67;
+}
+
+.footer h5 {
+  font-family: "Poppins", Arial, sans-serif;
+  font-size: 1.15rem;
+  font-weight: 600;
+  margin: 0;
 }
 .logo-footer {
   margin-left: 20px;
@@ -37,12 +62,13 @@ body {
   margin-left: 10px;
 }
 .yellow-line {
-  background-color: #f68317;
+  background-color: #eccd67;
   height: 3px;
   width: 75%;
+  border-radius: 2px;
 }
 .white-line {
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.2);
   height: 1px;
   width: 75%;
   margin: 10px;
@@ -59,21 +85,29 @@ body {
   color: #fff;
   width: 100%;
   margin-right: 100px;
+  font-size: 0.92rem;
+}
+
+.ftr-links:hover {
+  opacity: 0.8;
 }
 
 .ul-footer {
   margin-top: 20px;
   list-style: none;
+  font-size: 0.92rem;
 }
 
 .yellow-li {
-  color: #f68317;
+  color: #eccd67;
   font-size: 0.9rem;
 }
 
 .contact-ul {
   margin-top: 20px;
   list-style: none;
+  font-size: 0.92rem;
+  line-height: 1.7;
 }
 @media screen and (max-width: 600px) {
   .footer {
@@ -94,5 +128,8 @@ body {
     max-width: 290px;
     height: auto;
     aspect-ratio: 290 / 200;
+  }
+  .footer-ack {
+    padding: 16px 20px 20px;
   }
 }

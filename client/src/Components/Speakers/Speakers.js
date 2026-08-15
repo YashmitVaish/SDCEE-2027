@@ -1,5 +1,6 @@
 import React from "react";
 import "./Speakers.css";
+import GradientRing from "../GradientRing/GradientRing";
 const chief = [
   {
     name: "Prof. A. B. Pandit ",
@@ -160,9 +161,13 @@ export default function Speakers() {
         <h1 className="center chief">Chief Guest</h1>
         <div className="chief-speakercont">
           {chief.map((chief) => (
-            <div className="onespeaker">
-              <img src={chief.image} className="chief-speakerimg" />
+            <div className="onespeaker" key={chief.name}>
+              <div className="chief-speaker-photo">
+                <img src={chief.image} alt={chief.name} className="chief-speakerimg" />
+                <GradientRing className="chief-speaker-ring" />
+              </div>
               <h3>{chief.name}</h3>
+              <hr className="chief-divider" />
               <h6>{chief.position}</h6>
               <h6>{chief.department}</h6>
               <h6>{chief.place}</h6>
@@ -178,8 +183,11 @@ export default function Speakers() {
 
           <div className="speakercont">
             {speakers.map((speaker) => (
-              <div className="onespeaker">
-                <img src={speaker.image} className="speakerimg" />
+              <div className="onespeaker" key={speaker.name}>
+                <div className="speaker-photo">
+                  <img src={speaker.image} alt={speaker.name} className="speakerimg" />
+                  <GradientRing className="speaker-ring" />
+                </div>
                 <h3>{speaker.name}</h3>
                 <h6>{speaker.position}</h6>
                 <h6>{speaker.department}</h6>

@@ -20,9 +20,9 @@
 .three h1 {
   margin: 0;
   text-align: center;
-  color: #ff4d4d;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 32px;
+  color: #fd454b;
+  font-family: "Inter", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: clamp(32px, 4vw, 64px);
   font-weight: 600;
   text-transform: uppercase;
 }
@@ -56,16 +56,18 @@
 
 .timeline ul li {
   margin-bottom: 24px;
-  font-size: 18px;
+  font-family: "Inter", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: clamp(16px, 1.7vw, 24px);
+  font-weight: 400;
   line-height: 1.4;
 }
 
 .timeline ul li strong {
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .timeline ul li b {
-  font-weight: 700;
+  font-weight: 600;
 }
 
 /* =========================
@@ -111,9 +113,10 @@
   background-color: #d3d3d3;
   border: none;
   color: #000000;
-  padding: 6px 12px;
-  font-size: 9px;
-  font-weight: 500;
+  padding: 6px 14px;
+  font-family: "Inter", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 12px;
+  font-weight: 600;
   cursor: pointer;
   border-radius: 12px;
   white-space: nowrap;
@@ -194,8 +197,8 @@
   }
 
   .schedule-button button {
-    font-size: 8px;
-    padding: 5px 8px;
+    font-size: 11px;
+    padding: 5px 10px;
   }
 
   .three::after {

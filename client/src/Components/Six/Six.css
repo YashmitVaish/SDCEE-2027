@@ -15,14 +15,25 @@
   text-align: left;
 }
 
+.six .wrapper {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
 .six h3 {
   text-align: center;
+  margin: 0 0 20px;
+  font-family: "Poppins", Arial, sans-serif;
+  font-size: clamp(26px, 3vw, 40px);
+  font-weight: 600;
 }
 .six p {
   padding-top: 10px;
   text-align: center;
   width: 100%;
-  font-size: 1.2rem;
+  font-family: "Inter", "Segoe UI", Arial, sans-serif;
+  font-size: clamp(15px, 1.15vw, 18px);
+  line-height: 1.6;
 }
 
 @media screen and (max-width: 600px) {
@@ -33,12 +44,6 @@
     width: 100vw;
   }
   .six h3 {
-    padding: 25px;
     color: black;
-    font-size: 1.9rem;
-  }
-
-  .six p {
-    padding: 30px;
   }
 }

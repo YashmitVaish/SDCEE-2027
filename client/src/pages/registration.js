@@ -24,19 +24,19 @@ export default function Registration() {
       online: "6000 INR",
     },
     {
-      category: "Foreign Delegates",
+      category: "Foreign delegates",
       earlyBird: "300 $",
       regular: "400 $",
       online: "300 $",
     },
     {
-      category: "Overseas Scholars from Indian Origin (With valid proof)",
+      category: "Overseas scholars of Indian origin (with valid proof)",
       earlyBird: "200 $",
       regular: "300 $",
       online: "200 $",
     },
     {
-      category: "Listener/ Accompanying Person",
+      category: "Listener/ Accompanying person",
       earlyBird: null,
       regular: (
         <>
@@ -87,14 +87,14 @@ export default function Registration() {
                   {registrationFees.map((item, index) => (
                     <tr key={index}>
                       <td>{item.category}</td>
-                      {item.category === "Listener/ Accompanying Person" ? (
+                      {item.category === "Listener/ Accompanying person" ? (
                         <td colSpan={2} style={{ textAlign: "center" }}>
                           {item.regular}
                         </td>
                       ) : (
                         <td>{item.earlyBird}</td>
                       )}
-                      {item.category !== "Listener/ Accompanying Person" && (
+                      {item.category !== "Listener/ Accompanying person" && (
                         <td>{item.regular}</td>
                       )}
                       <td>{item.online}</td>
@@ -119,10 +119,10 @@ export default function Registration() {
             </div>
           </div>
           <div className="button-container">
-            <a href="https://forms.gle/BwTenJaU7qAQLbAw8" target="_blank">
+            <a href="https://forms.gle/k6itCAWS2avkJFmB8" target="_blank" rel="noopener noreferrer">
               <button>Link to Register</button>
             </a>
-            <a href="https://forms.gle/r784zXXhd1zkoNeE6" target="_blank">
+            <a href="https://forms.gle/r784zXXhd1zkoNeE6" target="_blank" rel="noopener noreferrer">
               <button>Hostel Accomodation</button>
             </a>
             <br />

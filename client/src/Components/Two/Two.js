@@ -1,6 +1,5 @@
 import React from "react";
 import "./Two.css";
-import conferenceBg from "./conference-bg.png"; // the crowd photo
 
 export default function Two() {
   return (
@@ -20,7 +19,10 @@ SDCEE-2027 offers valuable networking opportunities, research dissemination, and
           </p>
 
 
-          <h3 className="topics-title">CONFERENCE THEMES :</h3>
+          <h3 className="topics-title">
+            <span className="topics-title-main">CONFERENCE THEMES</span>
+            <span className="topics-title-colon"> :</span>
+          </h3>
 
           <div className="topics-grid">
             <div className="topics-column">

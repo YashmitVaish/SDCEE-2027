@@ -2,10 +2,6 @@ import React from "react";
 import "./registration.css";
 import "./Abstract.css";
 import Navbar from "../Components/Navbar/Navbar";
-import journal1 from "./j1.jpg";
-import journal2 from "./j2.jpg";
-import journal3 from "./j3.jpg";
-import journal4 from "./j4.png";
 import wos from "./wos.png";
 import scopus from "./scopus.png";
 
@@ -28,67 +24,9 @@ export default function Registration() {
           <div className="abs-journal">
             <h5 className="blink">
               <span>
-                Selected papers will be published in the following SCI/SCIE
-                Journals:
+                Selected papers will be published in indexed journals.
               </span>
             </h5>
-            <div className="journals">
-              <div className="j1">
-                <p>
-                  <strong>
-                    The Canadian Journal of Chemical Engineering (IF 2.1) ,
-                    Special issue
-                  </strong>
-                </p>
-                <img
-                  src={journal1}
-                  className="journal-images first-journal"
-                  alt="The Canadian Journal of Chemical Engineering"
-                />
-              </div>
-              <div className="j2">
-                <p>
-                  <strong>
-                    Chemical and Biochemical Engineering Quarterly (IF 1.5)
-                  </strong>
-                </p>
-                <img
-                  src={journal2}
-                  className="journal-images"
-                  alt="The Canadian Journal of Chemical Engineering"
-                />
-                <br />
-              </div>
-              <div className="j3">
-                <br />
-                <p>
-                  <strong>
-                    Chemical Engineering & Technology
-                    <br />
-                    <span>(IF 2.1)</span>
-                  </strong>
-                </p>
-                <img
-                  src={journal3}
-                  className="journal-images"
-                  alt="Chemical Engineering & Technology"
-                />
-              </div>
-              <div className="j4">
-                <br />
-                <p>
-                  <strong>
-                    Environmental Science and Pollutiion Research (ESPR)
-                    (IF 5.8)
-                  </strong>
-                </p>
-                <img
-                  src={journal4}
-                  className="journal-images"
-                  alt="Chemical Engineering & Technology"
-                />
-              </div>
-            </div>
           </div>
           <br />
           <br />
@@ -151,9 +89,22 @@ export default function Registration() {
               </button>
             </div>
             <div className="abs-center">
-              <button className="pdf register-center abs-btn-disabled" disabled>
-                <strike>Abstract template</strike>
-              </button>
+              <a
+                href={`${process.env.PUBLIC_URL}/Abstract_Format.docx`}
+                download
+                className="pdf register-center abs-none"
+              >
+                Abstract Template
+              </a>
+            </div>
+            <div className="abs-center">
+              <a
+                href={`${process.env.PUBLIC_URL}/Poster_Template.pptx`}
+                download
+                className="pdf register-center abs-none"
+              >
+                Poster Template
+              </a>
             </div>
             <div className="abs-center abs-btn-cont">
               <button className="abs-btn abs-btn-disabled" disabled>

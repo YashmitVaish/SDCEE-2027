@@ -51,6 +51,10 @@ export default function Navbar() {
           Venue
         </Link>
 
+        <Link to="/#speakers" className="nav-link" onClick={closeMenu}>
+          Speakers
+        </Link>
+
         <Link to="/abstract" className="nav-link" onClick={closeMenu}>
           Abstract/Paper Submission
         </Link>

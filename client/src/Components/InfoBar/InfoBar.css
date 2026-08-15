@@ -9,7 +9,7 @@
 
   padding: 18px 30px;
   color: #fff;
-  font-family: "Segoe UI", Arial, sans-serif;
+  font-family: "Inter", "Segoe UI", Arial, sans-serif;
   font-size: 15px;
 }
 
@@ -19,12 +19,20 @@
   gap: 10px;
 }
 
+.info-icon {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  color: #fff;
+}
+
 .register-btn {
   background: #fff;
   color: #000;
   border: none;
-  border-radius: 30px;
+  border-radius: 92px;
   padding: 10px 22px;
+  font-family: "Inter", "Segoe UI", Arial, sans-serif;
   font-weight: 600;
   cursor: pointer;
 }

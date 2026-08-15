@@ -45,10 +45,10 @@
 }
 
 .nav-link {
-  color: #000;
+  color: #1e1e1e;
   text-decoration: none;
 
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: "Inter", "Segoe UI", Arial, sans-serif;
   font-size: 14px;
   font-weight: 600;
 
@@ -71,10 +71,10 @@
   background: transparent;
   border: none;
 
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: "Inter", "Segoe UI", Arial, sans-serif;
   font-size: 14px;
   font-weight: 600;
-  color: #000;
+  color: #1e1e1e;
 
   cursor: pointer;
 }
@@ -115,10 +115,10 @@
 
   padding: 8px 16px;
 
-  color: #000;
+  color: #1e1e1e;
   text-decoration: none;
 
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: "Inter", "Segoe UI", Arial, sans-serif;
   font-size: 14px;
   font-weight: 600;
 
@@ -135,16 +135,17 @@
 }
 
 .nav-regg button {
-  border: none;
-  border-radius: 8px;
+  border: 1px solid #fff;
+  border-radius: 10px;
 
   background: #716997;
   color: white;
 
   padding: 9px 22px;
 
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: 13px;
+  font-family: "Inter", "Segoe UI", Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 600;
 
   cursor: pointer;
 }

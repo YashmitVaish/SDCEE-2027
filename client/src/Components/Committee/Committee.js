@@ -1,5 +1,6 @@
 import React from "react";
 import "./Comittee.css";
+import GradientRing from "../GradientRing/GradientRing";
 
 const organizing = [
   {
@@ -173,23 +174,29 @@ export default function Committee() {
       <div className="wrapper">
         <div className="patrons">
           <div className="patron">
-            <img
-              src={require("./images/padmakumarnair.jpg")}
-              alt=""
-              width={"45%"}
-            />
-            <h5 className="patronname">Prof. Padmakumar Nair</h5>
+            <div className="patron-photo">
+              <img
+                src={require("./images/padmakumarnair.jpg")}
+                alt=""
+                className="patronimg"
+              />
+              <GradientRing className="patron-ring" />
+            </div>
             <h4 className="patronhead">Chief Patron</h4>
+            <h5 className="patronname">Prof. Padmakumar Nair</h5>
             <p className="patronpost">Director, TIET</p>
           </div>
-          <div className="patron" style={{ marginTop: "300px" }}>
-            <img
-              src={require("./images/ajaybatish.jpg")}
-              alt=""
-              width={"45%"}
-            />
-            <h5 className="patronname">Prof. Ajay Batish</h5>
+          <div className="patron">
+            <div className="patron-photo">
+              <img
+                src={require("./images/ajaybatish.jpg")}
+                alt=""
+                className="patronimg"
+              />
+              <GradientRing className="patron-ring" />
+            </div>
             <h4 className="patronhead">Patron</h4>
+            <h5 className="patronname">Prof. Ajay Batish</h5>
             <p className="patronpost">Deputy Director, TIET</p>
           </div>
         </div>
@@ -211,11 +218,14 @@ export default function Committee() {
 
             {coreteam.map((member, i) => (
               <div className="orgcommember secs" key={`img-${i}`}>
-                <img
-                  src={member.img}
-                  alt=""
-                  className="orgcommemberimg secsimg"
-                />
+                <div className="orgcommember-photo secsimg-wrap">
+                  <img
+                    src={member.img}
+                    alt=""
+                    className="orgcommemberimg secsimg"
+                  />
+                  <GradientRing className="orgcommember-ring" />
+                </div>
                 <div>
                   <h5 style={{ marginTop: "20px" }}>{member.name}</h5>
                 </div>
@@ -227,7 +237,10 @@ export default function Committee() {
             {coconveners.map((member, i) => (
               <div className="orgcommember" key={i}>
                 {member.img && (
-                  <img src={member.img} alt="" className="orgcommemberimg" />
+                  <div className="orgcommember-photo">
+                    <img src={member.img} alt="" className="orgcommemberimg" />
+                    <GradientRing className="orgcommember-ring" />
+                  </div>
                 )}
                 <div>
                   <h5>{member.name}</h5>
@@ -239,7 +252,10 @@ export default function Committee() {
 
             {orgsecs.map((member, i) => (
               <div className="orgcommember orgsecs" key={i}>
-                <img src={member.img} alt="" className="orgcommemberimg" />
+                <div className="orgcommember-photo">
+                  <img src={member.img} alt="" className="orgcommemberimg" />
+                  <GradientRing className="orgcommember-ring" />
+                </div>
                 <div>
                   <h5>{member.name}</h5>
                 </div>
@@ -250,7 +266,10 @@ export default function Committee() {
 
             {jointsecs.map((member, i) => (
               <div className="orgcommember" key={i}>
-                <img src={member.img} alt="" className="orgcommemberimg" />
+                <div className="orgcommember-photo">
+                  <img src={member.img} alt="" className="orgcommemberimg" />
+                  <GradientRing className="orgcommember-ring" />
+                </div>
                 <div>
                   <h5>{member.name}</h5>
                 </div>
@@ -259,14 +278,29 @@ export default function Committee() {
           </div>
         </div>
 
-        <div className="orgcom">
+        <div className="orgcom organizing-committee">
           <h1>ORGANIZING COMMITTEE</h1>
 
           <div className="orgcommembers">
             {organizing.map((member, i) => (
               <div className="orgcommember" key={i}>
-                <img src={member.img} alt="" className="orgcommemberimg" />
-                <div>
+                <div className="orgcommember-photo">
+                  {member.img ? (
+                    <img src={member.img} alt="" className="orgcommemberimg" />
+                  ) : (
+                    <div className="orgcommemberimg orgcommember-placeholder" aria-hidden="true">
+                      <svg viewBox="0 0 24 24" fill="none">
+                        <circle cx="12" cy="8" r="4" fill="#c9c2c4" />
+                        <path
+                          d="M4 20c0-4.4 3.6-7 8-7s8 2.6 8 7"
+                          fill="#c9c2c4"
+                        />
+                      </svg>
+                    </div>
+                  )}
+                  <GradientRing className="orgcommember-ring" />
+                </div>
+                <div className="orgcommember-plate">
                   <h5>{member.name}</h5>
                   <p>{member.dept}</p>
                 </div>

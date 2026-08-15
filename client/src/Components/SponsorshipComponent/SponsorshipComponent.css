@@ -1,6 +1,5 @@
 .our-sponsors {
   width: 100%;
-  min-height: 300px;
 
   box-sizing: border-box;
 
@@ -10,7 +9,7 @@
   flex-direction: column;
   align-items: center;
 
-  padding-top: 38px;
+  padding: 38px 0 45px;
 
   border-bottom: 1px solid #bdbdbd;
 }
@@ -25,14 +24,65 @@
 
   color: #000000;
 
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Inter", Arial, Helvetica, sans-serif;
 
-  font-size: 36px;
-  font-weight: 700;
+  font-size: clamp(36px, 4vw, 64px);
+  font-weight: 600;
 
   line-height: 1.2;
 
   text-align: center;
+}
+
+
+/* =========================
+   SPONSORS PANEL
+========================= */
+
+.sponsors-panel {
+  width: 89.6%;
+  max-width: 1720px;
+  min-height: min(15.9vw, 305px);
+  margin-top: 38px;
+
+  border-radius: 20px;
+
+  background: linear-gradient(
+    180.14deg,
+    rgba(209, 201, 207, 0.5) 0.66%,
+    rgba(110, 91, 91, 0.5) 133.91%
+  );
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: clamp(16px, 3vw, 48px);
+
+  padding: clamp(20px, 3vw, 40px);
+  box-sizing: border-box;
+}
+
+.sponsor-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: clamp(100px, 10vw, 150px);
+  height: clamp(100px, 10vw, 150px);
+
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
+
+  padding: 14px;
+  box-sizing: border-box;
+}
+
+.sponsor-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
 
@@ -61,12 +111,4 @@
   .section-heading {
     font-size: 26px;
   }
-}
-
-.chiefguest {
-  background-color: white;
-  padding-top: 20px;
-  padding-bottom: 45px;
-
-  border-bottom: 1px solid #b5b5b5;
 }

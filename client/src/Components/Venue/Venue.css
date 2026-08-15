@@ -1,10 +1,16 @@
 /* Percentages below are converted from the Figma frame (1920 x 912, node 1:115)
    so the layout scales fluidly while keeping every element's proportion intact. */
 
+.venue-section {
+  position: relative;
+  overflow: hidden;
+  background: #ffffff;
+  padding-bottom: 140px;
+}
+
 .venue {
   position: relative;
   width: 100%;
-  overflow: hidden;
   background: #ffffff;
   aspect-ratio: 1920 / 912;
 }
@@ -122,9 +128,9 @@
 
 .venue-subtitle {
   margin: 0 0 clamp(10px, 1.6vw, 28px);
-  font-family: "Domine", serif;
-  font-weight: 700;
-  font-size: clamp(20px, 2.5vw, 48px);
+  font-family: "Poppins", Arial, sans-serif;
+  font-weight: 600;
+  font-size: clamp(20px, 2.2vw, 40px);
   color: #723530;
 }
 
@@ -133,7 +139,7 @@
   font-family: "Inter", "Segoe UI", Arial, sans-serif;
   font-size: clamp(13px, 1.25vw, 24px);
   line-height: 1.5;
-  color: #1a1a1a;
+  color: #000000;
 }
 
 .venue-title {
@@ -151,6 +157,10 @@
 
 /* ================= RESPONSIVE ================= */
 @media screen and (max-width: 1000px) {
+  .venue-section {
+    padding-bottom: 0;
+  }
+
   .venue {
     aspect-ratio: auto;
     display: flex;

@@ -11,7 +11,8 @@ import arcSwirl from "./arc-swirl.svg";
 
 export default function Venue() {
   return (
-    <section className="venue" id="venue">
+    <section className="venue-section" id="venue">
+    <div className="venue">
       <img className="venue-decor venue-blob-topleft" src={blobTopLeft} alt="" aria-hidden="true" />
       <img className="venue-decor venue-ring-topleft" src={ringTopLeft} alt="" aria-hidden="true" />
       <img className="venue-decor venue-blob-right" src={blobRight} alt="" aria-hidden="true" />
@@ -57,6 +58,7 @@ export default function Venue() {
       <img className="venue-decor venue-icon venue-icon-bottom" src={venueIcon} alt="" aria-hidden="true" />
 
       <h2 className="venue-title">VENUE</h2>
+    </div>
     </section>
   );
 }
