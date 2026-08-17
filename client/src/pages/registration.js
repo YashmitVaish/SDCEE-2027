@@ -154,7 +154,7 @@ export default function Registration() {
                 <strong>Type of A/c </strong> Saving
               </p>
               <p>
-                <strong>Bank Name </strong> Kotak Mahindra Bank Ltd.
+                <strong>Bank Name </strong> IDBI Bank
               </p>
               <p>
                 <strong>IFSC Code </strong> IBKL0000267
@@ -163,8 +163,7 @@ export default function Registration() {
                 <strong>Swift Code </strong> IBKLINBB003
               </p>
               <p>
-                <strong>Bank Address </strong> Ground & First Floor, Plot No. 644 Main Road Kashmiran Wala Gurudwara,
-                Tripuri Town, Pati Patiala Punjab - 147001
+                <strong>Bank Address </strong> 644, Opposite Gurudwara Kashmirian, Main Road, Tripuri Town, Patiala, Punjab, 147001
               </p>
             </div>
           </div>
