@@ -160,7 +160,7 @@ export default function Registration() {
                 <strong>IFSC Code </strong> IBKL0000267
               </p>
               <p>
-                <strong>Swift Code </strong> KKBKINBB
+                <strong>Swift Code </strong> IBKLINBB003
               </p>
               <p>
                 <strong>Bank Address </strong> Ground & First Floor, Plot No. 644 Main Road Kashmiran Wala Gurudwara,
