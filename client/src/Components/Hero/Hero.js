@@ -9,12 +9,13 @@ export default function Hero() {
   return (
     <section className="hero">
 
-      {/* Figma artwork */}
+      {/* College photo */}
       <img
         src={collegePhoto}
         alt="Thapar Institute"
         className="hero-art"
       />
+
       <GradientRing className="hero-art-ring" />
 
       {/* Hero content */}
@@ -29,11 +30,11 @@ export default function Hero() {
             </h1>
 
             <p className="hero-description">
-              International Conference on
+              2nd International Conference on
               <br />
-              "Sustainable Development in Chemical and
+              "Sustainable Development in Chemical Engineering,
               <br />
-              Environmental Engineering"
+              Energy and Environment"
             </p>
 
             <h3 className="hero-date">
