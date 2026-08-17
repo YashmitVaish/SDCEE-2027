@@ -12,13 +12,13 @@ export default function Registration() {
       <div className="abstract" id="">
         <div className="wrapper-reg">
           <div className="register-top">
-            <h1 className="hero-head reg-hero-head">SDCEE 2024</h1>
+            <h1 className="hero-head reg-hero-head">SDCEE 2027</h1>
           </div>
           <div className="register-center">
             <p className="abs-para">
               Welcome to the abstract submission for the International
               Conference on "Sustainable Development in Chemical and
-              Environmental Engineering"(SDCEE-2024).
+              Environmental Engineering"(SDCEE-2027).
             </p>
           </div>
           <div className="abs-journal">
@@ -84,9 +84,15 @@ export default function Registration() {
           </div>
           <div className="abs-links">
             <div className="abs-center">
-              <button className="pdf register-center abs-btn-disabled" disabled>
-                <strike>Submission Guidelines (CMT)</strike>
-              </button>
+              <a
+                href={`${process.env.PUBLIC_URL}/CMT_Submission_Guidelines.pdf`}
+                download
+                target="_blank"
+                rel="noopener noreferrer"
+                className="pdf register-center abs-none"
+              >
+                Submission Guidelines (CMT)
+              </a>
             </div>
             <div className="abs-center">
               <a
@@ -107,9 +113,14 @@ export default function Registration() {
               </a>
             </div>
             <div className="abs-center abs-btn-cont">
-              <button className="abs-btn abs-btn-disabled" disabled>
-                <strike>Abstract/Paper Submission</strike>
-              </button>
+              <a
+                href="https://cmt3.research.microsoft.com/SDCEE2027"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="abs-btn"
+              >
+                Abstract/Paper Submission
+              </a>
             </div>
           </div>
         </div>

@@ -57,10 +57,9 @@ export default function Footer() {
                 // href="https://cmt3.research.microsoft.com/SDCEE2024"
                 className="ftr-links"
               >
-                <strike>
                   <span className="bullet-point">&#9658;</span> Abstract
                   Submission
-                </strike>
+                
               </a>
               <div className="white-line"></div>
             </li>
