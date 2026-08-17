@@ -54,7 +54,7 @@ export default function Footer() {
             </li>
             <li>
               <a
-                // href="https://cmt3.research.microsoft.com/SDCEE2024"
+                href="https://cmt3.research.microsoft.com/SDCEE2027"
                 className="ftr-links"
               >
                   <span className="bullet-point">&#9658;</span> Abstract
