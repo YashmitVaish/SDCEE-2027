@@ -29,6 +29,10 @@ const organizing = [
     dept: "Civil Engineering, TIET Patiala",
   },
   {
+    name: "Prof. Manmohan Chhibber",
+    dept: "Chemistry and Biochemistry, TIET Patiala",
+  },
+  {
     name: "Dr. Sharad Saxena",
     img: require("./images/sharadsaxena.jpg"),
     dept: "CSE, TIET Patiala",
@@ -71,6 +75,30 @@ const organizing = [
   {
     name: "Prof. Raj K. Gupta",
     img: require("./images/rajkumargupta.jpg"),
+    dept: "Chemical Engineering, TIET Patiala",
+  },
+  {
+    name: "Prof. H. Bhunia",
+    dept: "Chemical Engineering, TIET Patiala",
+  },
+  {
+    name: "Prof. S. Barman",
+    dept: "Chemical Engineering, TIET Patiala",
+  },
+  {
+    name: "Prof. S. K. Ahuja",
+    dept: "Chemical Engineering, TIET Patiala",
+  },
+  {
+    name: "Prof. N. Singh",
+    dept: "Chemical Engineering, TIET Patiala",
+  },
+  {
+    name: "Dr. J. P. Kushwaha",
+    dept: "Chemical Engineering, TIET Patiala",
+  },
+  {
+    name: "Dr. Rakesh Gupta",
     dept: "Chemical Engineering, TIET Patiala",
   },
 ];
@@ -139,20 +167,13 @@ const jointsecs = [
 
 const advcom = [
   { name: "Prof. Christopher Pain", department: "ICL, UK" },
-  { name: "Prof. Rajnish Kumar", department: "IIT Madras, India" },
-  { name: "Prof. Jayant K. Singh", department: "IIT Kanpur, India" },
+  { name: "Prof. Hao Lin", department: "Rutgers University, New Jersey, US" },
   { name: "Prof. Dipan Kundu", department: "UNSW, Sydney" },
-  { name: "Prof. Vimal Chandra Srivastava", department: "IIT Roorkee, India" },
-  { name: "Prof. Rabibrata Mukherjee", department: "IIT Kharagpur, India" },
-  { name: "Prof. Vikram Vishal", department: "IIT Bombay, India" },
   { name: "Prof. Amit Dhiman", department: "IIT Roorkee, India" },
-  { name: "Prof. Anil Verma", department: "IIT Delhi, India" },
   { name: "Prof. Amarjit Singh Sarpal", department: "FURG, Brazil" },
   { name: "Dr. Siddharth Gadkari", department: "University of Surrey, UK" },
   { name: "Dr. Parag R. Gogate", department: "ICT, India" },
   { name: "Dr. Akhilesh Kumar", department: "CDC, South Korea" },
-  { name: "Dr. Sharad Lande", department: "Reliance Industries Ltd., India" },
-  { name: "Dr. Kunal Mondal", department: "UCF, USA" },
   { name: "Dr. Bhanu Pratap Singh", department: "CSIR-NPL, New Delhi, India" },
   { name: "Dr. Pooja Devi", department: "CSIR-CSIO, Chandigarh, India" },
   { name: "Dr. Amrita Jain", department: "IPPT-PAN, Poland" },
@@ -160,12 +181,22 @@ const advcom = [
   { name: "Dr Sushil Kumar", department: "MNIT, Allahabad, India" },
   { name: "Dr. Ramesh Kumar", department: "H U, Seoul, Republic of Korea" },
   { name: "Dr. Raj Kumar Arya", department: "NIT Jalandhar, India" },
-  { name: "Dr. Sarang P. Gumfekar", department: "IIT Ropar, India" },
-  { name: "Dr. Babul Prasad", department: "NCL Pune, India" },
-  { name: "Dr. Sushil Kumar Kansal", department: "Punjab University, India" },
-  { name: "Dr. Chandi Sasmal", department: "IIT Ropar, India" },
   { name: "Dr. Sandip Patil", department: "E-Spin Nanotech Pvt. Ltd., India" },
+  { name: "Dr. Harish Kumar", department: "DRDO Kanpur, India" },
+  { name: "Dr. Salim Jawed Ansari", department: "Jamia Millia Islamia, New Delhi, India" },
   { name: "Dr. Praveen Somwanshi", department: "MIT-ADT University Pune, India" },
+  { name: "Dr. Anuj Tripathi", department: "BARC Mumbai, India" },
+  { name: "Dr. Sunil Goswami", department: "BARC Mumbai, India" },
+  { name: "Dr Jayashree Biswal", department: "BARC Mumbai, India" },
+  { name: "Dr. Sudeep Tondon", department: "CIMAP Lucknow, India" },
+  { name: "Dr. Naveen Sharma", department: "CSIO Chandigarh, India" },
+  { name: "Dr. Bipul Sarkar", department: "IIP Dehradun, India" },
+  { name: "Dr. Suryakant Kumar", department: "CFEES New Delhi, India" },
+  { name: "Dr. Venkata Chandra Sekhar Palla", department: "IIP Dehradun, India" },
+  { name: "Dr. Arti Bhatt", department: "CFEES, New Delhi, India" },
+  { name: "Dr. Durgesh Nandini", department: "CFEES, New Delhi, India" },
+  { name: "Dr. Akshar Tripathi", department: "IIT Patna, India" },
+  { name: "Dr. Hreetabh Kishore", department: "RGIPT, India" },
 ];
 
 export default function Committee() {
