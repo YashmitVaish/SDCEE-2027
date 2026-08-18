@@ -40,8 +40,8 @@ function Home() {
       <InfoBar />
       <Two />
       <Three />
-      {/* <SponsorshipComponent />
-      <Speakers /> */}
+      {/*<SponsorshipComponent />*/}
+      <Speakers /> 
       <Venue />
       <Committee />
       <Five />
