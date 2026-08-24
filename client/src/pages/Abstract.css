@@ -40,15 +40,17 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  flex: 1 1 220px;
 }
 .abs-gray {
   padding: 20px;
 }
 .abs-links {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  gap: 16px;
 }
 
 .pdf,
@@ -104,6 +106,18 @@
   margin-top: 30px;
 }
 
+@media screen and (max-width: 1000px) {
+  .journals {
+    columns: 3;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .journals {
+    columns: 2;
+  }
+}
+
 .journal-images {
   max-height: 150px;
 }
@@ -127,10 +141,10 @@
   .abstract {
     overflow: hidden;
   }
-  .abs-links {
-    width: 60%;
-    padding-right: 30pxs;
+  .abs-center {
+    flex: 1 1 100%;
   }
+  .pdf,
   .abs-btn {
     width: 100%;
   }

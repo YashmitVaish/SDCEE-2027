@@ -10,6 +10,8 @@ body {
 
 .footer {
   display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
   padding: 40px;
   padding-top: 50px;
   margin-bottom: 0;
@@ -46,14 +48,12 @@ body {
   margin: 20px;
 }
 .desc {
-  width: 30%;
-  float: left;
+  flex: 1 1 260px;
+  max-width: 340px;
 }
 
 .useful-links {
-  width: 30%;
-  float: left;
-  margin-left: 90px;
+  flex: 1 1 220px;
   margin-top: 10px;
 }
 
@@ -75,8 +75,7 @@ body {
 }
 
 .contact-us {
-  width: 30%;
-  float: right;
+  flex: 1 1 220px;
   margin-top: 10px;
 }
 
@@ -118,8 +117,8 @@ body {
   .desc,
   .useful-links,
   .contact-us {
-    width: 100%;
-    float: none;
+    flex-basis: 100%;
+    max-width: none;
     margin-left: 0;
     margin-top: 20px;
   }

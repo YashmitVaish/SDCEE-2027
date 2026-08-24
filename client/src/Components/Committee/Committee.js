@@ -239,26 +239,16 @@ export default function Committee() {
           </div>
 
           <div className="orgcommembers">
-            {coreteam.map((member, i) => (
-              <div className="orgcommember secs" key={`role-${i}`}>
-                <div>
-                  <h3 className="color-role">{member.role}</h3>
-                </div>
-              </div>
-            ))}
+            <h3 className="corehead">Chairperson &amp; Convener</h3>
 
             {coreteam.map((member, i) => (
-              <div className="orgcommember secs" key={`img-${i}`}>
-                <div className="orgcommember-photo secsimg-wrap">
-                  <img
-                    src={member.img}
-                    alt=""
-                    className="orgcommemberimg secsimg"
-                  />
+              <div className="orgcommember" key={i}>
+                <div className="orgcommember-photo">
+                  <img src={member.img} alt="" className="orgcommemberimg" />
                   <GradientRing className="orgcommember-ring" />
                 </div>
                 <div>
-                  <h5 style={{ marginTop: "20px" }}>{member.name}</h5>
+                  <h5>{member.name}</h5>
                 </div>
               </div>
             ))}

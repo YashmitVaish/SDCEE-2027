@@ -124,28 +124,15 @@
   flex-basis: 50%;
 }
 
-.secs {
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
 .orgsecs {
   flex-basis: 33%;
   gap: 3px;
 }
 
-.color-role {
-  font-family: "Inter", "Segoe UI", Arial, sans-serif;
-  font-size: clamp(24px, 2.5vw, 48px);
-  font-weight: 600;
-  color: #7b4847;
-}
-
 .orgcommember-photo {
   position: relative;
-  width: 75px;
-  height: 75px;
+  width: 90px;
+  height: 90px;
   flex-shrink: 0;
   z-index: 2;
 }
@@ -207,16 +194,6 @@
   font-family: "Inter", "Segoe UI", Arial, sans-serif;
   font-size: 0.85rem;
   color: #555555;
-}
-
-.secsimg-wrap {
-  width: 150px;
-  height: 150px;
-  margin-right: 0;
-}
-
-.secsimg {
-  margin-right: 0;
 }
 
 .othercom {
@@ -289,6 +266,16 @@ p {
 
 .othercom1 .name {
   text-align: left;
+}
+
+@media screen and (max-width: 900px) {
+  .orgcom {
+    padding: 40px 40px;
+  }
+  .orgcommember,
+  .orgsecs {
+    flex-basis: 100%;
+  }
 }
 
 @media screen and (max-width: 600px) {

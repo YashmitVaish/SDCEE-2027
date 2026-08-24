@@ -6,11 +6,21 @@
   margin-bottom: 0;
 }
 
+.wrapper-reg {
+  --gutter: clamp(16px, 5vw, 50px);
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 0 var(--gutter);
+  box-sizing: border-box;
+}
+
 .register-top {
   background: linear-gradient(90deg, #495b10 -7.42%, #288838 62.99%);
   color: white;
   text-align: center;
-  padding: 20px 0;
+  margin: 0 calc(-1 * var(--gutter));
+  padding: 20px var(--gutter);
 }
 
 .hero-head.reg-hero-head {
@@ -125,6 +135,27 @@
   margin-top: 8px;
   font-size: 13px;
   font-weight: 600;
+}
+
+@media screen and (max-width: 900px) {
+  .fee-details,
+  .key-dates,
+  .button-container {
+    width: 100%;
+    display: block;
+    padding-left: 0;
+    margin-left: 0;
+  }
+
+  .button-container {
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  .button-container button {
+    width: auto;
+    margin: 0 10px 10px 0;
+  }
 }
 
 @media screen and (max-width: 600px) {

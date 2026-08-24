@@ -52,6 +52,9 @@
   font-size: clamp(14px, 0.95vw, 17px);
   line-height: 1.6;
   color: #ffffff;
+  text-align: justify;
+  text-align-last: left;
+  word-break: break-word;
 }
 
 /* LIVE LINK */
