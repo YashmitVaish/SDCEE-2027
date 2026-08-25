@@ -64,8 +64,8 @@ export default function Registration() {
             <h1 className="hero-head reg-hero-head">SDCEE 2027</h1>
             <h4>
               {" "}
-              International Conference on <br /> "Sustainable Development in
-              Chemical and <br /> Environmental Engineering"
+              2nd International Conference  <br /> on <br />Sustainable Development in
+              Chemical Engineering, Energy and Environment
             </h4>
           </div>
           <div className="register-center">

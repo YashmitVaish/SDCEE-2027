@@ -13,6 +13,11 @@ export default function Registration() {
         <div className="wrapper-reg">
           <div className="register-top">
             <h1 className="hero-head reg-hero-head">SDCEE 2027</h1>
+            <h4>
+              {" "}
+              2nd International Conference  <br /> on <br />Sustainable Development in
+              Chemical Engineering, Energy and Environment
+            </h4>
           </div>
           <div className="register-center">
             <p className="abs-para">
