@@ -392,7 +392,7 @@ export default function Committee() {
             <p className="name">Pallavi</p>
             <p className="name">Muskaan</p>
 
-            <h5 className="post">Act &amp; Email Correspondence</h5>
+            <h5 className="post">Email Correspondence</h5>
             <p className="name">Jyotica</p>
             <p className="name">Aniket</p>
             <p className="name">Nidhi</p>
