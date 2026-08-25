@@ -76,20 +76,20 @@
 }
 
 .venue-photo-frame {
-  left: 45.2%;
-  top: -25.44%;
-  width: 59.375%;
-  height: 104.06%;
+  left: 50%;
+  top: -10%;
+  width: 46%;
+  height: 80%;
   z-index: 1;
 }
 
 /* ================= PHOTO ================= */
 .venue-image-wrap {
   position: absolute;
-  left: 47.24%;
-  top: -25.11%;
-  width: 55.145%;
-  height: 100.54%;
+  left: 51.6%;
+  top: -9.5%;
+  width: 43%;
+  height: 78%;
   z-index: 2;
 }
 
