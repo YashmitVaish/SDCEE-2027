@@ -30,6 +30,7 @@ const organizing = [
   },
   {
     name: "Prof. Manmohan Chhibber",
+    img: require("./images/manmohan.jpg"),
     dept: "Chemistry and Biochemistry, TIET Patiala",
   },
   {
@@ -44,7 +45,7 @@ const organizing = [
   },
   {
     name: "Dr. H. S. Singh",
-    // img: require("./images/sharadsaxena.jpg"),
+    img: require("./images/harishankar.png"),
     dept: "E&C Engineering, TIET Patiala",
   },
   {
@@ -79,26 +80,32 @@ const organizing = [
   },
   {
     name: "Prof. H. Bhunia",
+    img: require("./images/haripadabhunia.jpg"),
     dept: "Chemical Engineering, TIET Patiala",
   },
   {
     name: "Prof. S. Barman",
+    img: require("./images/sanghita.jpg"),
     dept: "Chemical Engineering, TIET Patiala",
   },
   {
     name: "Prof. S. K. Ahuja",
+    img: require("./images/sanjeevkumar.jpg"),
     dept: "Chemical Engineering, TIET Patiala",
   },
   {
     name: "Prof. N. Singh",
+    img: require("./images/neetusingh.jpg"),
     dept: "Chemical Engineering, TIET Patiala",
   },
   {
     name: "Dr. J. P. Kushwaha",
+    img: require("./images/jaiprakashkhushwaha.jpg"),
     dept: "Chemical Engineering, TIET Patiala",
   },
   {
     name: "Dr. Rakesh Gupta",
+    img: require("./images/rakeshkumar.jpg"),
     dept: "Chemical Engineering, TIET Patiala",
   },
 ];
@@ -183,7 +190,7 @@ const advcom = [
   { name: "Dr. Raj Kumar Arya", department: "NIT Jalandhar, India" },
   { name: "Dr. Sandip Patil", department: "E-Spin Nanotech Pvt. Ltd., India" },
   { name: "Dr. Harish Kumar", department: "DRDO Kanpur, India" },
-  { name: "Dr. Salim Jawed Ansari", department: "Jamia Millia Islamia, New Delhi, India" },
+  { name: "Dr. Salim Jawed Ansari", department: "Jamia Millia Islamia, New Delhi" },
   { name: "Dr. Praveen Somwanshi", department: "MIT-ADT University Pune, India" },
   { name: "Dr. Anuj Tripathi", department: "BARC Mumbai, India" },
   { name: "Dr. Sunil Goswami", department: "BARC Mumbai, India" },
@@ -217,6 +224,7 @@ export default function Committee() {
             <h5 className="patronname">Prof. Padmakumar Nair</h5>
             <p className="patronpost">Vice Chancellor, TIET</p>
           </div>
+
           <div className="patron">
             <div className="patron-photo">
               <img
@@ -244,7 +252,11 @@ export default function Committee() {
             {coreteam.map((member, i) => (
               <div className="orgcommember core-member" key={i}>
                 <div className="orgcommember-photo">
-                  <img src={member.img} alt="" className="orgcommemberimg" />
+                  <img
+                    src={member.img}
+                    alt=""
+                    className="orgcommemberimg"
+                  />
                   <GradientRing className="orgcommember-ring" />
                 </div>
                 <div>
@@ -259,7 +271,11 @@ export default function Committee() {
               <div className="orgcommember core-member" key={i}>
                 {member.img && (
                   <div className="orgcommember-photo">
-                    <img src={member.img} alt="" className="orgcommemberimg" />
+                    <img
+                      src={member.img}
+                      alt=""
+                      className="orgcommemberimg"
+                    />
                     <GradientRing className="orgcommember-ring" />
                   </div>
                 )}
@@ -274,7 +290,11 @@ export default function Committee() {
             {orgsecs.map((member, i) => (
               <div className="orgcommember core-member orgsecs" key={i}>
                 <div className="orgcommember-photo">
-                  <img src={member.img} alt="" className="orgcommemberimg" />
+                  <img
+                    src={member.img}
+                    alt=""
+                    className="orgcommemberimg"
+                  />
                   <GradientRing className="orgcommember-ring" />
                 </div>
                 <div>
@@ -288,7 +308,11 @@ export default function Committee() {
             {jointsecs.map((member, i) => (
               <div className="orgcommember core-member" key={i}>
                 <div className="orgcommember-photo">
-                  <img src={member.img} alt="" className="orgcommemberimg" />
+                  <img
+                    src={member.img}
+                    alt=""
+                    className="orgcommemberimg"
+                  />
                   <GradientRing className="orgcommember-ring" />
                 </div>
                 <div>
@@ -307,9 +331,16 @@ export default function Committee() {
               <div className="orgcommember" key={i}>
                 <div className="orgcommember-photo">
                   {member.img ? (
-                    <img src={member.img} alt="" className="orgcommemberimg" />
+                    <img
+                      src={member.img}
+                      alt=""
+                      className="orgcommemberimg"
+                    />
                   ) : (
-                    <div className="orgcommemberimg orgcommember-placeholder" aria-hidden="true">
+                    <div
+                      className="orgcommemberimg orgcommember-placeholder"
+                      aria-hidden="true"
+                    >
                       <svg viewBox="0 0 24 24" fill="none">
                         <circle cx="12" cy="8" r="4" fill="#c9c2c4" />
                         <path
@@ -321,6 +352,7 @@ export default function Committee() {
                   )}
                   <GradientRing className="orgcommember-ring" />
                 </div>
+
                 <div className="orgcommember-plate">
                   <h5>{member.name}</h5>
                   <p>{member.dept}</p>
@@ -333,6 +365,7 @@ export default function Committee() {
         <div className="othercom">
           <div className="othercom1">
             <h3>Advisory Committee</h3>
+
             <div className="committee-list">
               {advcom.map((person, index) => (
                 <div key={index} className="committee-item">
@@ -341,12 +374,15 @@ export default function Committee() {
                       <strong>{person.name}</strong>
                     </span>
                     ,{" "}
-                    <span className="department-adv">{person.department}</span>
+                    <span className="department-adv">
+                      {person.department}
+                    </span>
                   </p>
                 </div>
               ))}
             </div>
           </div>
+
           <div className="othercom1">
             <h3>Student Committee</h3>
 
@@ -356,17 +392,17 @@ export default function Committee() {
             <p className="name">Pallavi</p>
             <p className="name">Muskaan</p>
 
-            <h5 className="post">Act & Email Correspondence</h5>
+            <h5 className="post">Act &amp; Email Correspondence</h5>
             <p className="name">Jyotica</p>
             <p className="name">Aniket</p>
             <p className="name">Nidhi</p>
 
-            <h5 className="post">Web & Brochure</h5>
+            <h5 className="post">Web &amp; Brochure</h5>
             <p className="name">Gurmeet</p>
             <p className="name">Abhishek</p>
             <p className="name">Bhakti</p>
 
-            <h5 className="post">Website & Brochure Designing</h5>
+            <h5 className="post">Website &amp; Brochure Designing</h5>
             <p className="name">Riya</p>
 
             <h5 className="post">Developers</h5>
@@ -374,9 +410,8 @@ export default function Committee() {
             <p className="name">Yashmit Vaish</p>
             <p className="name">Varun Gupta</p>
           </div>
-
-          </div>
         </div>
       </div>
+    </div>
   );
 }
