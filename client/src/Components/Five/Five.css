@@ -32,6 +32,8 @@
   font-family: "Inter", "Segoe UI", Arial, sans-serif;
   font-size: clamp(15px, 1.15vw, 18px);
   line-height: 1.6;
+  text-align: justify;
+  text-align-last: center;
 }
 
 @media screen and (max-width: 600px) {

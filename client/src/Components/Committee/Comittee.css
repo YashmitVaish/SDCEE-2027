@@ -81,7 +81,7 @@
   width: 100%;
   margin: 0;
   font-family: "Inter", "Segoe UI", Arial, sans-serif;
-  font-size: clamp(32px, 4vw, 64px);
+  font-size: clamp(24px, 2.6vw, 42px);
   font-weight: 600;
   color: #000000;
 }
@@ -194,6 +194,29 @@
   font-family: "Inter", "Segoe UI", Arial, sans-serif;
   font-size: 0.85rem;
   color: #555555;
+}
+
+/* =========================================================
+   CORE TEAM — photo above, name below
+   (applies to Chairperson, Co-Conveners, Org Secretaries,
+   Joint Secretaries only — Organizing Committee grid below
+   keeps its original side-by-side plate layout)
+========================================================= */
+
+.core-member {
+  flex-direction: column;
+  text-align: center;
+  gap: 0;
+}
+
+.core-member .orgcommember-photo {
+  width: 110px;
+  height: 110px;
+  margin-bottom: 12px;
+}
+
+.core-member h5 {
+  font-size: 1rem;
 }
 
 .othercom {

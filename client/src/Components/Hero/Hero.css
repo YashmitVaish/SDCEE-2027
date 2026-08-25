@@ -2,17 +2,13 @@
    HERO SECTION
 ========================================================= */
 
-/* =========================================================
-   HERO SECTION
-========================================================= */
-
 .hero {
   position: relative;
 
   width: 100%;
-  height: 57.2vw;
+  height: 50vw;
 
-  min-height: 936px;
+  min-height: 650px;
 
   overflow: hidden;
 
@@ -27,11 +23,11 @@
 .hero-art {
   position: absolute;
 
-  width: 58.5vw;
-  height: 58.5vw;
+  width: 48vw;
+  height: 48vw;
 
-  left: 40.52vw;
-  top: calc(-2.15vw - 200px);
+  left: 44vw;
+  top: calc(-2.15vw - 130px);
 
   z-index: 1;
 
@@ -53,12 +49,12 @@
 .hero-art-ring {
   position: absolute;
 
-  width: calc(58.5vw * 1301 / 1199);
-  height: calc(58.5vw * 1301 / 1199);
+  width: calc(48vw * 1301 / 1199);
+  height: calc(48vw * 1301 / 1199);
 
-  left: calc(40.52vw - (58.5vw * 1301 / 1199 - 58.5vw) / 2);
+  left: calc(44vw - (48vw * 1301 / 1199 - 48vw) / 2);
   top: calc(
-    -2.15vw - 205px - (58.5vw * 1301 / 1199 - 58.5vw) / 2
+    -2.15vw - 135px - (48vw * 1301 / 1199 - 48vw) / 2
   );
 
   z-index: 2;
@@ -95,12 +91,13 @@
   height: 100%;
 
   padding-left: 3.75vw;
+  padding-top: clamp(50px, 6vw, 110px);
 
   display: flex;
 
   align-items: flex-start;
 
-  justify-content: center;
+  justify-content: flex-start;
 
   flex-direction: column;
 
@@ -335,27 +332,27 @@
   .hero {
     height: auto;
 
-    min-height: clamp(600px, 73vw, 800px);
+    min-height: clamp(550px, 65vw, 750px);
   }
 
 
   .hero-art {
-    width: 62vw;
+    width: 55vw;
 
-    max-width: 700px;
+    max-width: 620px;
 
-    left: 36vw;
+    left: 38vw;
 
     top: -30px;
   }
 
 
   .hero-art-ring {
-    width: calc(min(62vw, 700px) * 1301 / 1199);
-    height: calc(min(62vw, 700px) * 1301 / 1199);
+    width: calc(min(55vw, 620px) * 1301 / 1199);
+    height: calc(min(55vw, 620px) * 1301 / 1199);
 
-    left: calc(36vw - (min(62vw, 700px) * 1301 / 1199 - min(62vw, 700px)) / 2);
-    top: calc(-30px - (min(62vw, 700px) * 1301 / 1199 - min(62vw, 700px)) / 2);
+    left: calc(38vw - (min(55vw, 620px) * 1301 / 1199 - min(55vw, 620px)) / 2);
+    top: calc(-30px - (min(55vw, 620px) * 1301 / 1199 - min(55vw, 620px)) / 2);
   }
 
 

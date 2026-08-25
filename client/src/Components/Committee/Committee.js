@@ -242,7 +242,7 @@ export default function Committee() {
             <h3 className="corehead">Chairperson &amp; Convener</h3>
 
             {coreteam.map((member, i) => (
-              <div className="orgcommember" key={i}>
+              <div className="orgcommember core-member" key={i}>
                 <div className="orgcommember-photo">
                   <img src={member.img} alt="" className="orgcommemberimg" />
                   <GradientRing className="orgcommember-ring" />
@@ -256,7 +256,7 @@ export default function Committee() {
             <h3 className="corehead">Co-Conveners</h3>
 
             {coconveners.map((member, i) => (
-              <div className="orgcommember" key={i}>
+              <div className="orgcommember core-member" key={i}>
                 {member.img && (
                   <div className="orgcommember-photo">
                     <img src={member.img} alt="" className="orgcommemberimg" />
@@ -272,7 +272,7 @@ export default function Committee() {
             <h3 className="corehead">Organizing Secretaries</h3>
 
             {orgsecs.map((member, i) => (
-              <div className="orgcommember orgsecs" key={i}>
+              <div className="orgcommember core-member orgsecs" key={i}>
                 <div className="orgcommember-photo">
                   <img src={member.img} alt="" className="orgcommemberimg" />
                   <GradientRing className="orgcommember-ring" />
@@ -286,7 +286,7 @@ export default function Committee() {
             <h3 className="corehead">Joint Secretaries</h3>
 
             {jointsecs.map((member, i) => (
-              <div className="orgcommember" key={i}>
+              <div className="orgcommember core-member" key={i}>
                 <div className="orgcommember-photo">
                   <img src={member.img} alt="" className="orgcommemberimg" />
                   <GradientRing className="orgcommember-ring" />
