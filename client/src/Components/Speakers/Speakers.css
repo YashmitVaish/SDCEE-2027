@@ -99,18 +99,17 @@
 }
 
 
-/* 4 SPEAKERS PER ROW */
+/* 4 SPEAKERS PER ROW (flex-based so leftover last-row items center) */
 
 .speakercont {
   width: 90%;
   margin: 55px auto 0;
 
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   column-gap: clamp(35px, 4.5vw, 90px);
   row-gap: 55px;
-
-  align-items: start;
 }
 
 
@@ -119,7 +118,7 @@
 ================================ */
 
 .onespeaker {
-  width: 100%;
+  width: calc(25% - clamp(35px, 4.5vw, 90px) * 3 / 4);
   margin: 0;
 
   display: flex;
@@ -131,8 +130,8 @@
 
 .speaker-photo {
   position: relative;
-  width: clamp(150px, 14.6vw, 280px);
-  height: clamp(150px, 14.6vw, 280px);
+  width: clamp(110px, 9.5vw, 190px);
+  height: clamp(110px, 9.5vw, 190px);
   margin: 0 auto 12px;
 }
 
@@ -174,17 +173,23 @@
 
 @media screen and (max-width: 1000px) {
   .speakercont {
-    grid-template-columns: repeat(3, 1fr);
     width: 90%;
+  }
+
+  .onespeaker {
+    width: calc(33.333% - clamp(35px, 4.5vw, 90px) * 2 / 3);
   }
 }
 
 @media screen and (max-width: 700px) {
   .speakercont {
-    grid-template-columns: repeat(2, 1fr);
     width: 90%;
     column-gap: 20px;
     row-gap: 40px;
+  }
+
+  .onespeaker {
+    width: calc(50% - 10px);
   }
 
   .speaker-photo {
@@ -199,7 +204,7 @@
 }
 
 @media screen and (max-width: 450px) {
-  .speakercont {
-    grid-template-columns: 1fr;
+  .onespeaker {
+    width: 100%;
   }
 }
