@@ -44,7 +44,14 @@ export default function InfoBar() {
         <span>Thapar Institute of Engineering &amp; Technology</span>
       </div>
 
-      <button className="register-btn">Register Now</button>
+      <a
+        href="https://docs.google.com/forms/d/e/1FAIpQLSf9Gdlc6HGjD4ZZFqNFK-6pw2cYAMUhLnGbuqRUQuS-KYrV4Q/viewform"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="register-btn"
+      >
+        Register Now
+      </a>
     </div>
   );
 }

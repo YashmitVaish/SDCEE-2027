@@ -27,6 +27,7 @@
 }
 
 .register-btn {
+  display: inline-block;
   background: #fff;
   color: #000;
   border: none;
@@ -34,6 +35,7 @@
   padding: 10px 22px;
   font-family: "Inter", "Segoe UI", Arial, sans-serif;
   font-weight: 600;
+  text-decoration: none;
   cursor: pointer;
 }
 

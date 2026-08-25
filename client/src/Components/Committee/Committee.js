@@ -215,7 +215,7 @@ export default function Committee() {
             </div>
             <h4 className="patronhead">Chief Patron</h4>
             <h5 className="patronname">Prof. Padmakumar Nair</h5>
-            <p className="patronpost">Director, TIET</p>
+            <p className="patronpost">Vice Chancellor, TIET</p>
           </div>
           <div className="patron">
             <div className="patron-photo">
@@ -228,7 +228,7 @@ export default function Committee() {
             </div>
             <h4 className="patronhead">Patron</h4>
             <h5 className="patronname">Prof. Ajay Batish</h5>
-            <p className="patronpost">Deputy Director, TIET</p>
+            <p className="patronpost">Pro Vice Chancellor, TIET</p>
           </div>
         </div>
 
