@@ -1,30 +1,35 @@
 .ppp-wrapper {
-  padding: 60px 20px;
-  background: #fafafa;
+  padding: 100px clamp(16px, 5vw, 50px) 140px;
+  background: #ffffff;
   min-height: 60vh;
 }
 
 .ppp-container {
-  max-width: 1000px;
+  max-width: 1100px;
   margin: 0 auto;
 }
 
 .ppp-heading {
-  font-size: 2rem;
-  margin-bottom: 8px;
-  color: #1e1e2f;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: clamp(30px, 4vw, 48px);
+  color: #7b4847;
+  margin-bottom: 10px;
 }
 
 .ppp-subheading {
+  font-family: "Inter", "Segoe UI", Arial, sans-serif;
+  font-size: clamp(14px, 1.1vw, 18px);
   color: #555;
-  margin-bottom: 30px;
+  margin-bottom: 36px;
 }
 
 .ppp-table-scroll {
   overflow-x: auto;
   background: #fff;
-  border-radius: 10px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+  border-radius: 12px;
+  border: 1px solid #eee;
+  box-shadow: 0 4px 20px rgba(114, 53, 48, 0.08);
 }
 
 .ppp-table {
@@ -35,26 +40,38 @@
 
 .ppp-table th,
 .ppp-table td {
-  padding: 14px 16px;
+  padding: 16px 18px;
   text-align: left;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid #f0eaea;
   vertical-align: top;
+  font-family: "Inter", "Segoe UI", Arial, sans-serif;
 }
 
 .ppp-table th {
-  background: #6c63ff;
-  color: #fff;
+  background: #723530;
+  color: #ffffff;
+  font-family: "Poppins", Arial, sans-serif;
   font-weight: 600;
-  position: sticky;
-  top: 0;
+  font-size: 15px;
+  letter-spacing: 0.3px;
+}
+
+.ppp-table td {
+  font-size: 14.5px;
+  color: #2b2b2b;
 }
 
 .ppp-table tr:nth-child(even) {
-  background: #f7f7fb;
+  background: #fbf6f5;
+}
+
+.ppp-table tr:hover {
+  background: #f6ecea;
 }
 
 .ppp-table td a {
-  color: #6c63ff;
+  color: #723530;
+  font-weight: 500;
   text-decoration: none;
   word-break: break-all;
 }
@@ -63,7 +80,11 @@
   text-decoration: underline;
 }
 
-@media (max-width: 640px) {
+@media screen and (max-width: 640px) {
+  .ppp-wrapper {
+    padding: 70px 16px 60px;
+  }
+
   .ppp-table {
     min-width: 600px;
   }

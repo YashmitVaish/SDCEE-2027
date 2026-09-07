@@ -34,7 +34,7 @@ export default function PastPublishedPapers() {
       <div className="ppp-container">
         <h1 className="ppp-heading">Past Published Papers</h1>
         <p className="ppp-subheading">
-          Papers published through SDCEE in past editions.
+          Papers published through SDCEE in past edition.
         </p>
 
         <div className="ppp-table-scroll">
