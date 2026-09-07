@@ -14,8 +14,7 @@ import Speakers from "./Components/Speakers/Speakers";
 import SponsorshipComponent from "./Components/SponsorshipComponent/SponsorshipComponent";
 import InfoBar from "./Components/InfoBar/InfoBar";
 import Venue from "./Components/Venue/Venue";
-
-
+import PastPublishedPapers from "./Components/PastPapers/PastPublishedPapers";
 
 function App() {
   return (
@@ -25,7 +24,15 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/register" element={<Registration />} />
           <Route path="/abstract" element={<Abstract />} />
-        </Routes>
+<Route
+  path="/past-published-papers"
+  element={
+    <>
+      <Navbar />
+      <PastPublishedPapers />
+    </>
+  }
+/>        </Routes>
         <Footer />
       </div>
     </BrowserRouter>

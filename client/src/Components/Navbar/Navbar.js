@@ -96,14 +96,13 @@ export default function Navbar() {
             </a>
 
             {/* SDCEE 2027 - placeholder */}
-            <a
-              href="#"
-              className="nav-dropdown-item"
-              onClick={(e) => e.preventDefault()}
+            <Link
+            to="/past-published-papers"
+            className="nav-dropdown-item"
+            onClick={closeMenu}
             >
-              Past Published Papers
-            </a>
-
+            Past Published Papers
+            </Link>
           </div>
         </div>
 
