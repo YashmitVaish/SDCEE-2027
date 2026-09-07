@@ -96,8 +96,57 @@
 .venue-image {
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  object-fit: cover;
   display: block;
+}
+
+/* ================= SLIDESHOW ================= */
+.venue-slideshow {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  /* Clip the photos to the same ellipse as photo-frame.svg */
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.venue-slide {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: opacity 0.9s ease-in-out;
+  pointer-events: none;
+}
+
+.venue-slide-active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.venue-slideshow-dots {
+  position: absolute;
+  left: 50%;
+  bottom: 4%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+  z-index: 4;
+}
+
+.venue-slideshow-dot {
+  width: 10px;
+  height: 10px;
+  padding: 0;
+  border: 1px solid #723530;
+  border-radius: 50%;
+  background: transparent;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.venue-slideshow-dot-active {
+  background: #723530;
+  transform: scale(1.2);
 }
 
 /* ================= ICONS ================= */

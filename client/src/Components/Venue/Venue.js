@@ -1,6 +1,10 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./Venue.css";
 import venuePhoto from "./venue-photo.webp";
+import venueSlide3 from "./venue-slide-3.jpeg";
+import venueSlide4 from "./venue-slide-4.jpg";
+import venueSlide5 from "./venue-slide-5.jpg";
+import venueSlide6 from "./venue-slide-6.jpeg";
 import venueIcon from "./venue-icon.svg";
 import blobTopLeft from "./blob-topleft.svg";
 import ringTopLeft from "./ring-topleft.svg";
@@ -9,7 +13,24 @@ import blobBottomRight from "./blob-bottomright.svg";
 import photoFrame from "./photo-frame.svg";
 import arcSwirl from "./arc-swirl.svg";
 
+const venueSlides = [
+  { src: venuePhoto, alt: "Thapar Institute of Engineering and Technology campus entrance" },
+  { src: venueSlide3, alt: "Thapar Institute campus building" },
+  { src: venueSlide4, alt: "Thapar University student residences masterplan" },
+  { src: venueSlide5, alt: "Central Library, Thapar Institute" },
+  { src: venueSlide6, alt: "Thapar Institute campus view" },
+];
+
 export default function Venue() {
+  const [activeSlide, setActiveSlide] = useState(0);
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setActiveSlide((prev) => (prev + 1) % venueSlides.length);
+    }, 4000);
+    return () => clearInterval(timer);
+  }, []);
+
   return (
     <section className="venue-section" id="venue">
       <div className="venue">
@@ -70,11 +91,35 @@ export default function Venue() {
         />
 
         <div className="venue-image-wrap">
-          <img
-            src={venuePhoto}
-            alt="Thapar Institute of Engineering and Technology campus entrance"
-            className="venue-image"
-          />
+          <div className="venue-slideshow">
+            {venueSlides.map((slide, index) => (
+              <img
+                key={slide.src}
+                src={slide.src}
+                alt={slide.alt}
+                className={
+                  "venue-image venue-slide" +
+                  (index === activeSlide ? " venue-slide-active" : "")
+                }
+              />
+            ))}
+          </div>
+
+          <div className="venue-slideshow-dots" role="tablist" aria-label="Venue photos">
+            {venueSlides.map((slide, index) => (
+              <button
+                key={slide.src}
+                type="button"
+                className={
+                  "venue-slideshow-dot" +
+                  (index === activeSlide ? " venue-slideshow-dot-active" : "")
+                }
+                aria-label={"Show venue photo " + (index + 1)}
+                aria-selected={index === activeSlide}
+                onClick={() => setActiveSlide(index)}
+              />
+            ))}
+          </div>
         </div>
 
         <div className="venue-text">
