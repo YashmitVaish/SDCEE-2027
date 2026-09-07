@@ -37,7 +37,6 @@ function Home() {
     <>
       <Navbar />
       <Hero />
-      <InfoBar />
       <Two />
       <Three />
       {/*<SponsorshipComponent />*/}

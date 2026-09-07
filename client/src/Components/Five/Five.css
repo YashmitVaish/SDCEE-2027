@@ -2,48 +2,104 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)),
+
+  background-image:
+    linear-gradient(
+      rgba(0, 0, 0, 0.45),
+      rgba(0, 0, 0, 0.55)
+    ),
     url(./bg-51.png);
-  background-color: none;
+
+  background-color: transparent;
   background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
   width: 100%;
-  background-size: 100% 100%;
-  padding: 30px 0;
-  padding-bottom: 70px;
+  padding: 70px 7vw;
   margin: 0;
+
   color: white;
   filter: grayscale(10%);
   text-align: center;
+
+  box-sizing: border-box;
 }
 
 .five .wrapper {
-  max-width: 900px;
+  width: 100%;
+  max-width: 1500px;
   margin: 0 auto;
 }
 
 .five h3 {
-  margin: 0 0 20px;
+  margin: 0 0 25px;
+
   font-family: "Poppins", Arial, sans-serif;
-  font-size: clamp(26px, 3vw, 40px);
+  font-size: clamp(28px, 3vw, 42px);
   font-weight: 600;
-}
-.five p {
+
   text-align: center;
-  font-family: "Inter", "Segoe UI", Arial, sans-serif;
-  font-size: clamp(15px, 1.15vw, 18px);
-  line-height: 1.6;
-  text-align: justify;
-  text-align-last: center;
 }
+
+.five p {
+  width: 100%;
+  margin: 0;
+
+  font-family: "Inter", "Segoe UI", Arial, sans-serif;
+  font-size: clamp(16px, 1.15vw, 19px);
+  line-height: 1.65;
+
+  text-align: justify;
+  text-align-last: left;
+}
+
+/* TABLET */
+
+@media screen and (max-width: 900px) {
+  .five {
+    padding: 60px 40px;
+  }
+
+  .five .wrapper {
+    max-width: 100%;
+  }
+
+  .five p {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+}
+
+/* MOBILE */
 
 @media screen and (max-width: 600px) {
   .five {
     overflow-x: hidden;
-    background: none;
-    background-color: gray;
-    width: 100vw;
+
+    background-image:
+      linear-gradient(
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.6)
+      ),
+      url(./bg-51.png);
+
+    background-position: center;
+    background-size: cover;
+
+    width: 100%;
+    padding: 50px 22px;
   }
+
   .five h3 {
-    color: black;
+    color: white;
+    font-size: 28px;
+  }
+
+  .five p {
+    font-size: 14px;
+    line-height: 1.55;
+    text-align: justify;
+    text-align-last: left;
   }
 }

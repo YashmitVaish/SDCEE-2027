@@ -31,7 +31,7 @@
 .two-title {
   margin: 0;
   font-family: "Poppins", "Segoe UI", sans-serif;
-  font-size: clamp(36px, 3.3vw, 56px);
+  font-size: clamp(40px, 3.8vw, 64px);
   font-weight: 600;
   letter-spacing: 0.5px;
   color: #ffffff;
@@ -49,7 +49,7 @@
   max-width: 1500px;
   margin: 0 0 18px;
   font-family: "Inter", "Segoe UI", Arial, sans-serif;
-  font-size: clamp(14px, 0.95vw, 17px);
+  font-size: clamp(16px, 1.15vw, 20px);
   line-height: 1.6;
   color: #ffffff;
   text-align: justify;
@@ -77,7 +77,7 @@
 /* THEMES */
 .topics-title {
   margin: 0 0 12px;
-  font-size: clamp(20px, 1.6vw, 27px);
+  font-size: clamp(22px, 1.8vw, 30px);
   letter-spacing: 1px;
   color: #ffffff;
   text-shadow: 0 5px 4px rgba(0, 0, 0, 0.25);
@@ -112,7 +112,7 @@
   padding-left: 18px;
   font-family: "Inter", "Segoe UI", Arial, sans-serif;
   font-weight: 500;
-  font-size: clamp(14px, 1.1vw, 17px);
+  font-size: clamp(16px, 1.25vw, 20px);
   line-height: 1.45;
   color: #ffffff;
 }
@@ -149,8 +149,8 @@
     font-size: 38px;
   }
   .two-description {
-    font-size: 13px;
-    line-height: 1.5;
+    font-size: 15px;
+    line-height: 1.55;
   }
   .two-live {
     font-size: 13px;
@@ -159,6 +159,6 @@
     font-size: 18px;
   }
   .topic {
-    font-size: 13px;
+    font-size: 15px;
   }
 }

@@ -16,7 +16,7 @@ const organizing = [
   {
     name: "Prof. H. D. Joshi",
     img: require("./images/hdj.png"),
-    dept: "E&C Engineering, TIET Patiala",
+    dept: "Electronics and Communication, TIET Patiala",
   },
   {
     name: "Prof. Dheeraj Gupta",
@@ -36,7 +36,7 @@ const organizing = [
   {
     name: "Dr. Sharad Saxena",
     img: require("./images/sharadsaxena.jpg"),
-    dept: "CSE, TIET Patiala",
+    dept: "Computer Science Engineering, TIET Patiala",
   },
   {
     name: "Dr. Shilpi Verma",
@@ -46,7 +46,7 @@ const organizing = [
   {
     name: "Dr. H. S. Singh",
     img: require("./images/harishankar.png"),
-    dept: "E&C Engineering, TIET Patiala",
+    dept: "Electronics and Communication, TIET Patiala",
   },
   {
     name: "Dr. Dhamodharan K.",
@@ -114,7 +114,7 @@ const coreteam = [
   {
     name: "Prof. Avinash Chandra",
     img: require("./images/avinashchandra.jpg"),
-    role: "Chairperson & Convener",
+    role: "Convener",
   },
 ];
 
@@ -210,6 +210,7 @@ export default function Committee() {
   return (
     <div className="committee" id="team">
       <div className="wrapper">
+
         <div className="patrons">
           <div className="patron">
             <div className="patron-photo">
@@ -220,6 +221,7 @@ export default function Committee() {
               />
               <GradientRing className="patron-ring" />
             </div>
+
             <h4 className="patronhead">Chief Patron</h4>
             <h5 className="patronname">Prof. Padmakumar Nair</h5>
             <p className="patronpost">Vice Chancellor, TIET</p>
@@ -234,6 +236,7 @@ export default function Committee() {
               />
               <GradientRing className="patron-ring" />
             </div>
+
             <h4 className="patronhead">Patron</h4>
             <h5 className="patronname">Prof. Ajay Batish</h5>
             <p className="patronpost">Pro Vice Chancellor, TIET</p>
@@ -247,7 +250,12 @@ export default function Committee() {
           </div>
 
           <div className="orgcommembers">
-            <h3 className="corehead">Chairperson &amp; Convener</h3>
+
+            {/* CHAIRPERSON & CONVENER */}
+
+            <h3 className="corehead">
+              Chairperson &amp; Convener
+            </h3>
 
             {coreteam.map((member, i) => (
               <div className="orgcommember core-member" key={i}>
@@ -259,13 +267,19 @@ export default function Committee() {
                   />
                   <GradientRing className="orgcommember-ring" />
                 </div>
+
                 <div>
                   <h5>{member.name}</h5>
+                  <p className="core-role">{member.role}</p>
                 </div>
               </div>
             ))}
 
-            <h3 className="corehead">Co-Conveners</h3>
+            {/* CO-CONVENERS */}
+
+            <h3 className="corehead">
+              Co-Conveners
+            </h3>
 
             {coconveners.map((member, i) => (
               <div className="orgcommember core-member" key={i}>
@@ -279,16 +293,25 @@ export default function Committee() {
                     <GradientRing className="orgcommember-ring" />
                   </div>
                 )}
+
                 <div>
                   <h5>{member.name}</h5>
+                  <p className="core-role">{member.role}</p>
                 </div>
               </div>
             ))}
 
-            <h3 className="corehead">Organizing Secretaries</h3>
+            {/* ORGANIZING SECRETARIES */}
+
+            <h3 className="corehead">
+              Organizing Secretaries
+            </h3>
 
             {orgsecs.map((member, i) => (
-              <div className="orgcommember core-member orgsecs" key={i}>
+              <div
+                className="orgcommember core-member orgsecs"
+                key={i}
+              >
                 <div className="orgcommember-photo">
                   <img
                     src={member.img}
@@ -297,13 +320,19 @@ export default function Committee() {
                   />
                   <GradientRing className="orgcommember-ring" />
                 </div>
+
                 <div>
                   <h5>{member.name}</h5>
+                  <p className="core-role">{member.role}</p>
                 </div>
               </div>
             ))}
 
-            <h3 className="corehead">Joint Secretaries</h3>
+            {/* JOINT SECRETARIES */}
+
+            <h3 className="corehead">
+              Joint Secretaries
+            </h3>
 
             {jointsecs.map((member, i) => (
               <div className="orgcommember core-member" key={i}>
@@ -315,11 +344,14 @@ export default function Committee() {
                   />
                   <GradientRing className="orgcommember-ring" />
                 </div>
+
                 <div>
                   <h5>{member.name}</h5>
+                  <p className="core-role">{member.role}</p>
                 </div>
               </div>
             ))}
+
           </div>
         </div>
 
@@ -330,6 +362,7 @@ export default function Committee() {
             {organizing.map((member, i) => (
               <div className="orgcommember" key={i}>
                 <div className="orgcommember-photo">
+
                   {member.img ? (
                     <img
                       src={member.img}
@@ -342,7 +375,12 @@ export default function Committee() {
                       aria-hidden="true"
                     >
                       <svg viewBox="0 0 24 24" fill="none">
-                        <circle cx="12" cy="8" r="4" fill="#c9c2c4" />
+                        <circle
+                          cx="12"
+                          cy="8"
+                          r="4"
+                          fill="#c9c2c4"
+                        />
                         <path
                           d="M4 20c0-4.4 3.6-7 8-7s8 2.6 8 7"
                           fill="#c9c2c4"
@@ -350,6 +388,7 @@ export default function Committee() {
                       </svg>
                     </div>
                   )}
+
                   <GradientRing className="orgcommember-ring" />
                 </div>
 
@@ -363,12 +402,16 @@ export default function Committee() {
         </div>
 
         <div className="othercom">
+
           <div className="othercom1">
             <h3>Advisory Committee</h3>
 
             <div className="committee-list">
               {advcom.map((person, index) => (
-                <div key={index} className="committee-item">
+                <div
+                  key={index}
+                  className="committee-item"
+                >
                   <p className="name-department">
                     <span className="name-adv">
                       <strong>{person.name}</strong>
@@ -386,23 +429,23 @@ export default function Committee() {
           <div className="othercom1">
             <h3>Student Committee</h3>
 
-            <h5 className="post">Funding</h5>
+            {/* <h5 className="post">Funding</h5> */}
             <p className="name">Usha</p>
             <p className="name">Mohit</p>
             <p className="name">Pallavi</p>
             <p className="name">Muskaan</p>
 
-            <h5 className="post">Email Correspondence</h5>
+            {/* //<h5 className="post">Email Correspondence</h5> */}
             <p className="name">Jyotica</p>
             <p className="name">Aniket</p>
             <p className="name">Nidhi</p>
 
-            <h5 className="post">Web &amp; Brochure</h5>
+            {/* //<h5 className="post">Web &amp; Brochure</h5> */}
             <p className="name">Gurmeet</p>
             <p className="name">Abhishek</p>
             <p className="name">Bhakti</p>
 
-            <h5 className="post">Website &amp; Brochure Designing</h5>
+            {/* //<h5 className="post">Website &amp; Brochure Designing</h5> */}
             <p className="name">Riya</p>
 
             <h5 className="post">Developers</h5>
@@ -410,7 +453,9 @@ export default function Committee() {
             <p className="name">Yashmit Vaish</p>
             <p className="name">Varun Gupta</p>
           </div>
+
         </div>
+
       </div>
     </div>
   );
