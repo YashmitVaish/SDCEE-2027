@@ -83,6 +83,8 @@ export default function Navbar() {
           </button>
 
           <div className="nav-dropdown-menu">
+
+            {/* SDCEE 2024 */}
             <a
               href="https://sdcee2024.thapar.edu/"
               target="_blank"
@@ -92,6 +94,16 @@ export default function Navbar() {
             >
               SDCEE 2024
             </a>
+
+            {/* SDCEE 2027 - placeholder */}
+            <a
+              href="#"
+              className="nav-dropdown-item"
+              onClick={(e) => e.preventDefault()}
+            >
+              Past Published Papers
+            </a>
+
           </div>
         </div>
 
