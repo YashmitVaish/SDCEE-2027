@@ -7,6 +7,8 @@ export default function Footer() {
   // contacts do not belong on a page about a conference that already happened.
   const isArchive = useLocation().pathname === "/sdcee-2024";
 
+  if(isArchive) return(<div></div>)
+
   return (
     <div className="footer-wrap">
       <div className="footer">
@@ -67,7 +69,7 @@ export default function Footer() {
               >
                   <span className="bullet-point">&#9658;</span> Abstract
                   Submission
-                
+
               </a>
               <div className="white-line"></div>
             </li>
