@@ -1,6 +1,12 @@
 import React from "react";
+import { useLocation } from "react-router-dom";
 import "./Footer.css";
+
 export default function Footer() {
+  // The 2024 archive keeps only the useful links; the map and the 2027
+  // contacts do not belong on a page about a conference that already happened.
+  const isArchive = useLocation().pathname === "/sdcee-2024";
+
   return (
     <div className="footer-wrap">
       <div className="footer">
@@ -10,6 +16,7 @@ export default function Footer() {
             alt="logo"
             className="logo-footer"
           />
+          {!isArchive && (
           <div className="map">
             <iframe
               title="Thapar Institute of Engineering & Technology location"
@@ -22,6 +29,7 @@ export default function Footer() {
               referrerPolicy="no-referrer-when-downgrade"
             ></iframe>
           </div>
+          )}
         </div>
 
         <div className="useful-links">
@@ -71,6 +79,7 @@ export default function Footer() {
             </li>
           </ul>
         </div>
+        {!isArchive && (
         <div className="contact-us">
           <div className="contact-us-heading">
             <h5>Contact Us</h5>
@@ -88,6 +97,7 @@ export default function Footer() {
             {/* <li className="yellow-li"> avinash.chandra@thapar.edu</li> */}
           </ul>
         </div>
+        )}
       </div>
     </div>
   );

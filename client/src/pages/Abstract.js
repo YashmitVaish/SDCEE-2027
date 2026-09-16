@@ -50,30 +50,17 @@ export default function Registration() {
             </p>
             <div className="abs-topics-grid">
               <div className="abs-topics-column">
-                <div className="abs-topic">Chemical &amp; Process Engineering</div>
-                <div className="abs-topic">Environmental Remediation and Sustainability</div>
-                <div className="abs-topic">Energy Engineering and Renewable Energy Technologies</div>
-                <div className="abs-topic">Sustainable Processes and Green Technologies</div>
-                <div className="abs-topic">Transport Phenomena (Fluid Flow, Heat Transfer, and Mass Transfer)</div>
-                <div className="abs-topic">Particle Technology and Mechanics</div>
-                <div className="abs-topic">Nanotechnology and Advanced Materials</div>
-                <div className="abs-topic">Process Modelling, Simulation, and Optimization</div>
-                <div className="abs-topic">Computational Fluid Dynamics (CFD)</div>
+                <div className="abs-topic">Sustainable Chemical Processes &amp; Intensification</div>
+                <div className="abs-topic">Fluid Mechanics, Heat Transfer, Transport Phenomena &amp; CFD</div>
+                <div className="abs-topic">Advanced Materials, Nanotechnology &amp; Catalysis</div>
+                <div className="abs-topic">Clean Energy, Energy Transition &amp; Storage Technologies</div>
+                <div className="abs-topic">Net-Zero, Carbon Capture &amp; Utilization</div>
               </div>
-
               <div className="abs-topics-column">
-                <div className="abs-topic">Biotechnology, Bioprocess Engineering, and Food Technology</div>
-                <div className="abs-topic">
-                  Artificial Intelligence, Machine Learning, and Data Analytics for
-                  Process Design, Control, and Optimization
-                </div>
-                <div className="abs-topic">Carbon Capture, Utilization, and Storage (CCUS)</div>
-                <div className="abs-topic">Hydrogen Energy and Fuel Cell Technologies</div>
-                <div className="abs-topic">Circular Economy and Waste Valorization</div>
-                <div className="abs-topic">Colloidal Science, Soft Matter, and Rheology</div>
-                <div className="abs-topic">Process Safety, Risk Assessment, and Industrial Sustainability</div>
-                <div className="abs-topic">Applied Radiation Technology</div>
-                <div className="abs-topic">Experiential learnings in chemistry</div>
+                <div className="abs-topic">Environmental Pollution Control &amp; Waste Valorization</div>
+                <div className="abs-topic">Applied Radiation Technologies &amp; Radioisotopes</div>
+                <div className="abs-topic">Industrial Biotechnology, Bioenergy &amp; Biorefineries</div>
+                <div className="abs-topic">AI/ML, Digital Twin, Modelling &amp; Simulation</div>
               </div>
             </div>
           </div>

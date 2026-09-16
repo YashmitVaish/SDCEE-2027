@@ -298,6 +298,15 @@ export default function Archive2024() {
             Thapar Institute of Engineering &amp; Technology, Patiala, India
           </p>
 
+          <a
+            className="a24-booklet"
+            href={`${process.env.PUBLIC_URL}/Abstract_Book_SDCEE_2024.pdf`}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Abstract Booklet
+          </a>
+
           <div className="a24-journals">
             <h2 className="a24-journals-title">
               Selected papers were published in the following SCI/SCIE journals
@@ -360,68 +369,6 @@ export default function Archive2024() {
             <SpeakerCard person={s} key={s.name} />
           ))}
         </div>
-      </section>
-
-      <section className="a24-section a24-inner">
-        <h2 className="a24-heading">Venue</h2>
-        <div className="a24-venue">
-          <div>
-            <h3 className="a24-subheading">The Institute</h3>
-            <p className="a24-para">
-              Thapar Institute of Engineering and Technology (TIET) is one of
-              India’s oldest and finest educational institutions, which provides
-              a steady source of highly skilled talent to the nation and
-              overseas. Founded in 1956 with a campus spread across sprawling 250
-              acres, the institute in Patiala has been a pioneer in engineering
-              education, research, and innovation. Our community involves
-              ingenious minds solvers eager to make the world a better place to
-              live in with their innovative techniques and discoveries. Rated
-              amongst the country's top-ranked innovation-driven private
-              universities and technical institutes, TIET has been accredited
-              with an A+ grade by the National Assessment and Accreditation
-              Council (NAAC). Currently, the institute is ranked 20th in the
-              country by NIRF. Our alumni have stood out in various fields, such
-              as business and industry, administrative and regulatory services,
-              research and education, and social and human rights organizations.
-            </p>
-          </div>
-          <img
-            src={require("./images/venue.jpg")}
-            alt="TIET campus"
-            className="a24-venue-img"
-          />
-        </div>
-      </section>
-
-      <section className="a24-section a24-inner">
-        <h2 className="a24-heading">Department of Chemical Engineering</h2>
-        <p className="a24-para">
-          The Chemical Engineering Department at TIET offers a comprehensive and
-          dynamic education in chemical engineering, preparing students for
-          diverse opportunities in the field. The department’s focus on research,
-          innovation, and theory equips students with the necessary knowledge and
-          skills to develop economical and sustainable solutions for utilizing
-          materials and energy for the benefit of humanity. The Department’s
-          faculty is actively involved in research, with an impressive track
-          record of ~350 high-impact publications in SCI journals from 2015 to
-          2023.
-        </p>
-      </section>
-
-      <section className="a24-section a24-inner">
-        <h2 className="a24-heading">About Patiala</h2>
-        <p className="a24-para">
-          Patiala is a city in south-eastern Punjab, north-western India. It is
-          the state's fourth-largest city and the administrative capital of the
-          Patiala district. Patiala is the erstwhile princely state of Punjab,
-          which is situated in the Malwa region. The city covers a total area of
-          365 km. It is a judicious synthesis of a brilliant spectrum of Rajput,
-          Mughal, and Punjabi cultures and a fine blend of modernity and
-          tradition. It connects to Delhi, Ambala, and Chandigarh well by rail
-          and road. It is around 280 Km from IGI Airport Delhi and 60 Km from
-          Chandigarh Airport. Shimla, Dharamshala, Manali, and Amritsar are
-          nearby cities of attraction.
-        </p>
       </section>
 
       <section className="a24-section a24-inner">

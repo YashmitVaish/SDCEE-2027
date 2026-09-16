@@ -1,27 +1,6 @@
 import React from "react";
 import "./Two.css";
 
-const THEMES = [
-  "Chemical & Process Engineering",
-  "Sustainable Environmental Solutions",
-  "Advancements in Energy Engineering",
-  "Materials in Engineering",
-  "Modeling and Simulation of Processes",
-  "Bioprocessing and Food Engineering",
-  "AI, Machine Learning, and Data Analytics in Process Design/Optimization",
-  "Sustainable Processes and Green Technologies",
-  "Transport Phenomena (Fluid Flow, Heat Transfer, and Mass Transfer)",
-  "Particle Technology and Mechanics",
-  "Computational Fluid Dynamics (CFD)",
-  "Carbon Capture, Utilization, and Storage (CCUS)",
-  "Hydrogen Energy and Fuel Cell Technologies",
-  "Circular Economy and Waste Valorization",
-  "Colloidal Science, Soft Matter, and Rheology",
-  "Process Safety, Risk Assessment, and Industrial Sustainability",
-  "Applied Radiation Technology",
-  "Experiential learnings in chemistry",
-];
-
 export default function Two() {
   return (
     <section className="two">
@@ -46,11 +25,19 @@ SDCEE-2027 offers valuable networking opportunities, research dissemination, and
           </h3>
 
           <div className="topics-grid">
-            {THEMES.map((theme) => (
-              <div className="topic" key={theme}>
-                {theme}
-              </div>
-            ))}
+            <div className="topics-column">
+              <div className="topic">Sustainable Chemical Processes &amp; Intensification</div>
+              <div className="topic">Fluid Mechanics, Heat Transfer, Transport Phenomena &amp; CFD</div>
+              <div className="topic">Advanced Materials, Nanotechnology &amp; Catalysis</div>
+              <div className="topic">Clean Energy, Energy Transition &amp; Storage Technologies</div>
+              <div className="topic">Net-Zero, Carbon Capture &amp; Utilization</div>
+            </div>
+            <div className="topics-column">
+              <div className="topic">Environmental Pollution Control &amp; Waste Valorization</div>
+              <div className="topic">Applied Radiation Technologies &amp; Radioisotopes</div>
+              <div className="topic">Industrial Biotechnology, Bioenergy &amp; Biorefineries</div>
+              <div className="topic">AI/ML, Digital Twin, Modelling &amp; Simulation</div>
+            </div>
           </div>
         </div>
 

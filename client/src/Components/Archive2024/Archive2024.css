@@ -42,10 +42,10 @@
 }
 
 .a24-hero-sub {
-  font-size: clamp(16px, 1.6vw, 24px);
-  max-width: 780px;
+  font-size: clamp(15px, 1.45vw, 21px);
   margin: 0 0 20px;
   line-height: 1.45;
+  white-space: nowrap;
 }
 
 .a24-hero-date {
@@ -60,6 +60,24 @@
   margin: 0;
   font-size: clamp(14px, 1.1vw, 17px);
   opacity: 0.9;
+}
+
+.a24-booklet {
+  display: inline-block;
+  margin-top: 18px;
+  padding: 11px 26px;
+  border-radius: 8px;
+  background: #eccd67;
+  color: #3b2220;
+  font-family: "Poppins", Arial, sans-serif;
+  font-size: clamp(14px, 1.05vw, 16px);
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.2s ease;
+}
+
+.a24-booklet:hover {
+  background: #f5dd8e;
 }
 
 .a24-journals {
@@ -102,8 +120,7 @@
 }
 
 .a24-heading + .a24-para,
-.a24-heading + .a24-speakers,
-.a24-heading + .a24-venue {
+.a24-heading + .a24-speakers {
   margin-top: 20px;
 }
 
@@ -142,13 +159,13 @@
 
 .a24-speakers {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
-  gap: 36px 24px;
+  grid-template-columns: repeat(auto-fill, minmax(195px, 1fr));
+  gap: 32px 22px;
   margin-bottom: 20px;
 }
 
 .a24-speakers-single {
-  grid-template-columns: minmax(230px, 300px);
+  grid-template-columns: minmax(195px, 260px);
 }
 
 .a24-speaker {
@@ -156,8 +173,8 @@
 }
 
 .a24-speaker-img {
-  width: 160px;
-  height: 160px;
+  width: 130px;
+  height: 130px;
   object-fit: cover;
   object-position: top;
   border-radius: 50%;
@@ -177,21 +194,6 @@
   font-size: 0.85rem;
   line-height: 1.45;
   color: #555555;
-}
-
-/* ---------- venue ---------- */
-
-.a24-venue {
-  display: grid;
-  grid-template-columns: 1.4fr 1fr;
-  gap: 40px;
-  align-items: start;
-}
-
-.a24-venue-img {
-  width: 100%;
-  border-radius: 12px;
-  box-shadow: 0 6px 22px rgba(0, 0, 0, 0.18);
 }
 
 /* ---------- committee ---------- */
@@ -268,9 +270,10 @@
 
 /* ---------- responsive ---------- */
 
-@media screen and (max-width: 900px) {
-  .a24-venue {
-    grid-template-columns: 1fr;
+@media screen and (max-width: 860px) {
+  .a24-hero-sub {
+    white-space: normal;
+    font-size: 16px;
   }
   .a24-themes {
     columns: 1;
@@ -279,12 +282,12 @@
 
 @media screen and (max-width: 600px) {
   .a24-speakers {
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-    gap: 28px 16px;
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    gap: 26px 14px;
   }
   .a24-speaker-img {
-    width: 120px;
-    height: 120px;
+    width: 105px;
+    height: 105px;
   }
   .a24-sponsors {
     gap: 24px;
