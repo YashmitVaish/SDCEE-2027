@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import "./Footer.css";
 
@@ -6,6 +6,12 @@ export default function Footer() {
   // The 2024 archive keeps only the useful links; the map and the 2027
   // contacts do not belong on a page about a conference that already happened.
   const isArchive = useLocation().pathname === "/sdcee-2024";
+
+  // The CMT acknowledgement lives in public/index.html, outside React.
+  useEffect(() => {
+    const ack = document.getElementById("cmt-acknowledgement");
+    if (ack) ack.style.display = isArchive ? "none" : "";
+  }, [isArchive]);
 
   if(isArchive) return(<div></div>)
 
