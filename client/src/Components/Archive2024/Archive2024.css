@@ -1,0 +1,292 @@
+/* Scoped under .a24 / prefixed a24- so none of it can reach the 2027 pages. */
+
+.a24 {
+  background: #ffffff;
+  font-family: "Inter", "Segoe UI", Arial, sans-serif;
+  color: #1e1e1e;
+  padding-bottom: 80px;
+}
+
+.a24-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 clamp(16px, 5vw, 50px);
+}
+
+/* ---------- archive notice ---------- */
+
+.a24-notice {
+  background: #f6ecea;
+  border-bottom: 1px solid #e3d2ce;
+  color: #723530;
+  font-size: clamp(13px, 1vw, 15px);
+  line-height: 1.55;
+  padding: 14px clamp(16px, 5vw, 50px);
+  text-align: center;
+}
+
+/* ---------- hero ---------- */
+
+.a24-hero {
+  background: linear-gradient(135deg, #3b2220 0%, #7b4847 100%);
+  color: #ffffff;
+  padding: clamp(45px, 6vw, 80px) 0;
+}
+
+.a24-hero-title {
+  font-family: "Poppins", Arial, sans-serif;
+  font-size: clamp(40px, 6vw, 76px);
+  font-weight: 700;
+  margin: 0 0 12px;
+  letter-spacing: 1px;
+}
+
+.a24-hero-sub {
+  font-size: clamp(16px, 1.6vw, 24px);
+  max-width: 780px;
+  margin: 0 0 20px;
+  line-height: 1.45;
+}
+
+.a24-hero-date {
+  font-family: "Poppins", Arial, sans-serif;
+  font-size: clamp(18px, 1.8vw, 26px);
+  font-weight: 600;
+  margin: 0 0 6px;
+  color: #eccd67;
+}
+
+.a24-hero-venue {
+  margin: 0;
+  font-size: clamp(14px, 1.1vw, 17px);
+  opacity: 0.9;
+}
+
+.a24-journals {
+  margin-top: 36px;
+  padding: 20px 24px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.1);
+  max-width: 780px;
+}
+
+.a24-journals-title {
+  font-family: "Poppins", Arial, sans-serif;
+  font-size: clamp(15px, 1.2vw, 18px);
+  font-weight: 600;
+  margin: 0 0 12px;
+}
+
+.a24-journals ul {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.a24-journals li {
+  font-size: clamp(14px, 1.05vw, 16px);
+  line-height: 1.7;
+}
+
+/* ---------- sections ---------- */
+
+.a24-section {
+  padding-top: clamp(40px, 5vw, 70px);
+}
+
+.a24-heading {
+  font-family: "Poppins", Arial, sans-serif;
+  font-size: clamp(26px, 3vw, 42px);
+  font-weight: 600;
+  color: #7b4847;
+  margin: 0 0 8px;
+}
+
+.a24-heading + .a24-para,
+.a24-heading + .a24-speakers,
+.a24-heading + .a24-venue {
+  margin-top: 20px;
+}
+
+.a24-subheading {
+  font-family: "Poppins", Arial, sans-serif;
+  font-size: clamp(18px, 1.6vw, 24px);
+  font-weight: 600;
+  color: #1e1e1e;
+  margin: 32px 0 10px;
+}
+
+.a24-para {
+  font-size: clamp(15px, 1.1vw, 17px);
+  line-height: 1.75;
+  color: #333333;
+  margin: 0 0 16px;
+  text-align: justify;
+  text-align-last: left;
+}
+
+.a24-themes {
+  margin: 0;
+  padding-left: 20px;
+  columns: 2;
+  column-gap: 50px;
+}
+
+.a24-themes li {
+  font-size: clamp(15px, 1.1vw, 17px);
+  line-height: 1.8;
+  font-weight: 500;
+  break-inside: avoid;
+}
+
+/* ---------- speakers ---------- */
+
+.a24-speakers {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  gap: 36px 24px;
+  margin-bottom: 20px;
+}
+
+.a24-speakers-single {
+  grid-template-columns: minmax(230px, 300px);
+}
+
+.a24-speaker {
+  text-align: center;
+}
+
+.a24-speaker-img {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 50%;
+  box-shadow: 0 5px 14px rgba(0, 0, 0, 0.25);
+  margin-bottom: 14px;
+}
+
+.a24-speaker-name {
+  font-family: "Poppins", Arial, sans-serif;
+  font-size: 1.05rem;
+  font-weight: 600;
+  margin: 0 0 6px;
+}
+
+.a24-speaker-line {
+  margin: 2px 0;
+  font-size: 0.85rem;
+  line-height: 1.45;
+  color: #555555;
+}
+
+/* ---------- venue ---------- */
+
+.a24-venue {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 40px;
+  align-items: start;
+}
+
+.a24-venue-img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 6px 22px rgba(0, 0, 0, 0.18);
+}
+
+/* ---------- committee ---------- */
+
+.a24-people-block {
+  margin-bottom: 8px;
+}
+
+.a24-people {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 10px 28px;
+}
+
+.a24-person {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 14px;
+  border-left: 3px solid #eee7e7;
+  background: #fbf6f5;
+  border-radius: 0 8px 8px 0;
+}
+
+.a24-person-name {
+  font-family: "Poppins", Arial, sans-serif;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #1e1e1e;
+}
+
+.a24-person-role {
+  font-size: 0.82rem;
+  color: #555555;
+  margin-top: 2px;
+}
+
+.a24-student-group {
+  margin-bottom: 14px;
+}
+
+.a24-student-role {
+  font-family: "Poppins", Arial, sans-serif;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #7b4847;
+  margin: 0 0 4px;
+}
+
+.a24-student-names {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #555555;
+}
+
+/* ---------- sponsors ---------- */
+
+.a24-sponsors {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 24px;
+}
+
+.a24-sponsor-img {
+  max-width: 150px;
+  max-height: 100px;
+  object-fit: contain;
+}
+
+/* ---------- responsive ---------- */
+
+@media screen and (max-width: 900px) {
+  .a24-venue {
+    grid-template-columns: 1fr;
+  }
+  .a24-themes {
+    columns: 1;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .a24-speakers {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 28px 16px;
+  }
+  .a24-speaker-img {
+    width: 120px;
+    height: 120px;
+  }
+  .a24-sponsors {
+    gap: 24px;
+  }
+}

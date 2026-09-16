@@ -282,7 +282,7 @@ export default function Committee() {
             </h3>
 
             {coconveners.map((member, i) => (
-              <div className="orgcommember core-member" key={i}>
+              <div className="orgcommember core-member co-convener" key={i}>
                 {member.img && (
                   <div className="orgcommember-photo">
                     <img

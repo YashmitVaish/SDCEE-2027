@@ -15,6 +15,7 @@ import SponsorshipComponent from "./Components/SponsorshipComponent/SponsorshipC
 import InfoBar from "./Components/InfoBar/InfoBar";
 import Venue from "./Components/Venue/Venue";
 import PastPublishedPapers from "./Components/PastPapers/PastPublishedPapers";
+import Archive2024 from "./Components/Archive2024/Archive2024";
 
 function App() {
   return (
@@ -32,7 +33,17 @@ function App() {
       <PastPublishedPapers />
     </>
   }
-/>        </Routes>
+/>
+          <Route
+            path="/sdcee-2024"
+            element={
+              <>
+                <Navbar />
+                <Archive2024 />
+              </>
+            }
+          />
+        </Routes>
         <Footer />
       </div>
     </BrowserRouter>
