@@ -78,6 +78,14 @@ export default function Hero() {
                   Selected papers will be published in indexed journals.
                 </span>
               </h5>
+              <h5>
+                <span>
+                  Publication Partner:{" "}
+                  <a href="https://www.tandfonline.com/journals/tice20/" target="_blank" rel="noreferrer">
+                    Indian Chemical Engineer (Taylor &amp; Francis)
+                  </a>
+                </span>
+              </h5>
 
             </div>
 

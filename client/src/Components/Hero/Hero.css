@@ -457,3 +457,8 @@
   }
 
 }
+.journal a,
+.abs-journal a {
+  color: inherit;
+  text-decoration: underline;
+}
