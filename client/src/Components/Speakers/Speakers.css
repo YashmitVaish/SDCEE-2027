@@ -208,3 +208,15 @@
     width: 100%;
   }
 }
+
+.onespeaker.highlighted h3 {
+  color: #b8860b;
+}
+
+/* Force the first 5 cards (the highlighted/foreign speakers) onto their
+   own row of 5 on larger screens, instead of wrapping the 5th to row 2. */
+@media screen and (min-width: 1001px) {
+  .speakercont .onespeaker:nth-child(-n + 5) {
+    width: calc(20% - clamp(35px, 4.5vw, 90px) * 4 / 5);
+  }
+}

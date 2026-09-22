@@ -4,6 +4,53 @@ import GradientRing from "../GradientRing/GradientRing";
 
 const speakers = [
   {
+    name: "Hannah Affum",
+    department: "International Atomic Energy Agency",
+    image: require("./images/hannahaffum.png"),
+    place: "Austria",
+    highlight: true,
+  },
+  {
+    name: "Prof. Olivier Potier",
+    position: "",
+    department: "University of Lorraine",
+    image: require("./images/OlivierPotier.png"),
+    place: "France",
+    highlight: true,
+  },
+  {
+    name: "Dr. Chanatip Samart",
+    position: "",
+    department: "Thammasat University",
+    image: require("./images/ChanatipSamart.webp"),
+    place: "Thailand",
+    highlight: true,
+  },
+  {
+    name: "Dr. Hao Lin",
+    position: "",
+    department: "Rutgers University",
+    image: require("./images/linhao.jpg"),
+    place: "USA",
+    highlight: true,
+  },
+  {
+    name: "Prof. Christopher Pain",
+    position: "",
+    department: "Imperial College London",
+    image: require("./images/christopherPain.jpg"),
+    place: "UK",
+    highlight: true,
+  },
+  {
+    name: "Dr. Vinod M. Janardhanan",
+    position: "",
+    department: "IIT Hyderabad",
+    image: require("./images/vinodj.jpg"),
+    place: "India",
+  },
+
+  {
     name: "Prof. Rajnish Kumar",
     position: "",
     department: "Indian Institute of Technology Madras",
@@ -134,14 +181,20 @@ export default function Speakers() {
         </div>
 
         <div className="speakercont">
-          {speakers.map((speaker) => (
-            <div className="onespeaker" key={speaker.name}>
+          {speakers.map((speaker) => {
+            return (
+            <div
+              className={`onespeaker${speaker.highlight ? " highlighted" : ""}`}
+              key={speaker.name}
+            >
               <div className="speaker-photo">
-                <img
-                  src={speaker.image}
-                  alt={speaker.name}
-                  className="speakerimg"
-                />
+                {speaker.image && (
+                  <img
+                    src={speaker.image}
+                    alt={speaker.name}
+                    className="speakerimg"
+                  />
+                )}
 
                 <GradientRing className="speaker-ring" />
               </div>
@@ -154,7 +207,8 @@ export default function Speakers() {
 
               {speaker.place && <h6>{speaker.place}</h6>}
             </div>
-          ))}
+            );
+          })}
         </div>
       </div>
     </div>

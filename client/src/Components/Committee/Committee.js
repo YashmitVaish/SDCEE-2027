@@ -4,6 +4,36 @@ import GradientRing from "../GradientRing/GradientRing";
 
 const organizing = [
   {
+    name: "Hannah Affum",
+    img: require("./images/hannahaffum.png"),
+    dept: "International Atomic Energy Agency, Austria",
+  },
+  {
+    name: "Prof. Olivier Potier",
+    img: require("./images/OlivierPotier.png"),
+    dept: "University of Lorraine, France",
+  },
+  {
+    name: "Dr. Chanatip Samart",
+    img: require("./images/ChanatipSamart.webp"),
+    dept: "Thammasat University, Thailand",
+  },
+  {
+    name: "Dr. Hao Lin",
+    img: require("./images/linhao.jpg"),
+    dept: "Rutgers University, USA",
+  },
+  {
+    name: "Prof. Christopher Pain",
+    img: require("./images/christopherPain.jpg"),
+    dept: "Imperial College London, UK",
+  },
+  {
+    name: "Dr. Vinod M. Janardhanan",
+    img: require("./images/vinodj.jpg"),
+    dept: "IIT Hyderabad, India",
+  },
+  {
     name: "Prof. B. K. Chudasama",
     img: require("./images/bkc.jpg"),
     dept: "Physics & Materials Science, TIET Patiala",
