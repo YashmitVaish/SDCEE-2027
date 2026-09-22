@@ -2,7 +2,7 @@
   position: relative;
   width: 100%;
   min-height: 600px;
-  background-color: #090909;
+  background-color: #2e2e2e;
   overflow: hidden;
 }
 
@@ -10,7 +10,7 @@
   width: 100%;
   min-height: 600px;
 
-  background-color: #000;
+  background-color: #2e2e2e;
 
   color: white;
   padding: 55px 7vw 70px;
