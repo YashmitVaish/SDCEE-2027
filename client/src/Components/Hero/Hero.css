@@ -259,6 +259,11 @@
 }
 
 
+.hero-partner {
+  margin-top: clamp(8px, 0.8vw, 14px);
+}
+
+
 .journal h5 {
   margin: 0 0 6px 0;
 

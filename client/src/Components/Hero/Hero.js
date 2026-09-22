@@ -37,6 +37,17 @@ export default function Hero() {
               Energy and Environment"
             </p>
 
+            <div className="journal hero-partner">
+              <h5>
+                <span>
+                  Publication Partner:{" "}
+                  <a href="https://www.tandfonline.com/journals/tice20/" target="_blank" rel="noreferrer">
+                    Indian Chemical Engineer (Taylor &amp; Francis)
+                  </a>
+                </span>
+              </h5>
+            </div>
+
             <h3 className="hero-date">
               February 18-20, 2027
             </h3>
@@ -76,14 +87,6 @@ export default function Hero() {
 
                 <span>
                   Selected papers will be published in indexed journals.
-                </span>
-              </h5>
-              <h5>
-                <span>
-                  Publication Partner:{" "}
-                  <a href="https://www.tandfonline.com/journals/tice20/" target="_blank" rel="noreferrer">
-                    Indian Chemical Engineer (Taylor &amp; Francis)
-                  </a>
                 </span>
               </h5>
 
