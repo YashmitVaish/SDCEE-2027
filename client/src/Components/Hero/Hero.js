@@ -39,10 +39,21 @@ export default function Hero() {
 
             <div className="journal hero-partner">
               <h5>
-                <span>
-                  Publication Partner:{" "}
-                  <a href="https://www.tandfonline.com/journals/tice20/" target="_blank" rel="noreferrer">
+                <span className="partner-label">Publication Partner:</span>
+                <span className="partner-links">
+                  <a
+                    href="https://www.tandfonline.com/journals/tice20/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     Indian Chemical Engineer (Taylor &amp; Francis)
+                  </a>
+                  <a
+                    href="https://www.frontiersin.org/journals/chemical-engineering"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Frontiers in Chemical Engineering
                   </a>
                 </span>
               </h5>
