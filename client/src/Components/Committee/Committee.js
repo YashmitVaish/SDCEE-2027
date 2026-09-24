@@ -155,7 +155,7 @@ const tpc = [
   "Dr. Rakesh Kumar Gupta",
 ];
 
-const webteam = ["Jash Patel", "Yashmit Vaish", "Varun Gupta"];
+const webteam = ["Jash Patel", "Yashmit Vaish","Ankita Sharma", "Varun Gupta","Rudraans Singh"];
 
 const advcom = [
   { name: "Prof. Christopher Pain", department: "ICL, UK" },
