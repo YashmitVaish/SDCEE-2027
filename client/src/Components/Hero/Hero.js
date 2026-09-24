@@ -65,8 +65,10 @@ export default function Hero() {
                 />
 
                 <span>
-                  Selected papers may be considered for publication in the
-                  following journals after peer review:
+                  Book proceedings will be published with ISBN no.
+                  <br />
+                  Selected papers will also be considered for publication in
+                  following SCI/Scopus indexed Journals (after peer review):
                 </span>
               </h5>
               <ul>

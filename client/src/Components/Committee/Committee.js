@@ -68,46 +68,6 @@ const organizing = [
     img: require("./images/vivekGupta.jpg"),
     dept: "Civil Engineering, TIET Patiala",
   },
-  {
-    name: "Prof. Rajeev Mehta",
-    img: require("./images/rajeevmeheta.jpg"),
-    dept: "Chemical Engineering, TIET Patiala",
-  },
-  {
-    name: "Prof. Raj K. Gupta",
-    img: require("./images/rajkumargupta.jpg"),
-    dept: "Chemical Engineering, TIET Patiala",
-  },
-  {
-    name: "Prof. H. Bhunia",
-    img: require("./images/haripadabhunia.jpg"),
-    dept: "Chemical Engineering, TIET Patiala",
-  },
-  {
-    name: "Prof. S. Barman",
-    img: require("./images/sanghita.jpg"),
-    dept: "Chemical Engineering, TIET Patiala",
-  },
-  {
-    name: "Prof. S. K. Ahuja",
-    img: require("./images/sanjeevkumar.jpg"),
-    dept: "Chemical Engineering, TIET Patiala",
-  },
-  {
-    name: "Prof. N. Singh",
-    img: require("./images/neetusingh.jpg"),
-    dept: "Chemical Engineering, TIET Patiala",
-  },
-  {
-    name: "Dr. J. P. Kushwaha",
-    img: require("./images/jaiprakashkhushwaha.jpg"),
-    dept: "Chemical Engineering, TIET Patiala",
-  },
-  {
-    name: "Dr. Rakesh Gupta",
-    img: require("./images/rakeshkumar.jpg"),
-    dept: "Chemical Engineering, TIET Patiala",
-  },
 ];
 
 const coreteam = [
