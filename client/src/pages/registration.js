@@ -122,9 +122,6 @@ export default function Registration() {
             <a href="https://forms.gle/k6itCAWS2avkJFmB8" target="_blank" rel="noopener noreferrer">
               <button>Link to Register</button>
             </a>
-            <a href="https://forms.gle/r784zXXhd1zkoNeE6" target="_blank" rel="noopener noreferrer">
-              <button>Hostel Accomodation</button>
-            </a>
             <br />
             {/* <Link smooth to="/abstract" className="text-link">
               <a href="">
@@ -166,28 +163,6 @@ export default function Registration() {
                 <strong>Bank Address </strong> 644, Opposite Gurudwara Kashmirian, Main Road, Tripuri Town, Patiala, Punjab, 147001
               </p>
             </div>
-          </div>
-          <div className="key-dates">
-            <h2>Important Dates:</h2>
-            <ul>
-              <li>
-                <strong>Last Date of Abstract Submissions:</strong> October 31,
-                2026
-              </li>
-              <li>
-                <strong>Early Bird Registration (deadline) :</strong> December 20, 2026
-              </li>
-              {/* <li>
-              <strong>Early Bird Registration Start:</strong> October
-              01,2023-December 15,2023
-            </li> */}
-              <li>
-                <strong>Full Paper (Selected) Submission:</strong> January 15, 2027 - February 15, 2027
-              </li>
-              <li>
-                <strong>Conference Date:</strong> February 18-20, 2027
-              </li>
-            </ul>
           </div>
         </div>
       </div>

@@ -22,7 +22,7 @@
   margin: 0;
   text-align: center;
   color: #fd454b;
-  font-family: "Inter", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Poppins", Arial, sans-serif;
   font-size: clamp(32px, 4vw, 64px);
   font-weight: 600;
   text-transform: uppercase;

@@ -4,36 +4,6 @@ import GradientRing from "../GradientRing/GradientRing";
 
 const organizing = [
   {
-    name: "Hannah Affum",
-    img: require("./images/hannahaffum.png"),
-    dept: "International Atomic Energy Agency, Austria",
-  },
-  {
-    name: "Prof. Olivier Potier",
-    img: require("./images/OlivierPotier.png"),
-    dept: "University of Lorraine, France",
-  },
-  {
-    name: "Dr. Chanatip Samart",
-    img: require("./images/ChanatipSamart.webp"),
-    dept: "Thammasat University, Thailand",
-  },
-  {
-    name: "Dr. Hao Lin",
-    img: require("./images/linhao.jpg"),
-    dept: "Rutgers University, USA",
-  },
-  {
-    name: "Prof. Christopher Pain",
-    img: require("./images/christopherPain.jpg"),
-    dept: "Imperial College London, UK",
-  },
-  {
-    name: "Dr. Vinod M. Janardhanan",
-    img: require("./images/vinodj.jpg"),
-    dept: "IIT Hyderabad, India",
-  },
-  {
     name: "Prof. B. K. Chudasama",
     img: require("./images/bkc.jpg"),
     dept: "Physics & Materials Science, TIET Patiala",
@@ -144,7 +114,6 @@ const coreteam = [
   {
     name: "Prof. Avinash Chandra",
     img: require("./images/avinashchandra.jpg"),
-    role: "Convener",
   },
 ];
 
@@ -152,71 +121,57 @@ const coconveners = [
   {
     name: "Dr. Sudhir Kumar Singh",
     img: require("./images/sudhir.jpg"),
-    role: "Co-Convener",
   },
   {
     name: "Dr. Parminder Singh",
     img: require("./images/parminder.jpeg"),
-    role: "Co-Convener",
   },
   {
     name: "Dr. Vivek Pawar",
     img: require("./images/vivekpawar.jpg"),
-    role: "Co-Convener",
   },
   {
     name: "Dr. Himali Horo",
     img: require("./images/himalihoro.jpg"),
-    role: "Co-Convener",
   },
 ];
 
 const orgsecs = [
-  {
-    name: "Dr. Chandra Shekhar",
-    img: require("./images/Dr. Chandra Shekhar.jpg"),
-    role: "Organizing Secretary",
-  },
-  {
-    name: "Dr. Sushma Kumari",
-    img: require("./images/Dr. Sushma Kumari.jpeg"),
-    role: "Organizing Secretary",
-  },
-  {
-    name: "Dr. Sujoy Chattaraj",
-    img: require("./images/Dr. Sujoy Chattaraj.png"),
-    role: "Organizing Secretary",
-  },
+  { name: "Dr. Renuka", img: require("./images/Dr. Renuka.jpg") },
+  { name: "Dr. Sushma Kumari", img: require("./images/Dr. Sushma Kumari.jpeg") },
+  { name: "Dr. Lovepreet Singh", img: require("./images/Dr. Lovepreet Singh.png") },
+  { name: "Dr. Sujoy Chattaraj", img: require("./images/Dr. Sujoy Chattaraj.png") },
+  { name: "Dr. Chandra Shekhar", img: require("./images/Dr. Chandra Shekhar.jpg") },
 ];
 
-const jointsecs = [
-  {
-    name: "Dr. Renuka",
-    img: require("./images/Dr. Renuka.jpg"),
-    role: "Joint Secretary",
-  },
-  {
-    name: "Dr. Lovepreet Singh",
-    img: require("./images/Dr. Lovepreet Singh.png"),
-    role: "Joint Secretary",
-  },
+const tpc = [
+  "Prof. Rajeev Mehta",
+  "Prof. Raj Kumar Gupta",
+  "Prof. Haripada Bhunia",
+  "Prof. Sanghamitra Barman",
+  "Prof. Sanjeev Kumar Ahuja",
+  "Prof. Neetu Singh",
+  "Dr. Jai Prakash Kushwaha",
+  "Dr. Rakesh Kumar Gupta",
 ];
+
+const webteam = ["Jash Patel", "Yashmit Vaish", "Varun Gupta"];
 
 const advcom = [
   { name: "Prof. Christopher Pain", department: "ICL, UK" },
   { name: "Prof. Hao Lin", department: "Rutgers University, New Jersey, US" },
   { name: "Prof. Dipan Kundu", department: "UNSW, Sydney" },
-  { name: "Prof. Amit Dhiman", department: "IIT Roorkee, India" },
   { name: "Prof. Amarjit Singh Sarpal", department: "FURG, Brazil" },
   { name: "Dr. Siddharth Gadkari", department: "University of Surrey, UK" },
-  { name: "Dr. Parag R. Gogate", department: "ICT, India" },
   { name: "Dr. Akhilesh Kumar", department: "CDC, South Korea" },
+  { name: "Dr. Amrita Jain", department: "IPPT-PAN, Poland" },
+  { name: "Dr. Ramesh Kumar", department: "H U, Seoul, Republic of Korea" },
+  { name: "Prof. Amit Dhiman", department: "IIT Roorkee, India" },
+  { name: "Dr. Parag R. Gogate", department: "ICT, India" },
   { name: "Dr. Bhanu Pratap Singh", department: "CSIR-NPL, New Delhi, India" },
   { name: "Dr. Pooja Devi", department: "CSIR-CSIO, Chandigarh, India" },
-  { name: "Dr. Amrita Jain", department: "IPPT-PAN, Poland" },
   { name: "Dr. Pratik N Sheth", department: "BITS Pilani, India" },
   { name: "Dr Sushil Kumar", department: "MNIT, Allahabad, India" },
-  { name: "Dr. Ramesh Kumar", department: "H U, Seoul, Republic of Korea" },
   { name: "Dr. Raj Kumar Arya", department: "NIT Jalandhar, India" },
   { name: "Dr. Sandip Patil", department: "E-Spin Nanotech Pvt. Ltd., India" },
   { name: "Dr. Harish Kumar", department: "DRDO Kanpur, India" },
@@ -300,7 +255,6 @@ export default function Committee() {
 
                 <div>
                   <h5>{member.name}</h5>
-                  <p className="core-role">{member.role}</p>
                 </div>
               </div>
             ))}
@@ -326,7 +280,6 @@ export default function Committee() {
 
                 <div>
                   <h5>{member.name}</h5>
-                  <p className="core-role">{member.role}</p>
                 </div>
               </div>
             ))}
@@ -353,31 +306,6 @@ export default function Committee() {
 
                 <div>
                   <h5>{member.name}</h5>
-                  <p className="core-role">{member.role}</p>
-                </div>
-              </div>
-            ))}
-
-            {/* JOINT SECRETARIES */}
-
-            <h3 className="corehead">
-              Joint Secretaries
-            </h3>
-
-            {jointsecs.map((member, i) => (
-              <div className="orgcommember core-member" key={i}>
-                <div className="orgcommember-photo">
-                  <img
-                    src={member.img}
-                    alt=""
-                    className="orgcommemberimg"
-                  />
-                  <GradientRing className="orgcommember-ring" />
-                </div>
-
-                <div>
-                  <h5>{member.name}</h5>
-                  <p className="core-role">{member.role}</p>
                 </div>
               </div>
             ))}
@@ -456,32 +384,22 @@ export default function Committee() {
             </div>
           </div>
 
-          <div className="othercom1">
-            <h3>Student Committee</h3>
+          <div className="othercom-stack">
+            <div className="othercom1">
+              <h3>Technical Programme Committee</h3>
+              {tpc.map((name) => (
+                <p className="name" key={name}>
+                  {name} — Chemical Engineering
+                </p>
+              ))}
+            </div>
 
-            {/* <h5 className="post">Funding</h5> */}
-            <p className="name">Usha</p>
-            <p className="name">Mohit</p>
-            <p className="name">Pallavi</p>
-            <p className="name">Muskaan</p>
-
-            {/* //<h5 className="post">Email Correspondence</h5> */}
-            <p className="name">Jyotica</p>
-            <p className="name">Aniket</p>
-            <p className="name">Nidhi</p>
-
-            {/* //<h5 className="post">Web &amp; Brochure</h5> */}
-            <p className="name">Gurmeet</p>
-            <p className="name">Abhishek</p>
-            <p className="name">Bhakti</p>
-
-            {/* //<h5 className="post">Website &amp; Brochure Designing</h5> */}
-            <p className="name">Riya</p>
-
-            <h5 className="post">Developers</h5>
-            <p className="name">Jash Patel</p>
-            <p className="name">Yashmit Vaish</p>
-            <p className="name">Varun Gupta</p>
+            <div className="othercom1">
+              <h3>Web Development Team</h3>
+              {webteam.map((name) => (
+                <p className="name" key={name}>{name}</p>
+              ))}
+            </div>
           </div>
 
         </div>

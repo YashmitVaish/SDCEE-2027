@@ -43,13 +43,26 @@ const speakers = [
     highlight: true,
   },
   {
+    name: "Dr. Kunal Mondal",
+    position: "",
+    department: "University of Central Florida",
+    image: require("./images/kunalmondal.jpg"),
+    place: "USA",
+  },
+  {
+    name: "Dr. Gopalakrishnan Kumar",
+    position: "",
+    department: "University of Stavanger",
+    image: require("./images/gopalkrishnan.jpg"),
+    place: "Norway",
+  },
+  {
     name: "Dr. Vinod M. Janardhanan",
     position: "",
     department: "IIT Hyderabad",
     image: require("./images/vinodj.jpg"),
     place: "India",
   },
-
   {
     name: "Prof. Rajnish Kumar",
     position: "",
@@ -107,13 +120,6 @@ const speakers = [
     place: "India",
   },
   {
-    name: "Dr. Kunal Mondal",
-    position: "",
-    department: "University of Central Florida",
-    image: require("./images/kunalmondal.jpg"),
-    place: "USA",
-  },
-  {
     name: "Dr. Babul Prasad (Scientist)",
     position: "",
     department: "National Chemical Laboratory",
@@ -134,13 +140,6 @@ const speakers = [
     department: "Centre for Fire, Explosive and Environment Safety, Defence Research and Development Organisation",
     image: require("./images/Prasun Roy.jpg"),
     place: "India",
-  },
-  {
-    name: "Dr. Gopalakrishnan Kumar",
-    position: "",
-    department: "University of Stavanger",
-    image: require("./images/gopalkrishnan.jpg"),
-    place: "Norway",
   },
   {
     name: "Dr. S. Manigandan",
@@ -177,7 +176,7 @@ export default function Speakers() {
     <div className="wrapper">
       <div className="speakers" id="speakers">
         <div>
-          <h1>Tentative Speakers</h1>
+          <h1>Keynote Speakers</h1>
         </div>
 
         <div className="speakercont">

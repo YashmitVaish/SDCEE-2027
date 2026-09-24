@@ -12,7 +12,7 @@
 .chief {
   margin: 0 0 30px;
   padding: 0 !important;
-  font-family: "Inter", "Segoe UI", Arial, sans-serif;
+  font-family: "Poppins", Arial, sans-serif;
   font-size: clamp(2.2rem, 4vw, 4.125rem);
   font-weight: 600;
   text-transform: uppercase;
@@ -73,7 +73,7 @@
   font-family: "Inter", "Segoe UI", Arial, sans-serif;
   font-size: 1rem;
   font-weight: 400;
-  color: #444444;
+  color: #000000;
 }
 
 
@@ -92,7 +92,7 @@
 
 .speakers > div:first-child h1 {
   margin: 0;
-  font-family: "Inter", "Segoe UI", Arial, sans-serif;
+  font-family: "Poppins", Arial, sans-serif;
   font-size: clamp(2.2rem, 4vw, 4.125rem);
   font-weight: 600;
   text-align: center;
@@ -163,7 +163,7 @@
   font-size: 0.85rem;
   font-weight: 400;
   line-height: 1.4;
-  color: #555555;
+  color: #000000;
 }
 
 
@@ -207,10 +207,6 @@
   .onespeaker {
     width: 100%;
   }
-}
-
-.onespeaker.highlighted h3 {
-  color: #b8860b;
 }
 
 /* Force the first 5 cards (the highlighted/foreign speakers) onto their
