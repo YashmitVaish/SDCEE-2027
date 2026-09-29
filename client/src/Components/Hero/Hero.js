@@ -71,11 +71,15 @@ export default function Hero() {
                   following SCI/Scopus indexed Journals (after peer review):
                 </span>
               </h5>
+
               <ul>
                 <li>Indian Chemical Engineer</li>
                 <li>Frontiers in Chemical Engineering</li>
               </ul>
-              <p>APCs, if applicable, will be borne by the authors.</p>
+
+              <p>
+                APCs, if applicable, will be borne by the authors.
+              </p>
 
             </div>
 

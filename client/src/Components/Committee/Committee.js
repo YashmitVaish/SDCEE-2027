@@ -97,11 +97,26 @@ const coconveners = [
 ];
 
 const orgsecs = [
-  { name: "Dr. Renuka", img: require("./images/Dr. Renuka.jpg") },
-  { name: "Dr. Sushma Kumari", img: require("./images/Dr. Sushma Kumari.jpeg") },
-  { name: "Dr. Lovepreet Singh", img: require("./images/Dr. Lovepreet Singh.png") },
-  { name: "Dr. Sujoy Chattaraj", img: require("./images/Dr. Sujoy Chattaraj.png") },
-  { name: "Dr. Chandra Shekhar", img: require("./images/Dr. Chandra Shekhar.jpg") },
+  {
+    name: "Dr. Renuka",
+    img: require("./images/Dr. Renuka.jpg"),
+  },
+  {
+    name: "Dr. Sushma Kumari",
+    img: require("./images/Dr. Sushma Kumari.jpeg"),
+  },
+  {
+    name: "Dr. Lovepreet Singh",
+    img: require("./images/Dr. Lovepreet Singh.png"),
+  },
+  {
+    name: "Dr. Sujoy Chattaraj",
+    img: require("./images/Dr. Sujoy Chattaraj.png"),
+  },
+  {
+    name: "Dr. Chandra Shekhar",
+    img: require("./images/Dr. Chandra Shekhar.jpg"),
+  },
 ];
 
 const tpc = [
@@ -115,7 +130,13 @@ const tpc = [
   "Dr. Rakesh Kumar Gupta",
 ];
 
-const webteam = ["Jash Patel", "Yashmit Vaish","Ankita Sharma", "Varun Gupta","Rudraans Singh"];
+const webteam = [
+  "Jash Patel",
+  "Yashmit Vaish",
+  "Ankita Sharma",
+  "Varun Gupta",
+  "Rudraans Singh",
+];
 
 const advcom = [
   { name: "Prof. Christopher Pain", department: "ICL, UK" },
@@ -144,7 +165,10 @@ const advcom = [
   { name: "Dr. Naveen Sharma", department: "CSIO Chandigarh, India" },
   { name: "Dr. Bipul Sarkar", department: "IIP Dehradun, India" },
   { name: "Dr. Suryakant Kumar", department: "CFEES New Delhi, India" },
-  { name: "Dr. Venkata Chandra Sekhar Palla", department: "IIP Dehradun, India" },
+  {
+    name: "Dr. Venkata Chandra Sekhar Palla",
+    department: "IIP Dehradun, India",
+  },
   { name: "Dr. Arti Bhatt", department: "CFEES, New Delhi, India" },
   { name: "Dr. Durgesh Nandini", department: "CFEES, New Delhi, India" },
   { name: "Dr. Akshar Tripathi", department: "IIT Patna, India" },
@@ -188,7 +212,7 @@ export default function Committee() {
           </div>
         </div>
 
-        <div className="orgcom" style={{ marginBottom: "100px" }}>
+        <div className="orgcom" style={{ marginBottom: "60px" }}>
           <div>
             <h1>CORE TEAM</h1>
             <h6>Department of Chemical Engineering, TIET Patiala</h6>
@@ -215,6 +239,7 @@ export default function Committee() {
 
                 <div>
                   <h5>{member.name}</h5>
+                  <p className="core-role">Chairperson &amp; Convener</p>
                 </div>
               </div>
             ))}
@@ -226,7 +251,10 @@ export default function Committee() {
             </h3>
 
             {coconveners.map((member, i) => (
-              <div className="orgcommember core-member co-convener" key={i}>
+              <div
+                className="orgcommember core-member co-convener"
+                key={i}
+              >
                 {member.img && (
                   <div className="orgcommember-photo">
                     <img
@@ -240,6 +268,7 @@ export default function Committee() {
 
                 <div>
                   <h5>{member.name}</h5>
+                  <p className="core-role">Co-Convener</p>
                 </div>
               </div>
             ))}
@@ -345,23 +374,31 @@ export default function Committee() {
           </div>
 
           <div className="othercom-stack">
+
             <div className="othercom1">
               <h3>Technical Programme Committee</h3>
-              {tpc.map((name) => (
-                <p className="name" key={name}>
-                  {name} — Chemical Engineering
-                </p>
-              ))}
+
+              <div className="committee-list">
+                {tpc.map((name) => (
+                  <p className="name-department" key={name}>
+                    <strong>{name}</strong>
+                    , Chemical Engineering, TIET
+                  </p>
+                ))}
+              </div>
             </div>
 
             <div className="othercom1">
               <h3>Web Development Team</h3>
+
               {webteam.map((name) => (
-                <p className="name" key={name}>{name}</p>
+                <p className="name" key={name}>
+                  {name}
+                </p>
               ))}
             </div>
-          </div>
 
+          </div>
         </div>
 
       </div>

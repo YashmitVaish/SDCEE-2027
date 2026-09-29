@@ -11,19 +11,19 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: flex-start;
-  gap: clamp(120px, 18vw, 300px);
-  padding: 40px 0 50px;
+  gap: clamp(80px, 12vw, 180px);
+  padding: 35px 0 35px;
 }
-
-/* Base patron */
 
 .patron {
   width: clamp(240px, 19vw, 290px);
-  margin: 30px 0 40px;
+  margin: 25px 0 25px;
+
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+
   text-align: center;
 }
 
@@ -47,17 +47,21 @@
 
 .patron-photo {
   position: relative;
+
   width: clamp(190px, 16vw, 240px);
   height: clamp(190px, 16vw, 240px);
-  margin: 0 auto 18px;
+
+  margin: 0 auto 14px;
 }
 
 .patronimg {
   width: 100%;
   height: 100%;
   aspect-ratio: 1;
+
   object-fit: cover;
   object-position: top;
+
   border-radius: 50%;
 }
 
@@ -68,28 +72,36 @@
 }
 
 .patronname {
-  margin: 5px 0 8px;
+  margin: 4px 0 6px;
+
   font-family: "Poppins", Arial, sans-serif;
   font-size: 1.15rem;
   font-weight: 600;
+
   color: #1e1e1e;
 }
 
 .patronhead {
   font-family: "Poppins", Arial, sans-serif;
-  margin: 0 0 5px;
+
+  margin: 0 0 4px;
+
   font-size: 0.9rem;
   font-weight: 600;
+
   letter-spacing: 0.04em;
   text-transform: uppercase;
+
   color: #000000;
 }
 
 .patronpost {
   margin: 0;
+
   font-family: "Inter", "Segoe UI", Arial, sans-serif;
   font-size: 0.85rem;
   font-weight: 400;
+
   color: #555555;
 }
 
@@ -99,10 +111,14 @@
 
 .orgcom {
   box-sizing: border-box;
+
   background-color: #f6f3f1;
+
   width: 100%;
+
   display: flex;
-  padding: 50px 100px;
+  padding: 40px 100px;
+
   border-radius: 20px;
   flex-wrap: wrap;
 }
@@ -110,9 +126,11 @@
 .orgcom h1 {
   width: 100%;
   margin: 0;
+
   font-family: "Poppins", Arial, sans-serif;
   font-size: clamp(24px, 2.6vw, 42px);
   font-weight: 600;
+
   color: #000000;
 }
 
@@ -122,24 +140,31 @@
 
 .orgcom h6 {
   width: 100%;
-  margin: 8px 0 0;
+  margin: 6px 0 0;
+
   font-family: "Poppins", Arial, sans-serif;
-  font-size: clamp(18px, 2vw, 32px);
+  font-size: clamp(18px, 2vw, 30px);
   font-weight: 600;
+
   color: #000000;
 }
 
 .corehead {
   flex-basis: 100%;
-  margin-top: 50px;
+
+  margin-top: 35px;
+  margin-bottom: 10px;
+
   font-family: "Poppins", Arial, sans-serif;
-  font-size: clamp(24px, 2.5vw, 48px);
+  font-size: clamp(24px, 2.5vw, 44px);
   font-weight: 600;
+
   color: #000000;
 }
 
 .orgcommembers {
   width: 100%;
+
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -149,8 +174,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
   flex-grow: 1;
-  margin-top: 50px;
+
+  margin-top: 25px;
+  margin-bottom: 5px;
+
   flex-basis: 50%;
 }
 
@@ -159,10 +188,16 @@
   gap: 3px;
 }
 
+/* =========================================================
+   MEMBER PHOTO
+========================================================= */
+
 .orgcommember-photo {
   position: relative;
+
   width: 90px;
   height: 90px;
+
   flex-shrink: 0;
   z-index: 2;
 }
@@ -170,14 +205,25 @@
 .orgcommember-plate {
   position: relative;
   z-index: 1;
+
   flex-grow: 0;
+
   width: 260px;
   max-width: 100%;
   min-height: 50px;
+
   margin-left: -23px;
+
   padding: 8px 10px 8px 50px;
+
   border-radius: 20px;
-  background: linear-gradient(90deg, #d9d9d9, #aba4ca);
+
+  background: linear-gradient(
+    90deg,
+    #d9d9d9,
+    #aba4ca
+  );
+
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -186,9 +232,13 @@
 .orgcommemberimg {
   width: 100%;
   height: 100%;
+
   aspect-ratio: 1;
+
   border-radius: 100px;
+
   box-shadow: 0 5px 10px #00000099;
+
   object-fit: cover;
   object-position: top;
 }
@@ -203,6 +253,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
   background-color: #eee7e7;
 }
 
@@ -213,52 +264,68 @@
 
 .orgcommember h5 {
   margin: 0;
+
   font-family: "Poppins", Arial, sans-serif;
   font-size: 1rem;
   font-weight: 600;
+
   color: #1e1e1e;
 }
 
 .orgcommember p {
-  margin: 4px 0 0;
+  margin: 3px 0 0;
+
   font-family: "Inter", "Segoe UI", Arial, sans-serif;
   font-size: 0.85rem;
+
   color: #555555;
 }
 
 /* =========================================================
    CORE TEAM
-   Larger images + clearer titles
 ========================================================= */
 
 .core-member {
   flex-direction: column;
   text-align: center;
-  gap: 0;
-}
 
-/* Make core team photos larger */
+  gap: 0;
+
+  margin-top: 18px;
+}
 
 .core-member .orgcommember-photo {
-  width: 150px;
-  height: 150px;
-  margin-bottom: 16px;
-}
+  width: 140px;
+  height: 140px;
 
-/* Make core team names more noticeable */
+  margin-bottom: 10px;
+}
 
 .core-member h5 {
   font-size: 1.15rem;
   font-weight: 600;
-  margin: 4px 0;
-}
 
-/* Core team title/position */
+  margin: 3px 0;
+}
 
 .core-member p {
   font-size: 0.95rem;
   font-weight: 500;
-  margin-top: 5px;
+
+  margin-top: 3px;
+}
+
+/* Core role below name */
+
+.core-role {
+  font-family: "Inter", "Segoe UI", Arial, sans-serif;
+
+  font-size: 0.95rem !important;
+  font-weight: 600 !important;
+
+  color: #7b4847 !important;
+
+  margin: 3px 0 0 !important;
 }
 
 /* =========================================================
@@ -268,33 +335,45 @@
 .othercom {
   display: flex;
   justify-content: space-between;
+
   flex-wrap: wrap;
-  gap: 50px;
+
+  gap: 30px;
 }
 
 .othercom1 {
   width: max(30%, 300px);
   flex-grow: 1;
+
   background: linear-gradient(
     180deg,
     rgba(209, 201, 207, 0.5),
     rgba(110, 91, 91, 0.5)
   );
+
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 30px 0px;
-  margin: 100px 0px;
+
+  padding: 25px 30px;
+
+  margin: 60px 0;
+
   border-radius: 20px;
+
+  box-sizing: border-box;
 }
 
 .othercom-stack {
   width: max(30%, 300px);
   flex-grow: 1;
+
   display: flex;
   flex-direction: column;
-  gap: 30px;
-  margin: 100px 0px;
+
+  gap: 25px;
+
+  margin: 60px 0;
 }
 
 .othercom-stack .othercom1 {
@@ -303,22 +382,29 @@
 }
 
 .othercom1 > h3 {
-  margin-bottom: 50px;
+  margin: 0 0 25px;
+
   font-family: "Poppins", Arial, sans-serif;
   font-size: clamp(20px, 2vw, 28px);
   font-weight: 600;
+
   color: #1e1e1e;
+
+  text-align: center;
 }
 
 .post {
-  margin-top: 30px;
+  margin-top: 20px;
+
   font-family: "Poppins", Arial, sans-serif;
   font-weight: 600;
+
   color: #000000;
 }
 
 .committee-item {
-  margin-left: 30px;
+  margin-left: 0;
+  margin-bottom: 6px;
 }
 
 .department-adv .name-adv {
@@ -333,6 +419,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+
   height: 100%;
 }
 
@@ -341,15 +428,30 @@ p {
   margin: 0;
 }
 
+/* Advisory + TPC text */
+
 .othercom1 h5,
 .othercom1 p {
   text-align: left !important;
+
   font-family: "Inter", "Segoe UI", Arial, sans-serif;
-  font-size: 0.95rem;
+
+  font-size: 1rem;
+  line-height: 1.45;
 }
 
 .othercom1 .name {
   text-align: left;
+}
+
+/* TPC / Advisory entries */
+
+.committee-list {
+  width: 100%;
+}
+
+.committee-list .name-department {
+  margin: 0 0 7px;
 }
 
 /* =========================================================
@@ -359,7 +461,7 @@ p {
 @media screen and (max-width: 900px) {
 
   .patrons {
-    gap: 70px;
+    gap: 60px;
   }
 
   .patron {
@@ -372,17 +474,27 @@ p {
   }
 
   .core-member .orgcommember-photo {
-    width: 130px;
-    height: 130px;
+    width: 125px;
+    height: 125px;
   }
 
   .orgcom {
-    padding: 40px 40px;
+    padding: 35px 40px;
   }
 
   .orgcommember,
   .orgsecs {
     flex-basis: 100%;
+  }
+
+  .othercom {
+    gap: 20px;
+  }
+
+  .othercom1,
+  .othercom-stack {
+    width: 100%;
+    margin: 30px 0;
   }
 }
 
@@ -403,13 +515,15 @@ p {
 
   .patrons {
     max-width: 100vw;
-    gap: 20px;
-    padding-top: 20px;
+
+    gap: 15px;
+
+    padding-top: 15px;
   }
 
   .patron {
     width: 100%;
-    margin-top: 20px;
+    margin-top: 15px;
   }
 
   .patron-photo {
@@ -423,13 +537,34 @@ p {
   }
 
   .orgcom {
-    padding: 30px 20px;
+    padding: 25px 20px;
+  }
+
+  .corehead {
+    margin-top: 30px;
+
+    font-size: 28px;
+  }
+
+  .orgcommember {
+    margin-top: 18px;
+  }
+
+  .othercom1 {
+    padding: 22px 20px;
+  }
+
+  .othercom1 h3 {
+    font-size: 23px;
+  }
+
+  .othercom1 p {
+    font-size: 0.95rem;
   }
 }
 
 /* =========================================================
    WIDE SCREENS
-   Organizing Committee 3-up, Co-Conveners all on one line
 ========================================================= */
 
 @media screen and (min-width: 1200px) {
