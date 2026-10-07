@@ -29,7 +29,7 @@
 }
 
 .logo img {
-  width: 90px;
+  width: 82px;
   height: auto;
   display: block;
 }
@@ -49,7 +49,7 @@
   text-decoration: none;
 
   font-family: "Inter", "Segoe UI", Arial, sans-serif;
-  font-size: 18px;
+  font-size: 15px;
   font-weight: 600;
 
   white-space: nowrap;
@@ -72,7 +72,7 @@
   border: none;
 
   font-family: "Inter", "Segoe UI", Arial, sans-serif;
-  font-size: 18px;
+  font-size: 15px;
   font-weight: 600;
   color: #1e1e1e;
 
@@ -80,7 +80,7 @@
 }
 
 .nav-dropdown-arrow {
-  font-size: 10px;
+  font-size: 9px;
   transition: transform 0.2s ease;
 }
 
@@ -96,11 +96,13 @@
   left: 0;
   margin-top: 10px;
 
-  min-width: 160px;
+  min-width: 180px;
 
   background: #fff;
   border-radius: 8px;
+
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+
   padding: 8px 0;
 
   z-index: 10;
@@ -113,13 +115,13 @@
 .nav-dropdown-item {
   display: block;
 
-  padding: 8px 16px;
+  padding: 9px 16px;
 
   color: #1e1e1e;
   text-decoration: none;
 
   font-family: "Inter", "Segoe UI", Arial, sans-serif;
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 600;
 
   white-space: nowrap;
@@ -141,10 +143,10 @@
   background: #716997;
   color: white;
 
-  padding: 9px 22px;
+  padding: 9px 20px;
 
   font-family: "Inter", "Segoe UI", Arial, sans-serif;
-  font-size: 18px;
+  font-size: 15px;
   font-weight: 600;
 
   cursor: pointer;
@@ -159,7 +161,9 @@
   text-decoration: none;
 }
 
-/* Hamburger */
+/* =========================================================
+   HAMBURGER
+========================================================= */
 
 .menu-icon {
   display: none;
@@ -182,13 +186,19 @@
   background: #000;
 }
 
-/* Mobile */
+/* =========================================================
+   MOBILE
+========================================================= */
 
 @media screen and (max-width: 1100px) {
   .nav {
     height: 71px;
     padding: 0 20px;
     justify-content: space-between;
+  }
+
+  .logo img {
+    width: 78px;
   }
 
   .menu-icon {
