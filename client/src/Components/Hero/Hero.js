@@ -30,7 +30,7 @@ export default function Hero() {
             </h1>
 
             <p className="hero-description">
-              2nd International Conference on
+              2<sup>nd</sup> International Conference on
               <br />
               "Sustainable Development in Chemical Engineering,
               <br />
