@@ -73,13 +73,12 @@ export default function Hero() {
               </h5>
 
               <ul>
-                <li>Indian Chemical Engineer</li>
-                <li>Frontiers in Chemical Engineering</li>
-              </ul>
+              <li>Indian Chemical Engineer</li>
+              <li>Frontiers in Chemical Engineering</li>
+              <li>Chemical Engineering and Technology</li>
+            </ul>
 
-              <p>
-                APCs, if applicable, will be borne by the authors.
-              </p>
+            <p>APCs, if applicable, will be borne by the authors.</p>
 
             </div>
 

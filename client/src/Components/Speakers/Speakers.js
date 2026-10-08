@@ -59,7 +59,7 @@ const speakers = [
   {
     name: "Dr. Vinod M. Janardhanan",
     position: "",
-    department: "IIT Hyderabad",
+    department: "Indian Institute of Technology Hyderabad",
     image: require("./images/vinodj.jpg"),
     place: "India",
   },
