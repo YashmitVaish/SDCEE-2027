@@ -54,7 +54,7 @@ const organizing = [
     dept: "Energy & Environment, TIET Patiala",
   },
   {
-    name: "Dr. Sapna Sharma",
+    name: "Prof. Sapna Sharma",
     img: require("./images/sapnasharma.jpg"),
     dept: "Mathematics, TIET Patiala",
   },

@@ -73,9 +73,9 @@ export default function Hero() {
               </h5>
 
               <ul>
-              <li>Indian Chemical Engineer</li>
-              <li>Frontiers in Chemical Engineering</li>
-              <li>Chemical Engineering and Technology</li>
+              <li>Indian Chemical Engineer (Impact Factor ≈ 1.2)</li>
+              <li>Frontiers in Chemical Engineering (Impact Factor ≈ 4.0)</li>
+              <li>Chemical Engineering &amp; Technology (Impact Factor ≈ 2.0)</li>
             </ul>
 
             <p>APCs, if applicable, will be borne by the authors.</p>

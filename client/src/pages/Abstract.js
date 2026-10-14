@@ -40,14 +40,21 @@ export default function Registration() {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  Indian Chemical Engineer (Taylor &amp; Francis)
+                  Indian Chemical Engineer (Impact Factor ≈ 1.2)
                 </a>
                 <a
                   href="https://www.frontiersin.org/journals/chemical-engineering"
                   target="_blank"
                   rel="noreferrer"
                 >
-                  Frontiers in Chemical Engineering
+                  Frontiers in Chemical Engineering (Impact Factor ≈ 4.0)
+                </a>
+                <a
+                  href="https://onlinelibrary.wiley.com/journal/15214125"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Chemical Engineering &amp; Technology (Impact Factor ≈ 2.0)
                 </a>
               </span>
             </h5>
