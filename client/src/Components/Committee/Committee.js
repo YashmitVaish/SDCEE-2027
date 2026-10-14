@@ -138,41 +138,70 @@ const webteam = [
   "Rudraans Singh",
 ];
 
-const advcom = [
-  { name: "Prof. Christopher Pain", department: "ICL, UK" },
-  { name: "Prof. Hao Lin", department: "Rutgers University, New Jersey, US" },
-  { name: "Prof. Dipan Kundu", department: "UNSW, Sydney" },
+const intladvcom = [
+  { name: "Prof. Ajay Dalai", department: "Univ. of Saskatchewan, Canada" },
+  { name: "Prof. Chanatip Samart", department: "Thammasat University, Thailand" },
+  { name: "Prof. Dipan Kundu", department: "UNSW Sydney, Australia" },
   { name: "Prof. Amarjit Singh Sarpal", department: "FURG, Brazil" },
-  { name: "Dr. Siddharth Gadkari", department: "University of Surrey, UK" },
-  { name: "Dr. Akhilesh Kumar", department: "CDC, South Korea" },
-  { name: "Dr. Amrita Jain", department: "IPPT-PAN, Poland" },
-  { name: "Dr. Ramesh Kumar", department: "H U, Seoul, Republic of Korea" },
-  { name: "Prof. Amit Dhiman", department: "IIT Roorkee, India" },
-  { name: "Dr. Parag R. Gogate", department: "ICT, India" },
+  { name: "Prof. Animesh Jha", department: "Univ. of Leeds, UK" },
+  { name: "Prof. Rahul R. Bhosale", department: "UT Chattanooga, USA" },
+  { name: "Prof. Rajendra Prasad Singh", department: "Southeast University, China" },
+  { name: "Prof. Devendra P. Saroj", department: "Univ. of Surrey, UK" },
+  { name: "Prof. Siddharth Gadkari", department: "Univ. of Surrey, UK" },
+  { name: "Prof. Ashutosh Goyal", department: "Rutgers University, USA" },
+  { name: "Prof. Ramesh Kumar", department: "Hanyang University, South Korea" },
+  { name: "Prof. Akhilesh Kumar", department: "Ewha Womans University, South Korea" },
+  { name: "Prof. Prhashanna Ammu", department: "Standard Industries, USA" },
+  { name: "Prof. Christina G. Georgantopoulou", department: "Bahrain Polytechnic, Bahrain" },
+  { name: "Prof. Gollapudi Narayana", department: "Bahrain Polytechnic, Bahrain" },
+  { name: "Prof. Abdul Gani Abdul Jameel", department: "KFUPM, Saudi Arabia" },
+  { name: "Prof. Lakkimsetty Nageswara Rao", department: "AURAK, UAE" },
+  { name: "Prof. Amrita Jain", department: "Polish Academy of Sciences, Poland" },
+];
+
+const natadvcom = [
+  { name: "Prof. Adarsh K. Arya", department: "HBTU Kanpur, India" },
+  { name: "Prof. Amit Kumar Dhiman", department: "IIT Roorkee, India" },
+  { name: "Prof. Anil Kumar", department: "DTU Delhi, India" },
+  { name: "Dr. Arti Bhatt", department: "CFEES-DRDO, Delhi, India" },
   { name: "Dr. Bhanu Pratap Singh", department: "CSIR-NPL, New Delhi, India" },
-  { name: "Dr. Pooja Devi", department: "CSIR-CSIO, Chandigarh, India" },
-  { name: "Dr. Pratik N Sheth", department: "BITS Pilani, India" },
-  { name: "Dr Sushil Kumar", department: "MNIT, Allahabad, India" },
-  { name: "Dr. Raj Kumar Arya", department: "NIT Jalandhar, India" },
-  { name: "Dr. Sandip Patil", department: "E-Spin Nanotech Pvt. Ltd., India" },
-  { name: "Dr. Harish Kumar", department: "DRDO Kanpur, India" },
-  { name: "Dr. Salim Jawed Ansari", department: "Jamia Millia Islamia, New Delhi" },
-  { name: "Dr. Praveen Somwanshi", department: "MIT-ADT University Pune, India" },
-  { name: "Dr. Anuj Tripathi", department: "BARC Mumbai, India" },
-  { name: "Dr. Sunil Goswami", department: "BARC Mumbai, India" },
-  { name: "Dr Jayashree Biswal", department: "BARC Mumbai, India" },
-  { name: "Dr. Sudeep Tondon", department: "CIMAP Lucknow, India" },
-  { name: "Dr. Naveen Sharma", department: "CSIO Chandigarh, India" },
-  { name: "Dr. Bipul Sarkar", department: "IIP Dehradun, India" },
-  { name: "Dr. Suryakant Kumar", department: "CFEES New Delhi, India" },
-  {
-    name: "Dr. Venkata Chandra Sekhar Palla",
-    department: "IIP Dehradun, India",
-  },
-  { name: "Dr. Arti Bhatt", department: "CFEES, New Delhi, India" },
-  { name: "Dr. Durgesh Nandini", department: "CFEES, New Delhi, India" },
-  { name: "Dr. Akshar Tripathi", department: "IIT Patna, India" },
-  { name: "Dr. Hreetabh Kishore", department: "RGIPT, India" },
+  { name: "Prof. Bhaskar Bhaduri", department: "IIT Kharagpur, India" },
+  { name: "Dr. Bipul Sarkar", department: "CSIR-IIP, Dehradun, India" },
+  { name: "Prof. Brajesh Kumar", department: "NIT Srinagar, India" },
+  { name: "Prof. Chandi Sasmal", department: "IIT Ropar, India" },
+  { name: "Prof. Dipankar Bandyopadhyay", department: "IIT Guwahati, India" },
+  { name: "Dr. Durgesh Nandini", department: "CFEES-DRDO, Delhi, India" },
+  { name: "Prof. G. L. Devnani", department: "HBTU Kanpur, India" },
+  { name: "Dr. Harish Jagat Pant", department: "Former Scientist & Head, BARC, India" },
+  { name: "Dr. Jayashree Biswal", department: "BARC Mumbai, India" },
+  { name: "Dr. Jayshree Ramkumar", department: "BARC Mumbai, India" },
+  { name: "Prof. Jayant K. Singh", department: "IIT Kanpur, India" },
+  { name: "Prof. Narsimha Mangadoddy", department: "IIT Hyderabad, India" },
+  { name: "Prof. Parag R. Gogate", department: "ICT Mumbai, India" },
+  { name: "Prof. Paramita Das", department: "IISER Bhopal, India" },
+  { name: "Dr. Pooja Devi", department: "CSIR-CSIO, India" },
+  { name: "Prof. Prateek N. Seth", department: "BITS Pilani, India" },
+  { name: "Prof. Praveen Somvanshi", department: "MIT-ADT University, Pune, India" },
+  { name: "Prof. R. P. Chhabra", department: "Shiv Nadar University, India" },
+  { name: "Prof. Rabibrata Mukherjee", department: "IIT Kharagpur, India" },
+  { name: "Prof. Raj Kumar Arya", department: "NIT Jalandhar, India" },
+  { name: "Prof. Rakesh Kumar", department: "RGIPT, India" },
+  { name: "Prof. S.Vasudevan", department: "CSIR-CECRI, India" },
+  { name: "Prof. S. T. Mhaske", department: "ICT Mumbai, India" },
+  { name: "Prof. Sachin Kumar", department: "HBTU Kanpur, India" },
+  { name: "Prof. Saleem Javed", department: "Jamia Millia Islamia, India" },
+  { name: "Prof. Sandeep Khan", department: "IIT Patna, India" },
+  { name: "Prof. Sandip Patil", department: "E-Spin Nanotech, India" },
+  { name: "Prof. Siddharth Sengupta", department: "IIT (ISM) Dhanbad, India" },
+  { name: "Prof. Sushil Kumar", department: "MNNIT Allahabad, India" },
+  { name: "Dr. Surya Kant Kumar", department: "CFEES-DRDO, Delhi, India" },
+  { name: "Prof. Tarak Patra", department: "IIT Madras, India" },
+  { name: "Dr. V. K. Sharma", department: "BARC, India" },
+  { name: "Dr. Veerendra Sharma", department: "BARC, India" },
+  { name: "Dr. Venkata Chandra Sekhar Palla", department: "CSIR-IIP, Dehradun, India" },
+  { name: "Prof. Vimal Katiyar", department: "IIT Guwahati, India" },
+  { name: "Prof. Vimal Kumar", department: "IIT Roorkee, India" },
+  { name: "Prof. Vishal Singh", department: "NIT Hamirpur, India" },
 ];
 
 export default function Committee() {
@@ -350,11 +379,15 @@ export default function Committee() {
 
         <div className="othercom">
 
-          <div className="othercom1">
-            <h3>Advisory Committee</h3>
+          {[
+            ["International Advisory Committee", intladvcom, ""],
+            ["National Advisory Committee", natadvcom, " national"],
+          ].map(([title, list, extra]) => (
+          <div className={"othercom1" + extra} key={title}>
+            <h3>{title}</h3>
 
             <div className="committee-list">
-              {advcom.map((person, index) => (
+              {list.map((person, index) => (
                 <div
                   key={index}
                   className="committee-item"
@@ -372,6 +405,7 @@ export default function Committee() {
               ))}
             </div>
           </div>
+          ))}
 
           <div className="othercom-stack">
 
@@ -393,7 +427,7 @@ export default function Committee() {
 
               {webteam.map((name) => (
                 <p className="name" key={name}>
-                  {name}
+                  <strong>{name}</strong>
                 </p>
               ))}
             </div>

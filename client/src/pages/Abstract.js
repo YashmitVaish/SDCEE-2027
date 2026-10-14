@@ -12,7 +12,7 @@ export default function Registration() {
       <div className="abstract" id="">
         <div className="wrapper-reg">
           <div className="register-top">
-            <h1 className="hero-head reg-hero-head">SDCEE 2027</h1>
+            <h1 className="hero-head reg-hero-head">SDCEE-2027</h1>
             <h4>
               {" "}
               2nd International Conference  <br /> on <br />Sustainable Development in
@@ -22,8 +22,8 @@ export default function Registration() {
           <div className="register-center">
             <p className="abs-para">
               Welcome to the abstract submission for the International
-              Conference on "Sustainable Development in Chemical and
-              Environmental Engineering"(SDCEE-2027).
+              Conference on "Sustainable Development in
+              Chemical Engineering, Energy and Environment"(SDCEE-2027).
             </p>
           </div>
           <div className="abs-journal">
