@@ -85,6 +85,7 @@ export default function Three() {
           </div>
         </div>
 
+        <div className="publication-box">
         <h1 className="publication-title" id="publication">Publication Opportunities</h1>
 
         <hr />
@@ -113,6 +114,7 @@ export default function Three() {
             <strong>Note:</strong> Article Processing Charges (APCs), if
             applicable, will be borne by the authors.
           </p>
+        </div>
         </div>
       </div>
     </div>

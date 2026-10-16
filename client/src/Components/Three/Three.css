@@ -75,9 +75,15 @@
    PUBLICATION OPPORTUNITIES
 ========================= */
 
+.publication-box {
+  margin-top: 40px;
+  padding: 24px clamp(16px, 3vw, 40px) 10px;
+  background: #f3f9fe;
+  border-radius: 16px;
+}
+
 .three h1.publication-title {
   scroll-margin-top: 80px;
-  margin-top: 40px;
 }
 
 .publication {

@@ -162,6 +162,7 @@ const intladvcom = [
 
 const natadvcom = [
   { name: "Prof. Adarsh K. Arya", department: "HBTU Kanpur, India" },
+  { name: "Dr. Akshar Tripathi", department: "IIT Patna, India" },
   { name: "Prof. Amit Kumar Dhiman", department: "IIT Roorkee, India" },
   { name: "Prof. Anil Kumar", department: "DTU Delhi, India" },
   { name: "Dr. Arti Bhatt", department: "CFEES-DRDO, Delhi, India" },
@@ -172,6 +173,7 @@ const natadvcom = [
   { name: "Prof. Dipankar Bandyopadhyay", department: "IIT Guwahati, India" },
   { name: "Dr. Durgesh Nandini", department: "CFEES-DRDO, Delhi, India" },
   { name: "Prof. G. L. Devnani", department: "HBTU Kanpur, India" },
+  { name: "Dr. Hreetabh Kishore", department: "RGIPT Jais, India" },
   { name: "Dr. Jayashree Biswal", department: "BARC Mumbai, India" },
   { name: "Dr. Jayshree Ramkumar", department: "BARC Mumbai, India" },
   { name: "Prof. Narsimha Mangadoddy", department: "IIT Hyderabad, India" },
