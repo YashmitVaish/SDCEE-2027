@@ -427,7 +427,7 @@ export default function Committee() {
 
               {webteam.map((name) => (
                 <p className="name" key={name}>
-                  <strong>{name}</strong>
+                  <strong>{name}</strong>, CSED, TIET
                 </p>
               ))}
             </div>

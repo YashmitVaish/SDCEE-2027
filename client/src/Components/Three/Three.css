@@ -21,7 +21,7 @@
 .three h1 {
   margin: 0;
   text-align: center;
-  color: #fd454b;
+  color: #000000;
   font-family: "Poppins", Arial, sans-serif;
   font-size: clamp(32px, 4vw, 64px);
   font-weight: 700;

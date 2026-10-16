@@ -2,54 +2,61 @@ import React from "react";
 import Navbar from "../Components/Navbar/Navbar";
 import "../Components/Footer/Footer";
 import "./registration.css"; // Import your CSS file
+import banner from "../Components/Hero/banner.webp";
 
 export default function Registration() {
   const registrationFees = [
     {
-      category: "Faculty/Academicians (Indian)",
-      earlyBird: "3500 INR",
-      regular: "5000 INR",
-      online: "3000 INR",
+      category: "Foreign Delegates",
+      earlyBird: "USD 300",
+      regular: "USD 400",
+      online: "USD 300",
+    },
+    {
+      category: "Overseas Scholars of Indian Origin (with valid proof)",
+      earlyBird: "USD 200",
+      regular: "USD 300",
+      online: "USD 200",
     },
     {
       category: "Research Scholars/Students",
-      earlyBird: "2000 INR",
-      regular: "3000 INR",
-      online: "1500 INR",
+      earlyBird: "INR 2,000",
+      regular: "INR 3,000",
+      online: "INR 1,500",
     },
     {
-      category: "Industrial participants",
-      earlyBird: "7000 INR",
-      regular: "10000 INR",
-      online: "6000 INR",
+      category: "Faculty/Academicians (Indian)",
+      earlyBird: "INR 3,500",
+      regular: "INR 5,000",
+      online: "INR 3,000",
     },
     {
-      category: "Foreign delegates",
-      earlyBird: "300 $",
-      regular: "400 $",
-      online: "300 $",
+      category: "Industrial Participants",
+      earlyBird: "INR 7,000",
+      regular: "INR 10,000",
+      online: "INR 6,000",
     },
     {
-      category: "Overseas scholars of Indian origin (with valid proof)",
-      earlyBird: "200 $",
-      regular: "300 $",
-      online: "200 $",
-    },
-    {
-      category: "Listener/ Accompanying person",
-      earlyBird: null,
+      category: "Listener/Accompanying Person",
+      earlyBird: (
+        <>
+          INR 2,000
+          <br />
+          USD 100 (overseas)
+        </>
+      ),
       regular: (
         <>
-          2000 INR
+          INR 2,000
           <br />
-          100 $ (for overseas)
+          USD 100 (overseas)
         </>
       ),
       online: (
         <>
-          1500 INR
+          INR 1,500
           <br />
-          80 $ (for overseas)
+          USD 80 (overseas)
         </>
       ),
     },
@@ -59,18 +66,12 @@ export default function Registration() {
     <div>
       <Navbar />
       <div className="register" id="">
+        <img src={banner} alt="SDCEE 2027 banner" className="reg-banner" />
         <div className="wrapper-reg">
-          <div className="register-top">
-            <h1 className="hero-head reg-hero-head">SDCEE 2027</h1>
-            <h4>
-              {" "}
-              2nd International Conference  <br /> on <br />Sustainable Development in
-              Chemical Engineering, Energy and Environment
-            </h4>
-          </div>
           <div className="register-center">
             <h1>Registration Guidelines</h1>
           </div>
+          <div className="reg-row">
           <div className="fee-details">
             <h2>Registration Fee</h2>
             <div className="table-scroll">
@@ -87,16 +88,8 @@ export default function Registration() {
                   {registrationFees.map((item, index) => (
                     <tr key={index}>
                       <td>{item.category}</td>
-                      {item.category === "Listener/ Accompanying person" ? (
-                        <td colSpan={2} style={{ textAlign: "center" }}>
-                          {item.regular}
-                        </td>
-                      ) : (
-                        <td>{item.earlyBird}</td>
-                      )}
-                      {item.category !== "Listener/ Accompanying person" && (
-                        <td>{item.regular}</td>
-                      )}
+                      <td>{item.earlyBird}</td>
+                      <td>{item.regular}</td>
                       <td>{item.online}</td>
                     </tr>
                   ))}
@@ -113,21 +106,10 @@ export default function Registration() {
                 </li>
                 <li>
                   {" "}
-                  The registration fee does not include the Article Publication Charge (APC). If selected for publication, authors are responsible for paying the APC directly according to the journal’s.
+                  The registration fee does not include the Article Publication Charge (APC). If selected for publication, authors are responsible for paying the APC directly according to the journal’s guidelines.
                 </li>
               </ul>
             </div>
-          </div>
-          <div className="button-container">
-            <a href="https://forms.gle/k6itCAWS2avkJFmB8" target="_blank" rel="noopener noreferrer">
-              <button>Link to Register</button>
-            </a>
-            <br />
-            {/* <Link smooth to="/abstract" className="text-link">
-              <a href="">
-                <button>Submission Link</button>
-              </a>
-            </Link> */}
           </div>
           <div className="key-dates">
             <h2>Payment Details</h2>
@@ -163,6 +145,17 @@ export default function Registration() {
                 <strong>Bank Address </strong> 644, Opposite Gurudwara Kashmirian, Main Road, Tripuri Town, Patiala, Punjab, 147001
               </p>
             </div>
+            <div className="button-container">
+              <a href="https://forms.gle/k6itCAWS2avkJFmB8" target="_blank" rel="noopener noreferrer">
+                <button>Link to Register</button>
+              </a>
+              {/* <Link smooth to="/abstract" className="text-link">
+                <a href="">
+                  <button>Submission Link</button>
+                </a>
+              </Link> */}
+            </div>
+          </div>
           </div>
         </div>
       </div>

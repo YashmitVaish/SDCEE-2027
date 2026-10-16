@@ -35,13 +35,16 @@
   margin: 20px 0;
 }
 
+.reg-row {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+}
+
 .fee-details,
-.key-dates,
-.button-container {
-  width: 50%;
-  display: inline-block;
-  vertical-align: top;
-  padding-left: 20px; /* Add padding to the left of both sections */
+.key-dates {
+  flex: 1;
+  min-width: 0;
   margin-top: 10px;
 }
 
@@ -50,8 +53,24 @@
 }
 
 .button-container {
-  text-align: right;
-  margin-top: 60px;
+  clear: both;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.payment-details-text {
+  padding: 0 10px;
+  line-height: 1.5;
+}
+
+.payment-details-text > p {
+  margin: 0 0 14px;
+}
+
+.payment-details-text strong {
+  display: block;
+  font-size: 14px;
+  color: #555;
 }
 
 .fee-details h2,
@@ -78,12 +97,10 @@
 }
 
 .button-container button {
-  width: 30%;
   background-color: #450808;
   color: white;
   border: none;
-  padding: 10px;
-  margin-right: 40px;
+  padding: 10px 40px;
   font-size: 16px;
   cursor: pointer;
   transition: background-color 0.3s;
@@ -138,40 +155,19 @@
 }
 
 @media screen and (max-width: 900px) {
+  .reg-row {
+    flex-direction: column;
+    gap: 0;
+  }
   .fee-details,
-  .key-dates,
-  .button-container {
+  .key-dates {
     width: 100%;
-    display: block;
-    padding-left: 0;
-    margin-left: 0;
-  }
-
-  .button-container {
-    text-align: center;
-    margin-top: 30px;
-  }
-
-  .button-container button {
-    width: auto;
-    margin: 0 10px 10px 0;
   }
 }
 
 @media screen and (max-width: 600px) {
   .register {
     overflow: hidden;
-  }
-  .fee-details,
-  .key-dates,
-  .button-container {
-    width: 100%;
-    display: block;
-    padding-left: 0;
-    margin-left: 0;
-  }
-  .button-container {
-    margin-top: 20px;
   }
   .table-container {
     margin-left: 0px;
@@ -184,4 +180,9 @@
     float: none;
     margin: 10px auto;
   }
+}
+.reg-banner {
+  display: block;
+  width: 100%;
+  height: auto;
 }

@@ -4,21 +4,15 @@ import "./Abstract.css";
 import Navbar from "../Components/Navbar/Navbar";
 import wos from "./wos.png";
 import scopus from "./scopus.png";
+import banner from "../Components/Hero/banner.webp";
 
 export default function Registration() {
   return (
     <div>
       <Navbar />
       <div className="abstract" id="">
+        <img src={banner} alt="SDCEE 2027 banner" className="reg-banner" />
         <div className="wrapper-reg">
-          <div className="register-top">
-            <h1 className="hero-head reg-hero-head">SDCEE-2027</h1>
-            <h4>
-              {" "}
-              2nd International Conference  <br /> on <br />Sustainable Development in
-              Chemical Engineering, Energy and Environment
-            </h4>
-          </div>
           <div className="register-center">
             <p className="abs-para">
               Welcome to the abstract submission for the International
