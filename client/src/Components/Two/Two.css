@@ -52,6 +52,27 @@
   word-break: break-word;
 }
 
+/* INTRO + THAPAR PHOTO */
+.two-intro {
+  display: flex;
+  align-items: flex-start;
+  gap: clamp(24px, 3vw, 56px);
+  margin-bottom: 18px;
+}
+
+.two-intro-text {
+  flex: 1;
+}
+
+.two-photo {
+  width: 38%;
+  max-width: 560px;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
 /* LIVE LINK */
 .two-live {
   margin: 22px 0 35px;
@@ -127,6 +148,13 @@
   .topics-grid {
     grid-template-columns: 1fr;
     gap: 9px;
+  }
+  .two-intro {
+    flex-direction: column;
+  }
+  .two-photo {
+    width: 100%;
+    max-width: none;
   }
 }
 

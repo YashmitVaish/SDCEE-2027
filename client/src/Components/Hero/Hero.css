@@ -1,125 +1,41 @@
 /* =========================================================
-   HERO SECTION
+   HERO BANNER
 ========================================================= */
 
 .hero {
-  position: relative;
-
   width: 100%;
-
-  height: 38vw;
-
-  min-height: 650px;
-  max-height: 760px;
-
-  overflow: hidden;
 
   background: #ffffff;
 }
 
-
-/* =========================================================
-   HERO ARTWORK
-========================================================= */
-
-.hero-art {
-  position: absolute;
-
-  width: 48vw;
-  height: 48vw;
-
-  left: 44vw;
-  top: calc(-2.15vw - 130px);
-
-  z-index: 1;
-
-  pointer-events: none;
-  user-select: none;
-
-  object-fit: cover;
-
-  border-radius: 50%;
-}
-
-
-/* =========================================================
-   HERO ARTWORK — GRADIENT RING
-========================================================= */
-
-.hero-art-ring {
-  position: absolute;
-
-  width: calc(48vw * 1301 / 1199);
-  height: calc(48vw * 1301 / 1199);
-
-  left: calc(
-    44vw - (48vw * 1301 / 1199 - 48vw) / 2
-  );
-
-  top: calc(
-    -2.15vw - 135px - (48vw * 1301 / 1199 - 48vw) / 2
-  );
-
-  z-index: 2;
-
-  pointer-events: none;
-}
-
-
-/* =========================================================
-   HERO CONTENT
-========================================================= */
-
-.hero-content {
-  position: relative;
+.hero-banner {
+  display: block;
 
   width: 100%;
-  height: 100%;
-
-  z-index: 10;
-
-  display: flex;
+  height: auto;
 }
 
-
-/* =========================================================
-   LEFT SIDE
-========================================================= */
-
-.hero-left {
-  position: relative;
-
-  width: 50%;
-
-  height: 100%;
-
-  padding-left: 3.75vw;
-  padding-top: clamp(70px, 6vw, 110px);
-
+.hero-bar {
   display: flex;
 
-  align-items: flex-start;
+  justify-content: center;
 
-  justify-content: flex-start;
+  padding: clamp(14px, 1.5vw, 24px) 16px;
 
-  flex-direction: column;
-
-  z-index: 10;
+  background: #e8f4fc;
 }
 
+.visually-hidden {
+  position: absolute;
 
-/* =========================================================
-   TEXT WRAPPER
-========================================================= */
+  width: 1px;
+  height: 1px;
 
-.hero-text {
-  position: relative;
+  overflow: hidden;
 
-  color: #000000;
+  clip: rect(0 0 0 0);
 
-  font-family: "Inter", "Segoe UI", Arial, sans-serif;
-
-  z-index: 20;
+  white-space: nowrap;
 }
 
 
@@ -141,51 +57,6 @@
   letter-spacing: -0.03em;
 
   color: #000000;
-}
-
-
-/* =========================================================
-   DESCRIPTION
-========================================================= */
-
-.hero-description {
-  margin: 0;
-
-  font-family: "Inter", "Segoe UI", Arial, sans-serif;
-
-  font-size: clamp(22px, 1.5vw, 28px);
-
-  font-weight: 400;
-
-  line-height: 1.3;
-
-  letter-spacing: -0.01em;
-
-  color: #000000;
-
-  font-style: italic;
-}
-
-
-/* =========================================================
-   DATE
-========================================================= */
-
-.hero-date {
-  margin: clamp(14px, 2.34vw, 45px) 0
-    clamp(12px, 1.2vw, 23px) 0;
-
-  font-family: "Poppins", Arial, Helvetica, sans-serif;
-
-  font-size: clamp(30px, 2.4vw, 46px);
-
-  font-weight: 700;
-
-  letter-spacing: -0.03em;
-
-  color: #b3282d;
-
-  opacity: 1;
 }
 
 
@@ -247,143 +118,6 @@
   color: inherit;
 
   text-decoration: none;
-}
-
-
-/* =========================================================
-   LARGE DESKTOP
-========================================================= */
-
-@media screen and (min-width: 1600px) {
-  .hero-left {
-    padding-left: 3.75vw;
-  }
-}
-
-
-/* =========================================================
-   TABLET
-========================================================= */
-
-@media screen and (max-width: 1100px) {
-  .hero {
-    height: auto;
-
-    min-height: 650px;
-
-    max-height: none;
-  }
-
-  .hero-art {
-    width: 55vw;
-
-    max-width: 620px;
-
-    left: 38vw;
-
-    top: -30px;
-  }
-
-  .hero-art-ring {
-    width: calc(min(55vw, 620px) * 1301 / 1199);
-
-    height: calc(min(55vw, 620px) * 1301 / 1199);
-
-    left: calc(
-      38vw -
-        (
-          min(55vw, 620px) * 1301 / 1199 -
-            min(55vw, 620px)
-        ) / 2
-    );
-
-    top: calc(
-      -30px -
-        (
-          min(55vw, 620px) * 1301 / 1199 -
-            min(55vw, 620px)
-        ) / 2
-    );
-  }
-
-  .hero-left {
-    width: 55%;
-
-    padding-left: 35px;
-  }
-
-}
-
-
-/* =========================================================
-   MOBILE
-========================================================= */
-
-@media screen and (max-width: 700px) {
-  .hero {
-    height: auto;
-
-    min-height: clamp(500px, 130vw, 806px);
-
-    overflow: hidden;
-  }
-
-  .hero-art,
-  .hero-art-ring {
-    display: none;
-  }
-
-  .hero-content {
-    min-height: 806px;
-  }
-
-  .hero-left {
-    width: 100%;
-
-    padding: 100px 25px 50px 25px;
-
-    align-items: flex-start;
-
-    justify-content: flex-start;
-  }
-
-  .hero-text {
-    width: 100%;
-  }
-
-  .hero-head {
-    font-size: 62px;
-  }
-
-  .hero-description {
-    font-size: 24px;
-  }
-
-  .hero-buttons {
-    flex-wrap: wrap;
-  }
-
-}
-
-
-/* =========================================================
-   VERY SMALL PHONES
-========================================================= */
-
-@media screen and (max-width: 450px) {
-  .hero-left {
-    padding-left: 20px;
-
-    padding-right: 20px;
-  }
-
-  .hero-head {
-    font-size: 53px;
-  }
-
-  .hero-description {
-    font-size: 22px;
-  }
 }
 
 

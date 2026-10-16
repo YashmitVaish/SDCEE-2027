@@ -1,65 +1,24 @@
 import React from "react";
 import "./Hero.css";
 import { HashLink as Link } from "react-router-hash-link";
-import collegePhoto from "./tiet.jpeg";
-import GradientRing from "../GradientRing/GradientRing";
+import banner from "./banner.webp";
 
 export default function Hero() {
   return (
     <section className="hero">
+      <h1 className="visually-hidden">
+        SDCEE-2027: 2nd International Conference on Sustainable Development
+        in Chemical Engineering, Energy and Environment, February 18-20, 2027,
+        Patiala, Punjab, India
+      </h1>
 
-      {/* College photo */}
-      <img
-        src={collegePhoto}
-        alt="Thapar Institute"
-        className="hero-art"
-      />
+      <img src={banner} alt="" className="hero-banner" />
 
-      <GradientRing className="hero-art-ring" />
-
-      {/* Hero content */}
-      <div className="hero-content">
-
-        <div className="hero-left">
-
-          <div className="hero-text">
-
-            <h1 className="hero-head">
-              SDCEE-2027
-            </h1>
-
-            <p className="hero-description">
-              2<sup>nd</sup> International Conference on
-              <br />
-              "Sustainable Development in Chemical Engineering,
-              <br />
-              Energy and Environment"
-            </p>
-
-            <h3 className="hero-date">
-              February 18-20, 2027
-            </h3>
-
-            <div className="hero-buttons">
-
-              <Link
-                smooth
-                to="/register"
-                className="text-link"
-              >
-                <button className="hero-reg">
-                  Register
-                </button>
-              </Link>
-
-            </div>
-
-          </div>
-
-        </div>
-
+      <div className="hero-bar">
+        <Link smooth to="/register" className="text-link">
+          <button className="hero-reg">Register</button>
+        </Link>
       </div>
-
     </section>
   );
 }

@@ -1,5 +1,6 @@
 import React from "react";
 import "./Two.css";
+import collegePhoto from "./tiet.jpeg";
 
 export default function Two() {
   return (
@@ -10,6 +11,8 @@ export default function Two() {
           <h2 className="two-title">The Conference</h2>
           <div className="two-divider"></div>
 
+          <div className="two-intro">
+            <div className="two-intro-text">
           <p className="two-description">
         The International Conference on “Sustainable Development in Chemical Engineering, Energy and Environment” (SDCEE-2027) plays a pivotal role in advancing sustainable practices, facilitating knowledge exchange, and fostering collaborative outreach. Covering key areas of chemical engineering, including soft matter, advanced materials, energy, the environment, sustainable processing, and green technologies, the conference emphasizes sustainable development and encourages multidisciplinary approaches to complex challenges.
           </p>
@@ -17,6 +20,14 @@ export default function Two() {
           <p className="two-description">
 SDCEE-2027 offers valuable networking opportunities, research dissemination, and publication prospects in internationally reputed journals. The conference is a vital catalyst for innovation and sustainability, making it essential for academicians, researchers, and industry professionals. The event will be conducted in online and offline both modes.
           </p>
+            </div>
+
+            <img
+              src={collegePhoto}
+              alt="Thapar Institute of Engineering and Technology, Patiala"
+              className="two-photo"
+            />
+          </div>
 
 
           <h3 className="topics-title">
