@@ -94,6 +94,8 @@
 .publication ul {
   margin: 0 0 14px;
   padding-left: 24px;
+  font-size: 1.1em;
+  font-weight: 700;
 }
 
 .publication strong {

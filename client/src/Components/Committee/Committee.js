@@ -131,6 +131,7 @@ const tpc = [
 ];
 
 const webteam = [
+  "Harcharan Jit Singh",
   "Jash Patel",
   "Yashmit Vaish",
   "Ankita Sharma",
@@ -423,7 +424,7 @@ export default function Committee() {
 
               {webteam.map((name) => (
                 <p className="name" key={name}>
-                  <strong>{name}</strong>, CSED, TIET
+                  <strong>{name}</strong>, Department of Computer Science, TIET
                 </p>
               ))}
             </div>

@@ -379,6 +379,7 @@
 .othercom-stack .othercom1 {
   flex: 1 1 300px;
   margin: 0;
+  padding-left: 40px;
 }
 
 .othercom1 > h3 {
