@@ -24,8 +24,8 @@
   color: #fd454b;
   font-family: "Poppins", Arial, sans-serif;
   font-size: clamp(32px, 4vw, 64px);
-  font-weight: 600;
-  text-transform: uppercase;
+  font-weight: 700;
+  font-style: italic;
 }
 
 .three hr {
@@ -68,6 +68,34 @@
 }
 
 .timeline ul li b {
+  font-weight: 600;
+}
+
+/* =========================
+   PUBLICATION OPPORTUNITIES
+========================= */
+
+.three h1.publication-title {
+  margin-top: 40px;
+}
+
+.publication {
+  color: #000000;
+  font-family: "Inter", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: clamp(16px, 1.4vw, 20px);
+  line-height: 1.5;
+}
+
+.publication p {
+  margin: 0 0 14px;
+}
+
+.publication ul {
+  margin: 0 0 14px;
+  padding-left: 24px;
+}
+
+.publication strong {
   font-weight: 600;
 }
 

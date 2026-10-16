@@ -243,7 +243,7 @@ export default function Committee() {
 
         <div className="orgcom" style={{ marginBottom: "60px" }}>
           <div>
-            <h1>CORE TEAM</h1>
+            <h1>Core Team</h1>
             <h6>Department of Chemical Engineering, TIET Patiala</h6>
           </div>
 
@@ -332,7 +332,7 @@ export default function Committee() {
         </div>
 
         <div className="orgcom organizing-committee">
-          <h1>ORGANIZING COMMITTEE</h1>
+          <h1>Organizing Committee</h1>
 
           <div className="orgcommembers">
             {organizing.map((member, i) => (

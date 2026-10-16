@@ -8,7 +8,7 @@ export default function Three() {
   return (
     <div className="three" id="dates">
       <div className="wrapper">
-        <h1>IMPORTANT DATES</h1>
+        <h1>Important Dates</h1>
 
         <hr />
 
@@ -83,6 +83,35 @@ export default function Three() {
               </a>
             </div>
           </div>
+        </div>
+
+        <h1 className="publication-title">Publication Opportunities</h1>
+
+        <hr />
+
+        <div className="publication">
+          <p>
+            <strong>Conference Proceedings:</strong> Selected contributions
+            will be published in conference proceedings with an ISBN.
+          </p>
+
+          <p>
+            <strong>Journal Publications:</strong> Selected high-quality papers
+            may be considered for publication in the following reputed
+            SCI/Scopus/WoS-indexed journals, subject to peer review and the
+            respective journals' editorial policies:
+          </p>
+
+          <ul>
+            <li>Indian Chemical Engineer (Impact Factor ≈ 1.2)</li>
+            <li>Frontiers in Chemical Engineering (Impact Factor ≈ 4.0)</li>
+            <li>Chemical Engineering &amp; Technology (Impact Factor ≈ 2.0)</li>
+          </ul>
+
+          <p>
+            <strong>Note:</strong> Article Processing Charges (APCs), if
+            applicable, will be borne by the authors.
+          </p>
         </div>
       </div>
     </div>

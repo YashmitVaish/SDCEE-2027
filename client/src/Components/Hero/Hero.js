@@ -2,7 +2,6 @@ import React from "react";
 import "./Hero.css";
 import { HashLink as Link } from "react-router-hash-link";
 import collegePhoto from "./tiet.jpeg";
-import newBlinking from "./new-blinking.gif";
 import GradientRing from "../GradientRing/GradientRing";
 
 export default function Hero() {
@@ -52,33 +51,6 @@ export default function Hero() {
                   Register
                 </button>
               </Link>
-
-            </div>
-
-            <div className="journal">
-
-              <h5>
-                <img
-                  className="new-blinking"
-                  src={newBlinking}
-                  alt="new"
-                />
-
-                <span>
-                  Book proceedings will be published with ISBN no.
-                  <br />
-                  Selected papers will also be considered for publication in
-                  following SCI/Scopus indexed Journals (after peer review):
-                </span>
-              </h5>
-
-              <ul>
-              <li>Indian Chemical Engineer (Impact Factor ≈ 1.2)</li>
-              <li>Frontiers in Chemical Engineering (Impact Factor ≈ 4.0)</li>
-              <li>Chemical Engineering &amp; Technology (Impact Factor ≈ 2.0)</li>
-            </ul>
-
-            <p>APCs, if applicable, will be borne by the authors.</p>
 
             </div>
 

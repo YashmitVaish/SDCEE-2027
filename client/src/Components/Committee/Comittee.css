@@ -129,7 +129,8 @@
 
   font-family: "Poppins", Arial, sans-serif;
   font-size: clamp(24px, 2.6vw, 42px);
-  font-weight: 600;
+  font-weight: 700;
+  font-style: italic;
 
   color: #000000;
 }

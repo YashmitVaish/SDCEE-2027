@@ -240,70 +240,6 @@
 
 
 /* =========================================================
-   JOURNAL / PUBLICATION INFORMATION
-========================================================= */
-
-.journal {
-  margin-top: 18px;
-
-  width: min(600px, 90%);
-
-  color: #b3282d;
-
-  font-family: "Inter", "Segoe UI", Arial, sans-serif;
-
-  font-size: clamp(14px, 0.95vw, 16px);
-
-  line-height: 1.4;
-}
-
-.journal h5 {
-  margin: 0 0 6px 0;
-
-  font-family: inherit;
-
-  font-size: inherit;
-
-  font-weight: 600;
-
-  color: #b3282d;
-}
-
-.journal ul {
-  margin: 0;
-
-  padding-left: 18px;
-}
-
-.journal li {
-  margin-bottom: 3px;
-
-  color: #b3282d;
-}
-
-.journal p {
-  margin: 3px 0 0;
-
-  color: #b3282d;
-}
-
-
-/* =========================================================
-   NEW / BLINKING ICON
-========================================================= */
-
-.new-blinking {
-  width: 28px;
-
-  height: auto;
-
-  margin-right: 5px;
-
-  vertical-align: middle;
-}
-
-
-/* =========================================================
    TEXT LINK
 ========================================================= */
 
@@ -376,9 +312,6 @@
     padding-left: 35px;
   }
 
-  .journal {
-    width: 90%;
-  }
 }
 
 
@@ -430,9 +363,6 @@
     flex-wrap: wrap;
   }
 
-  .journal {
-    width: 100%;
-  }
 }
 
 

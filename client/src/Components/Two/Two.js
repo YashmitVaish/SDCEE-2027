@@ -7,7 +7,7 @@ export default function Two() {
 
       <div className="two-overlay">
         <div className="two-content">
-          <h2 className="two-title">THE CONFERENCE</h2>
+          <h2 className="two-title">The Conference</h2>
           <div className="two-divider"></div>
 
           <p className="two-description">

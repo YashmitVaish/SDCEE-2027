@@ -94,7 +94,8 @@
   margin: 0;
   font-family: "Poppins", Arial, sans-serif;
   font-size: clamp(2.2rem, 4vw, 4.125rem);
-  font-weight: 600;
+  font-weight: 700;
+  font-style: italic;
   text-align: center;
 }
 

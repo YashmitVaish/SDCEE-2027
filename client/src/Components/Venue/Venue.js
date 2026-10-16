@@ -160,7 +160,7 @@ export default function Venue() {
           aria-hidden="true"
         />
 
-        <h2 className="venue-title">VENUE</h2>
+        <h2 className="venue-title">Venue</h2>
       </div>
     </section>
   );
