@@ -10,11 +10,11 @@
 
   background: linear-gradient(
     90deg,
-    #df9c71 0%,
-    #e1a470 30%,
-    #eccd67 50%,
-    #e1a470 72%,
-    #db8e75 100%
+    #2a7bbf 0%,
+    #64aee3 30%,
+    #9ccdf0 50%,
+    #64aee3 72%,
+    #2a7bbf 100%
   );
 
   position: sticky;
@@ -45,7 +45,7 @@
 }
 
 .nav-link {
-  color: #1e1e1e;
+  color: #0d2b5e;
   text-decoration: none;
 
   font-family: "Inter", "Segoe UI", Arial, sans-serif;
@@ -74,7 +74,7 @@
   font-family: "Inter", "Segoe UI", Arial, sans-serif;
   font-size: 15px;
   font-weight: 600;
-  color: #1e1e1e;
+  color: #0d2b5e;
 
   cursor: pointer;
 }
@@ -117,7 +117,7 @@
 
   padding: 9px 16px;
 
-  color: #1e1e1e;
+  color: #0d2b5e;
   text-decoration: none;
 
   font-family: "Inter", "Segoe UI", Arial, sans-serif;
@@ -140,7 +140,7 @@
   border: 1px solid #fff;
   border-radius: 10px;
 
-  background: #716997;
+  background: #0d2b5e;
   color: white;
 
   padding: 9px 20px;
@@ -183,7 +183,7 @@
 
   margin: 5px 0;
 
-  background: #000;
+  background: #0d2b5e;
 }
 
 /* =========================================================
@@ -223,9 +223,9 @@
 
     background: linear-gradient(
       90deg,
-      #df9c71,
-      #eccd67,
-      #db8e75
+      #2a7bbf,
+      #9ccdf0,
+      #2a7bbf
     );
   }
 

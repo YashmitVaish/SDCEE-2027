@@ -78,11 +78,11 @@
   padding: clamp(10px, 0.833vw, 16px)
     clamp(20px, 2.604vw, 50px);
 
-  border: 1px solid #000000;
+  border: 1px solid #ffffff;
 
   border-radius: clamp(10px, 1.04vw, 20px);
 
-  background-color: #716997;
+  background: #0d2b5e;
 
   color: #ffffff;
 
