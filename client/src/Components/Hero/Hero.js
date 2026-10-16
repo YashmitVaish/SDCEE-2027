@@ -15,9 +15,12 @@ export default function Hero() {
       <img src={banner} alt="" className="hero-banner" />
 
       <div className="hero-bar">
-        <Link smooth to="/register" className="text-link">
-          <button className="hero-reg">Register</button>
-        </Link>
+        <p className="hero-marquee">
+          Selected papers will be published in indexed journals.{" "}
+          <Link smooth to="/#publication" className="hero-marquee-link">
+            Click here
+          </Link>
+        </p>
       </div>
     </section>
   );

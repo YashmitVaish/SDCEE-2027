@@ -16,13 +16,49 @@
 }
 
 .hero-bar {
-  display: flex;
+  overflow: hidden;
 
-  justify-content: center;
-
-  padding: clamp(14px, 1.5vw, 24px) 16px;
+  padding: clamp(14px, 1.5vw, 24px) 0;
 
   background: #e8f4fc;
+}
+
+.hero-marquee {
+  margin: 0;
+
+  display: inline-block;
+  padding-left: 100%;
+
+  white-space: nowrap;
+
+  font-family: "Inter", "Segoe UI", Arial, sans-serif;
+  font-size: clamp(15px, 1.2vw, 20px);
+  font-weight: 600;
+  color: #0d2b5e;
+
+  animation: hero-marquee 18s linear infinite;
+}
+
+.hero-marquee-link {
+  color: #1565c0;
+  text-decoration: underline;
+}
+
+.hero-marquee:hover {
+  animation-play-state: paused;
+}
+
+@keyframes hero-marquee {
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-marquee {
+    animation: none;
+    padding-left: 16px;
+  }
 }
 
 .visually-hidden {
@@ -70,39 +106,6 @@
   align-items: center;
 
   gap: clamp(10px, 1.04vw, 20px);
-}
-
-.hero-reg {
-  height: auto;
-
-  padding: clamp(10px, 0.833vw, 16px)
-    clamp(20px, 2.604vw, 50px);
-
-  border: 1px solid #ffffff;
-
-  border-radius: clamp(10px, 1.04vw, 20px);
-
-  background: #0d2b5e;
-
-  color: #ffffff;
-
-  font-family: "Inter", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-
-  font-size: clamp(15px, 1.1vw, 18px);
-
-  font-weight: 600;
-
-  cursor: pointer;
-
-  transition:
-    transform 0.2s ease,
-    opacity 0.2s ease;
-}
-
-.hero-reg:hover {
-  transform: translateY(-2px);
-
-  opacity: 0.9;
 }
 
 .hero-buttons a {

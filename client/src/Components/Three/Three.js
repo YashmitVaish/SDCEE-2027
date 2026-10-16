@@ -85,7 +85,7 @@ export default function Three() {
           </div>
         </div>
 
-        <h1 className="publication-title">Publication Opportunities</h1>
+        <h1 className="publication-title" id="publication">Publication Opportunities</h1>
 
         <hr />
 
@@ -106,6 +106,7 @@ export default function Three() {
             <li>Indian Chemical Engineer (Impact Factor ≈ 1.2)</li>
             <li>Frontiers in Chemical Engineering (Impact Factor ≈ 4.0)</li>
             <li>Chemical Engineering &amp; Technology (Impact Factor ≈ 2.0)</li>
+            <li>Next Nanotechnology (Impact Factor ≈ 3.7)</li>
           </ul>
 
           <p>

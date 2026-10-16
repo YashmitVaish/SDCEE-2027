@@ -76,6 +76,7 @@
 ========================= */
 
 .three h1.publication-title {
+  scroll-margin-top: 80px;
   margin-top: 40px;
 }
 

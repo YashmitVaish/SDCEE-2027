@@ -10,11 +10,8 @@
 
   background: linear-gradient(
     90deg,
-    #2a7bbf 0%,
-    #64aee3 30%,
-    #9ccdf0 50%,
-    #64aee3 72%,
-    #2a7bbf 100%
+    #0d2b5e 0%,
+    #1e4a8a 100%
   );
 
   position: sticky;
@@ -32,6 +29,10 @@
   width: 82px;
   height: auto;
   display: block;
+
+  background: #ffffff;
+  padding: 4px 6px;
+  border-radius: 6px;
 }
 
 .nav-menu {
@@ -45,11 +46,11 @@
 }
 
 .nav-link {
-  color: #0d2b5e;
+  color: #ffffff;
   text-decoration: none;
 
   font-family: "Inter", "Segoe UI", Arial, sans-serif;
-  font-size: 15px;
+  font-size: 17px;
   font-weight: 600;
 
   white-space: nowrap;
@@ -72,9 +73,9 @@
   border: none;
 
   font-family: "Inter", "Segoe UI", Arial, sans-serif;
-  font-size: 15px;
+  font-size: 17px;
   font-weight: 600;
-  color: #0d2b5e;
+  color: #ffffff;
 
   cursor: pointer;
 }
@@ -121,7 +122,7 @@
   text-decoration: none;
 
   font-family: "Inter", "Segoe UI", Arial, sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 600;
 
   white-space: nowrap;
@@ -140,13 +141,13 @@
   border: 1px solid #fff;
   border-radius: 10px;
 
-  background: #0d2b5e;
-  color: white;
+  background: #ffffff;
+  color: #0d2b5e;
 
   padding: 9px 20px;
 
   font-family: "Inter", "Segoe UI", Arial, sans-serif;
-  font-size: 15px;
+  font-size: 17px;
   font-weight: 600;
 
   cursor: pointer;
@@ -183,7 +184,7 @@
 
   margin: 5px 0;
 
-  background: #0d2b5e;
+  background: #ffffff;
 }
 
 /* =========================================================
@@ -223,9 +224,8 @@
 
     background: linear-gradient(
       90deg,
-      #2a7bbf,
-      #9ccdf0,
-      #2a7bbf
+      #0d2b5e,
+      #1e4a8a
     );
   }
 
