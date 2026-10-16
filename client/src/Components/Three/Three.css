@@ -77,9 +77,12 @@
 
 .publication-box {
   margin-top: 40px;
-  padding: 24px clamp(16px, 3vw, 40px) 10px;
+  padding: 24px 0 10px;
   background: #f3f9fe;
-  border-radius: 16px;
+
+  /* full-bleed background, content stays in the wrapper */
+  box-shadow: 0 0 0 100vmax #f3f9fe;
+  clip-path: inset(0 -100vmax);
 }
 
 .three h1.publication-title {
