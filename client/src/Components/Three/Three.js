@@ -92,7 +92,7 @@ export default function Three() {
         <div className="publication">
           <p>
             <strong>Conference Proceedings:</strong> Selected contributions
-            will be published in conference proceedings with an ISBN.
+            will be published in conference proceedings with an ISBN Number.
           </p>
 
           <p>
