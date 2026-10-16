@@ -112,7 +112,7 @@
 .orgcom {
   box-sizing: border-box;
 
-  background-color: #f6f3f1;
+  background-color: #f3f9fe;
 
   width: 100%;
 
@@ -346,7 +346,7 @@
   width: max(30%, 300px);
   flex-grow: 1;
 
-  background: #e8f4fc;
+  background: #f3f9fe;
 
   display: flex;
   flex-direction: column;
