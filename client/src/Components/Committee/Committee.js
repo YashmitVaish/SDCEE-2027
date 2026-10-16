@@ -132,6 +132,7 @@ const tpc = [
 
 const webteam = [
   "Dr. Harcharan Jit Singh",
+  "Mr. Aeiman Preet Singh",
   "Jash Patel",
   "Yashmit Vaish",
   "Ankita Sharma",
@@ -424,11 +425,14 @@ export default function Committee() {
             <div className="othercom1">
               <h3>Web Development Team</h3>
 
-              {webteam.map((name) => (
-                <p className="name" key={name}>
-                  <strong>{name}</strong>, Department of Computer Science and Engineering, TIET
-                </p>
-              ))}
+              <div className="committee-list">
+                {webteam.map((name) => (
+                  <p className="name-department" key={name}>
+                    <strong>{name}</strong>
+                    , Department of Computer Science and Engineering, TIET
+                  </p>
+                ))}
+              </div>
             </div>
 
           </div>

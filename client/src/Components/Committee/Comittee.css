@@ -346,11 +346,7 @@
   width: max(30%, 300px);
   flex-grow: 1;
 
-  background: linear-gradient(
-    180deg,
-    rgba(209, 201, 207, 0.5),
-    rgba(110, 91, 91, 0.5)
-  );
+  background: #e8f4fc;
 
   display: flex;
   flex-direction: column;
@@ -439,11 +435,6 @@ p {
 
   font-size: 1rem;
   line-height: 1.45;
-}
-
-.othercom1 .name {
-  align-self: stretch;
-  text-align: left;
 }
 
 /* TPC / Advisory entries */
