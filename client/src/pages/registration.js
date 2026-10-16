@@ -71,6 +71,21 @@ export default function Registration() {
           <div className="register-center">
             <h1>Registration Guidelines</h1>
           </div>
+          <div className="reg-steps">
+            <span>
+              Step 1: Abstract{" "}
+              <a href="https://cmt3.research.microsoft.com/SDCEE2027" target="_blank" rel="noopener noreferrer">
+                submission.
+              </a>
+            </span>
+            <span>Step 2: Payment of registration fees.</span>
+            <span>
+              Step 3: Complete your{" "}
+              <a href="https://forms.gle/k6itCAWS2avkJFmB8" target="_blank" rel="noopener noreferrer">
+                registration.
+              </a>
+            </span>
+          </div>
           <div className="reg-row">
           <div className="fee-details">
             <h2>Registration Fee</h2>
@@ -107,7 +122,7 @@ export default function Registration() {
                 <li>
                   {" "}
                   The registration fee does not include the Article Publication Charge (APC). If selected for publication, authors are responsible for paying the APC directly according to the journal’s guidelines.
-                </li>
+                  </li>
               </ul>
             </div>
           </div>
@@ -130,7 +145,7 @@ export default function Registration() {
                 <strong>Account Number </strong> 0267104000092579
               </p>
               <p>
-                <strong>Type of A/c </strong> Saving
+                <strong>Type of A/c </strong> Savings
               </p>
               <p>
                 <strong>Bank Name </strong> IDBI Bank

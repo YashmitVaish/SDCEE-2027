@@ -186,3 +186,12 @@
   width: 100%;
   height: auto;
 }
+.reg-steps {
+  text-align: left;
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+.reg-steps span {
+  display: block;
+}
