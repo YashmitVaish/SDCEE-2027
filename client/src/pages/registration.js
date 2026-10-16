@@ -162,7 +162,7 @@ export default function Registration() {
             </div>
             <div className="button-container">
               <a href="https://forms.gle/k6itCAWS2avkJFmB8" target="_blank" rel="noopener noreferrer">
-                <button>Link to Register</button>
+                <button>Registeration Link</button>
               </a>
               {/* <Link smooth to="/abstract" className="text-link">
                 <a href="">

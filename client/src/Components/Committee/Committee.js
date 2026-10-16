@@ -131,7 +131,7 @@ const tpc = [
 ];
 
 const webteam = [
-  "Harcharan Jit Singh",
+  "Dr. Harcharan Jit Singh",
   "Jash Patel",
   "Yashmit Vaish",
   "Ankita Sharma",
