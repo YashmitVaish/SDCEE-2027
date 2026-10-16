@@ -21,12 +21,12 @@ export default function Three() {
               </li>
 
               <li>
-                <strong>Early Bird Registration (deadline) :</strong>{" "}
+                <strong>Early Bird Registration :</strong>{" "}
                 <b>December 20, 2026</b>
               </li>
 
               <li>
-                <strong>Full Paper (Selected) submission : </strong>{" "}
+                <strong>Full Paper submission : </strong>{" "}
                 <b>January 15, 2027 - February 15, 2027</b>
               </li>
 
