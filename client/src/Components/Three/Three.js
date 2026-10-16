@@ -16,22 +16,22 @@ export default function Three() {
           <div className="timeline">
             <ul>
               <li>
-                <strong>Last Date of Abstract Submissions :</strong>{" "}
+                <strong>Last Date for Abstract Submission:</strong>{" "}
                 <b>October 31, 2026</b>
               </li>
 
               <li>
-                <strong>Early Bird Registration :</strong>{" "}
+                <strong>Early Bird Registration:</strong>{" "}
                 <b>December 20, 2026</b>
               </li>
 
               <li>
-                <strong>Full Paper submission : </strong>{" "}
+                <strong>Full Paper Submission:</strong>{" "}
                 <b>January 15, 2027 - February 15, 2027</b>
               </li>
 
               <li>
-                <strong>Conference Date :</strong>{" "}
+                <strong>Conference Dates:</strong>{" "}
                 <b>February 18-20, 2027</b>
               </li>
             </ul>
@@ -93,7 +93,7 @@ export default function Three() {
         <div className="publication">
           <p>
             <strong>Conference Proceedings:</strong> Selected contributions
-            will be published in conference proceedings with an ISBN Number.
+            will be published in conference proceedings with an ISBN.
           </p>
 
           <p>

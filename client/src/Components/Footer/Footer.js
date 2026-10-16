@@ -64,7 +64,7 @@ export default function Footer() {
                 rel="noopener noreferrer"
                 className="ftr-links"
               >
-                <span className="bullet-point">&#9658;</span> About The Institute
+                <span className="bullet-point">&#9658;</span> About the Institute
               </a>
               <div className="white-line"></div>
             </li>

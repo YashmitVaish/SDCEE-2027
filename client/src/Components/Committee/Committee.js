@@ -36,7 +36,7 @@ const organizing = [
   {
     name: "Dr. Sharad Saxena",
     img: require("./images/sharadsaxena.jpg"),
-    dept: "Computer Science Engineering, TIET Patiala",
+    dept: "Computer Science and Engineering, TIET Patiala",
   },
   {
     name: "Dr. Shilpi Verma",
@@ -185,7 +185,7 @@ const natadvcom = [
   { name: "Prof. R. P. Chhabra", department: "Shiv Nadar University, India" },
   { name: "Prof. Raj Kumar Arya", department: "NIT Jalandhar, India" },
   { name: "Prof. Rakesh Kumar", department: "RGIPT, India" },
-  { name: "Prof. S.Vasudevan", department: "CSIR-CECRI, India" },
+  { name: "Prof. S. Vasudevan", department: "CSIR-CECRI, India" },
   { name: "Prof. S. T. Mhaske", department: "ICT Mumbai, India" },
   { name: "Prof. Sachin Kumar", department: "HBTU Kanpur, India" },
   { name: "Prof. Saleem Javed", department: "Jamia Millia Islamia, India" },
@@ -426,7 +426,7 @@ export default function Committee() {
 
               {webteam.map((name) => (
                 <p className="name" key={name}>
-                  <strong>{name}</strong>, Department of Computer Science, TIET
+                  <strong>{name}</strong>, Department of Computer Science and Engineering, TIET
                 </p>
               ))}
             </div>

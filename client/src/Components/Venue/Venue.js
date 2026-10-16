@@ -129,11 +129,11 @@ export default function Venue() {
             Thapar Institute of Engineering and Technology (TIET) is one of
             India&apos;s oldest and finest educational institutions, which
             provides a steady source of highly skilled talent to the nation
-            and overseas. Founded in 1956 with a campus spread across
-            sprawling 250 acres, the institute in Patiala has been a pioneer
+            and overseas. Founded in 1956 with a sprawling
+            250-acre campus, the institute in Patiala has been a pioneer
             in engineering education, research, and innovation. Our
-            community involves ingenious minds solvers eager to make the
-            world a better place to live in with their innovative techniques
+            community comprises ingenious problem solvers eager to make the
+            world a better place through their innovative techniques
             and discoveries. Rated amongst the country&apos;s top-ranked
             innovation-driven private universities and technical institutes,
             TIET has been accredited with an A++ grade by the National

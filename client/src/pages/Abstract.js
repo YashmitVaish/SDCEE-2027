@@ -17,7 +17,7 @@ export default function Registration() {
             <p className="abs-para">
               Welcome to the abstract submission for the International
               Conference on "Sustainable Development in
-              Chemical Engineering, Energy and Environment"(SDCEE-2027).
+              Chemical Engineering, Energy and Environment" (SDCEE-2027).
             </p>
           </div>
           <div className="abs-journal">
@@ -27,7 +27,7 @@ export default function Registration() {
               </span>
             </h5>
             <h5>
-              <span className="partner-label">Publication Partner:</span>
+              <span className="partner-label">Publication Partners:</span>
               <span className="partner-links">
                 <a
                   href="https://www.tandfonline.com/journals/tice20/"
@@ -58,7 +58,7 @@ export default function Registration() {
           <div className="abs-index">
             <h4>Indexed Journals</h4>
             <div className="index-images">
-              <img className="index-img wos" src={wos} alt="web of science" />
+              <img className="index-img wos" src={wos} alt="Web of Science" />
               <img className="index-img scopus" src={scopus} alt="Scopus" />
             </div>
           </div>

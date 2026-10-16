@@ -94,7 +94,7 @@ export default function Registration() {
                 <thead>
                   <tr>
                     <th>Participant</th>
-                    <th>Early bird</th>
+                    <th>Early Bird</th>
                     <th>Regular</th>
                     <th>Online</th>
                   </tr>
@@ -114,14 +114,14 @@ export default function Registration() {
             <div className="register-guide">
               <ul className="guide-reg">
                 <li>
-                  Registration fee includes registration kit, lunch, conference/ gala dinner, and tea during the conference sessions for offline attendees.
+                  The registration fee includes registration kit, lunch, conference/gala dinner, and tea during the conference sessions for offline attendees.
                 </li>
                 <li>
-                  Registration fee is inclusive of GST.
+                  The registration fee is inclusive of GST.
                 </li>
                 <li>
                   {" "}
-                  The registration fee does not include the Article Publication Charge (APC). If selected for publication, authors are responsible for paying the APC directly according to the journal’s guidelines.
+                  The registration fee does not include the Article Processing Charge (APC). If selected for publication, authors are responsible for paying the APC directly according to the journal’s guidelines.
                   </li>
               </ul>
             </div>
@@ -135,7 +135,7 @@ export default function Registration() {
                   alt="Scan & Pay QR Code"
                   className="qr-image"
                 />
-                <p className="qr-vpa">VPA : o5bfrz37gff9@idbi</p>
+                <p className="qr-vpa">VPA: o5bfrz37gff9@idbi</p>
               </div>
               <p>
                 <strong>Name of Beneficiary </strong> Thapar Institute of

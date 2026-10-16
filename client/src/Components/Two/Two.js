@@ -18,7 +18,7 @@ export default function Two() {
           </p>
 
           <p className="two-description">
-SDCEE-2027 offers valuable networking opportunities, research dissemination, and publication prospects in internationally reputed journals. The conference is a vital catalyst for innovation and sustainability, making it essential for academicians, researchers, and industry professionals. The event will be conducted in online and offline both modes.
+SDCEE-2027 offers valuable networking opportunities, research dissemination, and publication prospects in internationally reputed journals. The conference is a vital catalyst for innovation and sustainability, making it essential for academicians, researchers, and industry professionals. The event will be conducted in both online and offline modes.
           </p>
             </div>
 
@@ -32,7 +32,7 @@ SDCEE-2027 offers valuable networking opportunities, research dissemination, and
 
           <h3 className="topics-title">
             <span className="topics-title-main">CONFERENCE THEMES</span>
-            <span className="topics-title-colon"> :</span>
+            <span className="topics-title-colon">:</span>
           </h3>
 
           <div className="topics-grid">
