@@ -228,3 +228,9 @@
     width: 225px;
   }
 }
+.new-date {
+  background: #ffeb3b;
+  color: #b00020;
+  padding: 0 4px;
+  border-radius: 3px;
+}
