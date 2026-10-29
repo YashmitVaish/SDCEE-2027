@@ -50,6 +50,13 @@ export default function Registration() {
                 >
                   Chemical Engineering &amp; Technology (Impact Factor ≈ 2.0)
                 </a>
+                <a
+                  href="https://onlinelibrary.wiley.com/journal/15214125"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Next Nanotechnology (Impact Factor ≈ 3.7)
+                </a>
               </span>
             </h5>
           </div>
