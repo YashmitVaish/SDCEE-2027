@@ -268,7 +268,7 @@ export default function Committee() {
 
                 <div>
                   <h5>{member.name}</h5>
-                  <p className="core-role">Chairperson &amp; Convener</p>
+                  {/* <p className="core-role">Chairperson &amp; Convener</p> */}
                 </div>
               </div>
             ))}
@@ -297,7 +297,7 @@ export default function Committee() {
 
                 <div>
                   <h5>{member.name}</h5>
-                  <p className="core-role">Co-Convener</p>
+                  {/* <p className="core-role">Co-Convener</p> */}
                 </div>
               </div>
             ))}
