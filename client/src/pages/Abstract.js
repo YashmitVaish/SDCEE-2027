@@ -124,6 +124,15 @@ export default function Registration() {
                 Poster Template
               </a>
             </div>
+            <div className="abs-center">
+              <a
+                href={`${process.env.PUBLIC_URL}/ManuscriptTemplate-SDCEE2027.pdf`}
+                download
+                className="pdf register-center abs-none"
+              >
+                Manuscript Template
+              </a>
+            </div>
             <div className="abs-center abs-btn-cont">
               <a
                 href="https://cmt3.research.microsoft.com/SDCEE2027"

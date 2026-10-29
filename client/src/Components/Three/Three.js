@@ -17,7 +17,7 @@ export default function Three() {
             <ul>
               <li>
                 <strong>Last Date for Abstract Submission:</strong>{" "}
-                <b>October 31, 2026</b>
+                <b><s>October 31, 2026</s> November 30, 2026</b>
               </li>
 
               <li>
