@@ -159,6 +159,7 @@ const intladvcom = [
   { name: "Prof. Abdul Gani Abdul Jameel", department: "KFUPM, Saudi Arabia" },
   { name: "Prof. Lakkimsetty Nageswara Rao", department: "AURAK, UAE" },
   { name: "Prof. Amrita Jain", department: "Polish Academy of Sciences, Poland" },
+  { name: "Dr. Piyush Kumar Kumawat", department: "University of Utah, USA" },
 ];
 
 const natadvcom = [
